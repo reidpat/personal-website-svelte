@@ -24,7 +24,7 @@ let cap;
 let loaded = false;
 let points = [];
 
-let num = 1000;
+let num = 200;
 
 let noiseScale = 0.04;
 let noiseRandom
@@ -48,10 +48,12 @@ window.addEventListener('resize', windowResized)
 async function windowResized() {
     if (document.getElementById("boids-display")) {
         let elem = document.getElementById('home');
-        cap.resize(elem.clientWidth, elem.clientHeight);
-        resizeCanvas(elem.clientWidth, elem.clientHeight);
-        fill(0, 0, 0)
-        rect(0,0, width, height);
+        cap.resize(elem.clientWidth - 1, elem.clientHeight);
+        resizeCanvas(elem.clientWidth - 1 , elem.clientHeight);
+        elementHeight = elem.clientHeight;
+        background(50);
+        // fill(0, 0, 0)
+        // rect(0,0, width, height);
 
     }
   }
@@ -63,26 +65,34 @@ function setup() {
   noiseRandom = random(1);
   noStroke();
   // createCanvas(cap.width, cap.height);
- 
-  //image(cap, 0, 0)
 }
 let mounted = false;
+let elementHeight;
 function draw() {
+  //blendMode(SOFT_LIGHT)
   if (!mounted && document.getElementById("boids-display")) {
     let elem = document.getElementById('home');
-    cap.resize(elem.clientWidth, elem.clientHeight);
+    cap.resize(elem.clientWidth - 1, elem.clientHeight);
     mounted = true
 
-  createCanvas(cap.width, cap.height); 
+    createCanvas(cap.width, cap.height); 
+    elementHeight = elem.clientHeight;
      loaded = true;
+     console.log('mils', millis())
+    num = min(500000/millis(),1000)
+    console.log(num);
     for(let i = 0; i <  num; i++){
       points.push(createVector(random(width), random(height)));
     }
+    //image(cap, width, height)
+    // fill(0,20);
+    // rect(0,0,width,height)
+    background(50);
   }
-  else if(mounted){
+  else if(mounted && scrollY < elementHeight){
     
-    background(20, 10)
-    // tint(255, 5)
+    background(0, 12)
+    //tint(255, 5)
     // image(cap,0,0)
     cap.loadPixels();
       
@@ -118,6 +128,8 @@ function draw() {
       else{
         p.y += yChange;
       }
+      // p.x += xChange;
+      // p.y += yChange;
       if (!onScreen(p) || random() < 0.05) {
         p.x = random(width);
         p.y = random(height);

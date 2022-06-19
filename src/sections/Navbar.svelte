@@ -12,7 +12,7 @@ import Contact from "../components/Contact.svelte";
 	})
 
 	function scrollOpacityTop(){
-		opacity = scrollY/150 - 0.5;
+		opacity = scrollY/150;
 	}
 
    
@@ -46,9 +46,17 @@ import Contact from "../components/Contact.svelte";
 		</div>
 	</div>
 	<div class="navbar-center">
-		<button on:click={() => {scrollTo("home")}} class="btn btn-ghost normal-case text-xl">Reid Patterson</button>
+		<button on:click={() => {scrollTo("home")}} class="btn btn-ghost name normal-case text-xl">Reid Patterson</button>
 	</div>
 	<div class="navbar-end">
 		<Contact />
 	</div>
 </div>
+
+<style>
+	.name{
+  background-image: linear-gradient(60deg, #E21143, #FFB03A);
+  background-clip: text;
+  color: transparent;
+	}
+</style>

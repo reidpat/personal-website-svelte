@@ -13,13 +13,13 @@
 
 	let opacity = 0;
 	function scrollBot() {
-		opacity = scrollY/150 - 0.5;
+		opacity = scrollY/250 - 1;
 		
 		let sections = document.getElementsByClassName('section');
 
 		Array.from(sections).forEach((section) => {
 			const sectionTop = section.offsetTop;
-			if (scrollY >= sectionTop - 200) {
+			if (scrollY >= sectionTop - 350) {
 				currentScroll = section.getAttribute('id');
 			}
 		});
@@ -31,9 +31,8 @@
 		on:click={() => {
 			scrollTo('home');
 		}}
-		class:tab-active={currentScroll === 'home'}
-		class:bg-primary={currentScroll === 'home'}
-		class="tab tab-lg"
+		class:glow={currentScroll === 'home'}
+		class="tab glow-on-hover tab-lg"
 	>
 		Home
 	</div>
@@ -41,8 +40,8 @@
 		on:click={() => {
 			scrollTo('about');
 		}}
-		class:tab-active={currentScroll === 'about'}
-		class="tab tab-lg"
+		class:glow={currentScroll === 'about'}
+		class="tab glow-on-hover tab-lg"
 	>
 		About
 	</div>
@@ -50,8 +49,8 @@
 		on:click={() => {
 			scrollTo('portfolio');
 		}}
-		class:tab-active={currentScroll === 'portfolio'}
-		class="tab tab-lg"
+		class:glow={currentScroll === 'portfolio'}
+		class="tab glow-on-hover tab-lg"
 	>
 		Portfolio
 	</div>
@@ -60,11 +59,26 @@
 <style>
 	#bottom-nav-wrapper {
 		position: sticky;
-		top: calc(100vh - 54px);
+		top: calc(100vh - 64px);
 		display: flex;
 		justify-content: center;
 		width: 100%;
-		height: 55px;
+		height: 65px;
 		border-radius: 0px;
+	}
+	.glow:before{
+		opacity: 0.7 !important;
+	}
+	
+	.tab{
+		width: auto;
+		margin: auto 5px;
+		background-color: black;
+	}
+	.tab:after{
+		background: black;
+	}
+	.tab:before{
+		opacity: 0;
 	}
 </style>
