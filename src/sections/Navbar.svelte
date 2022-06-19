@@ -54,9 +54,5 @@ import Contact from "../components/Contact.svelte";
 </div>
 
 <style>
-	.name{
-  background-image: linear-gradient(60deg, #E21143, #FFB03A);
-  background-clip: text;
-  color: transparent;
-	}
+
 </style>
