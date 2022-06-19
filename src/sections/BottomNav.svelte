@@ -14,7 +14,6 @@
 	let opacity = 0;
 	function scrollBot() {
 		opacity = scrollY/150 - 0.5;
-        console.log(opacity);
 		
 		let sections = document.getElementsByClassName('section');
 

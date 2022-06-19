@@ -13,7 +13,6 @@ import Contact from "../components/Contact.svelte";
 
 	function scrollOpacityTop(){
 		opacity = scrollY/150 - 0.5;
-        console.log(opacity);
 	}
 
    

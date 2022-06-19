@@ -9,7 +9,7 @@
 	}
 </script>
 
-<div id="about" class="section min-h-screen bg-base-200">
+<div id="about" class="section min-h-screen bg-base-200 flex justify-center">
 	<div class="hero-content flex-col align-middle justify-center text-center">
 		<div>
 			{#if currentSelect === 'about'}

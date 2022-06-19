@@ -8,3 +8,9 @@
 <div class="z-30">
     <label for="my-modal-4" class="btn modal-button btn-secondary">Contact</label>
 </div>
+
+<style>
+  .btn{
+    background: linear-gradient(45deg, #002aff, #7b00ff, #ff00c8);
+  }
+</style>
