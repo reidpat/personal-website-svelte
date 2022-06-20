@@ -28,7 +28,7 @@ const manifest = {
   assets: /* @__PURE__ */ new Set(["Boids/Boid.js", "Boids/quadtree.js", "Boids/sketch.js", "MeFun.png", "MeFun.webp", "MeSerious.png", "MeSerious.webp", "chip.jpg", "chip2.jpg", "favicon.png", "lights.jpg", "lights2.jpg", "pandoc-2.18-windows-x86_64.msi", "q5.js", "q5.min.js", "sketch.js", "sky.jpeg", "space (large).jpg", "space.jpg", "space.webp"]),
   mimeTypes: { ".js": "application/javascript", ".png": "image/png", ".webp": "image/webp", ".jpg": "image/jpeg", ".msi": "application/octet-stream", ".jpeg": "image/jpeg" },
   _: {
-    entry: { "file": "start-ec8f5c9c.js", "js": ["start-ec8f5c9c.js", "chunks/index-9ad997b9.js"], "css": [] },
+    entry: { "file": "start-72442f7c.js", "js": ["start-72442f7c.js", "chunks/index-03d1660a.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => __toESM(require("./nodes/0.js"))),
       () => Promise.resolve().then(() => __toESM(require("./nodes/1.js"))),

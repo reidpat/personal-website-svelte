@@ -17,6 +17,8 @@ var __copyProps = (to, from, except, desc) => {
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 var stdin_exports = {};
 __export(stdin_exports, {
+  a: () => add_attribute,
+  b: () => each,
   c: () => create_ssr_component,
   e: () => escape,
   m: () => missing_component,
@@ -56,6 +58,16 @@ const escaped = {
 };
 function escape(html) {
   return String(html).replace(/["'&<>]/g, (match) => escaped[match]);
+}
+function escape_attribute_value(value) {
+  return typeof value === "string" ? escape(value) : value;
+}
+function each(items, fn) {
+  let str = "";
+  for (let i = 0; i < items.length; i += 1) {
+    str += fn(items[i], i);
+  }
+  return str;
 }
 const missing_component = {
   $$render: () => ""
@@ -102,4 +114,10 @@ function create_ssr_component(fn) {
     },
     $$render
   };
+}
+function add_attribute(name, value, boolean) {
+  if (value == null || boolean && !value)
+    return "";
+  const assignment = boolean && value === true ? "" : `="${escape_attribute_value(value.toString())}"`;
+  return ` ${name}${assignment}`;
 }
