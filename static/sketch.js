@@ -37,7 +37,7 @@ function preload(){
   //cap = loadImage('GU_Portrait_Reid.png')
 //cap = loadImage('sky.jpeg')
 // cap = loadImage('chip.jpg')
-cap = loadImage('space.jpg')
+cap = loadImage('space.webp')
 //cap = loadImage('lights2.jpg')
 //cap = loadImage('chip2.jpg')
   //cap = loadImage('nebula.jpg')
@@ -79,7 +79,7 @@ function draw() {
     elementHeight = elem.clientHeight;
      loaded = true;
      console.log('mils', millis())
-    num = min(500000/millis(),1000)
+    num = min(100000/millis(),500)
     console.log(num);
     for(let i = 0; i <  num; i++){
       points.push(createVector(random(width), random(height)));
@@ -130,7 +130,7 @@ function draw() {
       }
       // p.x += xChange;
       // p.y += yChange;
-      if (!onScreen(p) || random() < 0.05) {
+      if (!onScreen(p) || random() < 0.01) {
         p.x = random(width);
         p.y = random(height);
       }

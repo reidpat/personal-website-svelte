@@ -1,30 +1,28 @@
 <script>
-    import Splash from '../components/Splash.svelte'
 	function scrollTo(id) {
 		var element = document.getElementById(id);
 		element.scrollIntoView({ behavior: 'smooth' });
 	}
 </script>
 
-<Splash />
 <div id="home" class="section hero min-h-screen bg-base-200">
 	<div class="hero-content  text-center rounded p-10">
 		<div class="max-w-md">
 			<p class="text-xl font-semibold text-slate-100">Hi, I'm</p>
-			<h1 class="text-5xl font-bold name" >Reid Patterson</h1>
+			<h1 class="text-5xl font-bold gradient-text" >Reid Patterson</h1>
 			<p class="text-xl p-4 text-slate-100">Tinkerer. Developer. Educator.</p>
 			<div class="flex flex-col m-auto">
 				<button
 					on:click={() => {
 						scrollTo('about');
 					}}
-					class="btn glow-on-hover m-auto">About Me</button
+					class="btn glow-on-hover m-auto uppercase">About Me</button
 				>
                 <button
 					on:click={() => {
 						scrollTo('portfolio');
 					}}
-					class="btn glow-on-hover m-auto">Portfolio</button
+					class="btn glow-on-hover m-auto uppercase">Portfolio</button
 				>
 			</div>
 		</div>

@@ -67,7 +67,7 @@
 		border-radius: 0px;
 	}
 	.glow:before{
-		opacity: 0.7 !important;
+		opacity: 0.5 !important;
 	}
 	
 	.tab{

@@ -46,7 +46,7 @@ import Contact from "../components/Contact.svelte";
 		</div>
 	</div>
 	<div class="navbar-center">
-		<button on:click={() => {scrollTo("home")}} class="btn btn-ghost name normal-case text-xl">Reid Patterson</button>
+		<button on:click={() => {scrollTo("home")}} class="btn btn-ghost gradient-text normal-case text-xl">Reid Patterson</button>
 	</div>
 	<div class="navbar-end">
 		<Contact />

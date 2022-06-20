@@ -25,14 +25,14 @@
 								on:mouseover={swap}
 								class="portrait"
 								style="z-index: {seriousZ.toString()}"
-								src="MeSerious.png"
+								src="MeSerious.webp"
 								alt=""
 							/>
 							<img
 								on:mouseleave={swap}
 								class="portrait"
 								style="z-index: {smileZ.toString()}"
-								src="MeFun.png"
+								src="MeFun.webp"
 								alt=""
 							/>
 						</div>
