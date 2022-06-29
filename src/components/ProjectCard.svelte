@@ -3,7 +3,8 @@
 	export let alt = '';
 	export let title = '';
 	export let description = '';
-	// export let topBadge = '';
+	export let topBadge = '';
+	export let link = '';
 	export let bottomBadges = [];
 </script>
 
@@ -20,7 +21,7 @@
 				<div class="badge badge-outline">{badge}</div>
 			{/each}
 		</div>
-		<button class="btn uppercase glow-on-hover mt-3">Learn More</button>
+		<a href={`/portfolio/${link}`}  target="_self" ><button  class="btn uppercase glow-on-hover mt-3">Learn More</button></a>
 	</div>
 </div>
 
@@ -31,7 +32,7 @@
 		min-width: 250px;
 		max-width: 350px;
 		height: 550px;
-		margin: 10px;
+		/* margin: 10px; */
 		-webkit-touch-callout: none; /* iOS Safari */
 		-webkit-user-select: none; /* Safari */
 		-khtml-user-select: none; /* Konqueror HTML */
@@ -42,6 +43,6 @@
 	img {
 		height: 200px;
 		width: 100%;
-		object-fit: cover;
+		object-fit: contain;
 	}
 </style>

@@ -1,24 +1,22 @@
 <script>
-
-import { onMount } from "svelte";
-import Contact from "../components/Contact.svelte";
+	import { onMount } from 'svelte';
+	import Contact from '../components/Contact.svelte';
 	function scrollTo(id) {
 		var element = document.getElementById(id);
 		element.scrollIntoView({ behavior: 'smooth' });
+		console.log(element);
 	}
-    let opacity = 0;
-    onMount(()=>{
-		window.addEventListener("scroll", scrollOpacityTop)
-	})
+	let opacity = 0;
+	onMount(() => {
+		window.addEventListener('scroll', scrollOpacityTop);
+	});
 
-	function scrollOpacityTop(){
-		opacity = scrollY/150;
+	function scrollOpacityTop() {
+		opacity = scrollY / 150;
 	}
-
-   
 </script>
 
-<div class="navbar bg-base-100 fixed top-0 z-10" style="opacity: {opacity};">
+<div class="navbar bg-base-100 fixed top-0 z-10">
 	<div class="navbar-start">
 		<div class="dropdown">
 			<label for tabindex="0" class="btn btn-ghost btn-circle">
@@ -40,13 +38,30 @@ import Contact from "../components/Contact.svelte";
 				tabindex="0"
 				class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
 			>
-				<li><a href on:click={() => {scrollTo("portfolio")}}>Portfolio</a></li>
-				<li><a href on:click={() => {scrollTo("about")}}>About</a></li>
+				<li>
+					<div
+						on:click={() => {
+							scrollTo('portfolio');
+						}}>Portfolio</div
+					>
+				</li>
+				<li>
+					<div
+						on:click={() => {
+							scrollTo('about');
+						}}>About</div
+					>
+				</li>
 			</ul>
 		</div>
 	</div>
 	<div class="navbar-center">
-		<button on:click={() => {scrollTo("home")}} class="btn btn-ghost gradient-text normal-case text-xl">Reid Patterson</button>
+		<button
+			on:click={() => {
+				scrollTo('home');
+			}}
+			class="btn btn-ghost gradient-text normal-case text-xl">Reid Patterson</button
+		>
 	</div>
 	<div class="navbar-end">
 		<Contact />
@@ -54,5 +69,4 @@ import Contact from "../components/Contact.svelte";
 </div>
 
 <style>
-
 </style>

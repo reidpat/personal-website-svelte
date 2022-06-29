@@ -79,7 +79,7 @@ function draw() {
     elementHeight = elem.clientHeight;
      loaded = true;
      console.log('mils', millis())
-    num = min(100000/millis(),500)
+    num = min(100000/millis(),350)
     console.log(num);
     for(let i = 0; i <  num; i++){
       points.push(createVector(random(width), random(height)));

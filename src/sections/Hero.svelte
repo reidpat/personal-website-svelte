@@ -4,7 +4,6 @@
 		element.scrollIntoView({ behavior: 'smooth' });
 	}
 </script>
-
 <div id="home" class="section hero min-h-screen bg-base-200">
 	<div class="hero-content  text-center rounded p-10">
 		<div class="max-w-md">
