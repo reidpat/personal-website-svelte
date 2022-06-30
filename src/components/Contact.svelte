@@ -5,9 +5,9 @@
     <p class="py-4">Under Construction</p>
   </label>
 </label>
-<div class="z-30">
+<!-- <div class="z-30">
     <label for="my-modal-4" class="btn mr-2 modal-button glow-on-hover uppercase">Contact</label>
-</div>
+</div> -->
 
 <style>
   .btn{

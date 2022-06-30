@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* body{
+    background-color: hsl(var(--b2));
+} */
+
 .glow-on-hover {
     /* width: 220px; */
     height: 50px;

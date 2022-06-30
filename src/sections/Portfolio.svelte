@@ -172,6 +172,7 @@
 							topBadge="featured"
 							description="An inventory management app for employees to sign out, track, and return technology (laptops, arduinos, etc...) used in our program delivery."
 							bottomBadges={['Svelte', 'Supabase', 'PWA', 'Netlify', 'Tailwind CSS']}
+							link="techtracker"
 						/>
 					</div>
 					<div
@@ -186,6 +187,7 @@
 							topBadge="featured"
 							description="A hub to provide STEM resources, lesson plans, online courses, and events for teachers"
 							bottomBadges={['Webflow']}
+							link="pro-dhub"
 						/>
 					</div>
 					<!-- <div

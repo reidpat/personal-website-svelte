@@ -5,7 +5,7 @@
 <NavbarOther />
 <div class="background bg-base-200 p-10 min-h-screen">
     <div class="content p-10 m-20 bg-base-300">
-        <h1>Unity</h1>
+        <h1>Teacher Pro-D Hub</h1>
         <Construction />
     </div>   
 </div>
