@@ -21,7 +21,7 @@
 			case 'Personal Knowledge Management':
 				img = 'obsidian-icon';
 				content =
-					'Personal Knowledge Management (PKM) is the practice of creating and maintaining a system.';
+					'Personal Knowledge Management (PKM) is the practice of creating and maintaining a system where an individual can keep track of a large volume';
 				break;
 			case 'Music':
 				img = 'ukulele';
@@ -75,19 +75,18 @@
 				<div>
 					<h1 class="text-5xl font-bold">About Me</h1>
 					<div class="flex align-middle justify-center flex-wrap" id="about-pic">
-						<div id="about-desc" class="py-6 text-left self-center">
-							<p>Hello, I'm Reid!</p>
-							<p>
-								I'm an educator and developer living in Vancouver, BC. Teaching and making
-								interesting things with technology are my passions.
+						<div id="about-desc" class="py-6 text-xl text-left self-center">
+							<p class="text-2xl italic mb-3">Hello, I'm Reid!</p>
+							<p class="mb-3">
+								I'm an educator and developer living in Vancouver, BC. <br> Teaching and tinkering with tech are my passions!
+							</p>
+							<p class="mb-3">
+								By day, I work at <a class="gradient-text" href="https://geeringup.apsc.ubc.ca/">UBC Geering Up</a> as a professional development instructor,
+								helping K-12 teachers bring <span class="tooltip gradient-text"  data-tip="Science, Technology, Engineering, Math">STEM</span> into their classrooms.
 							</p>
 							<p>
-								For my day job I work at Geering Up as a professional development instructor, where
-								I help K-12 teachers bring STEM into their classrooms.
-							</p>
-							<p>
-								I also moonlight as a web developer, as I love designing fun little tools and
-								websites
+								By night, I moonlight as a web developer, indulging my love of programming through designing helpful little tools and
+								websites.
 							</p>
 						</div>
 						<div id="action">
@@ -116,7 +115,7 @@
 					</p>
 				</div>
 			{/if} -->
-			{#if currentSelect === 'interests'}
+			<!-- {#if currentSelect === 'interests'}
 				<div>
 					<h1 class="text-5xl font-bold">My Interests</h1>
 					<div class="flex flex-wrap justify-center m-20">
@@ -146,30 +145,23 @@
 						</div>
 					</div>
 				</div>
-			{/if}
-			<div class="tabs flex justify-center">
+			{/if} -->
+			<!-- <div class="tabs flex justify-center">
 				<button
 					on:click={() => {
 						currentSelect = 'about';
 					}}
 					class:tab-active={currentSelect === 'about'}
-					class="tab tab-bordered">About</button
+					class="tab tab-lg tab-bordered">About</button
 				>
-				<!-- <button
-					on:click={() => {
-						currentSelect = 'work';
-					}}
-					class:tab-active={currentSelect === 'work'}
-					class="tab tab-bordered">Work</button
-				> -->
 				<button
 					on:click={() => {
 						currentSelect = 'interests';
 					}}
 					class:tab-active={currentSelect === 'interests'}
-					class="tab tab-bordered">Interests</button
+					class="tab tab-lg tab-bordered">Interests</button
 				>
-			</div>
+			</div> -->
 		</div>
 	</div>
 </div>
@@ -193,7 +185,7 @@
 		justify-content: center;
 	}
 	#about-desc {
-		width: 45%;
+		width: 65%;
 		max-width: 600px;
 		min-width: 250px;
 	}

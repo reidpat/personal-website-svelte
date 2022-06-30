@@ -9,7 +9,7 @@
 		<div class="max-w-md">
 			<p class="text-xl font-semibold text-slate-100">Hi, I'm</p>
 			<h1 class="text-5xl font-bold gradient-text" >Reid Patterson</h1>
-			<p class="text-xl p-4 text-slate-100">Tinkerer. Developer. Educator.</p>
+			<p class="text-xl p-4 text-slate-100">Tinkerer / Developer / Educator.</p>
 			<div class="flex flex-col m-auto">
 				<button
 					on:click={() => {
