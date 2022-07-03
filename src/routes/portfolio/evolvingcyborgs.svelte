@@ -11,8 +11,8 @@
 	<div
 		class="content p-10 m-auto mt-20 bg-base-300 rounded-md flex flex-col justify-center text-left text-lg, max-w-4xl"
 	>
-		<h1 class="text-3xl bold text-left mb-3">Evolving Cyborgs</h1>
-		<p class="text-lg">A better gamified habit tracker</p>
+		<h1 class="text-3xl bold text-center mb-3">Evolving Cyborgs</h1>
+		<p class="text-lg text-center">A better gamified habit tracker</p>
 		<img class="max-w-10 m-10 rounded-lg" src="../assets/EvolvingCyborgs.jpg" alt="" />
 		<a class="m-auto" href="https://github.com/reidpat/evolving-cyborgs-svelte" target="_blank"
 			><button class="glow-on-hover pl-3 pr-3">See Code</button></a
@@ -120,6 +120,11 @@
 		{#if currentSelect == 1}
 			<div class="text-center">
 				<p>Timeline: Feb - May, 2020</p>
+				<h4>Technology Used</h4>
+				<ul class="max-w-sm">
+					<li>Vue (frontend)</li>
+					<li>Firebase (backend)</li>
+				</ul>
 				<h4>Design Process</h4>
 				<div class="h-96 carousel carousel-vertical rounded-box">
 					<div class="carousel-item h-full">
@@ -218,7 +223,68 @@
 			</div>
 		{:else if currentSelect == 2}
 			<div class="text-center">
-				<p>Timeline: Sep 2020 - Dec 2021</p>
+				<p>Timeline: Jan - Dec 2021</p>
+				<h4>Technology Used</h4>
+				<ul class="max-w-sm">
+					<li>Vue (frontend)</li>
+					<li>Firebase (backend)</li>
+				</ul>
+				<h3>Redesign #1</h3>
+				<p class="text-left">
+					I decided to revisit the project almost a year later with the intention of improving on
+					it. I still didn't feel like I had created the piece of software that I was looking for.
+					Primary among these concerns was one piece of feedback I kept recieving from friends who
+					tried the app - it wasn't very good on mobile.
+				</p>
+				<h3>Design Process</h3>
+				<p>So this time, I decided to design for mobile first</p>
+				<img
+					class="m-auto p-5"
+					src="../assets/evolving_cyborgs/evolving_cyborgs_concept.jpg"
+					alt=""
+				/>
+				<p class="text-left">
+					Opting for a card based design and changing tabs through a menu at the bottom allows for a
+					very smooth mobile experience. Adding PWA support was a priority so that it could behave
+					like a native mobile app. <br />
+					I also decided to focus on the habits section of the app, as this is what was being used the
+					most.
+				</p>
+				<p class="text" />
+				<h3>Final Product</h3>
+				<img class="m-auto" src="../assets/evolving_cyborgs/evolving-cyborgs-mobile.png" alt="" />
+				<h4>Features include:</h4>
+				<ul class="max-w-xl">
+					<li>A daily habit tracker</li>
+					<li>Vices - time since last performed an action you are trying to stop</li>
+					<li>Attributes - Game-like stats that increase based on completion of specific habits</li>
+					<li>Friends list showing their level and current experience</li>
+					<li>Daily checklist (works well for things like taking vitamins)</li>
+				</ul>
+				<div class="text-left">
+					<h3 class="divider text-2xl text">V2 Reflection</h3>
+					<p>
+						This version of the app improved significantly upon the original and became my main
+						habit tracker for the next year. The improvements in mobile usability were particularly
+						notable.
+					</p>
+					<p class="mt-5">
+						Through the process of creating this app, I began to run into major issues with using
+						Firebase as a backend. Firebase structures it's data into collections and sub
+						collections - kind of like folders and sub folders. This presented an issue for me
+						because I would often want to connect parts of the app together in ways which did not
+						easily fit into Firebase's structure. An example of this was the stats feature, which
+						needed to be updated everytime a user completed a habit. Because these were in two
+						separate "folders", I would either have to request data from both folders, or have
+						copies of the data in two places. Due to Firebase's pricing schema the first option
+						would have likely started costing me money, which I was not interested in spending as
+						this app doesn't generate revenue. The second option is dangerous because once you have
+						multiple copies of the same data it becomes hard to keep them in sync with one another.
+						<br />
+						Ultimately, this caused me to scrap this version of the project and start using a new backend,
+						which requires a MAJOR redesign.
+					</p>
+				</div>
 			</div>
 		{:else}
 			<div class="text-center">
@@ -230,6 +296,13 @@
 </div>
 
 <style>
+	ul {
+		list-style: circle;
+		text-align: left;
+		margin: auto;
+		justify-self: center;
+		width: auto;
+	}
 	iframe {
 		margin: 20px auto;
 		width: 60%;
