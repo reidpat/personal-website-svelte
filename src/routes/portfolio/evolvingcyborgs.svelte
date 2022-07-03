@@ -2,7 +2,7 @@
 	import NavbarOther from '../../sections/NavbarOther.svelte';
 	import Construction from '../../components/Construction.svelte';
 
-	let currentSelect = 2;
+	let currentSelect = 3;
 	let problemSelect = 1;
 </script>
 
@@ -289,10 +289,53 @@
 		{:else}
 			<div class="text-center">
 				<p>Timeline: Jan 2022 - Present</p>
+				<h4>Technology Used</h4>
+				<ul class="max-w-sm">
+					<li>Svelte (frontend)</li>
+					<li>Supabase (backend)</li>
+				</ul>
+
+				<h4>Design Process</h4>
+				<div class="text-left mt-5">
+					<p>
+						After my issues with structuring data on Firebase, I decided to rebuild the app using
+						Supabase instead. This required a total overhaul of how data was processed and stored.
+						Around this same time, I found myself experimenting with Svelte - an frontend
+						alternative to Vue. I quickly fell in love with Svelte and I decided to use it to create
+						the app instead of Vue.
+					</p>
+					<p>
+						These two factors combined resulted in the need to do a complete rewrite of the existing
+						code. The existing UI/UX for the app stayed nearly identical, as there were no issues
+						with this area and Svelte code looks and performs quite similarly to Vue, meaning there
+						were large sections of my code that I was able to reuse after making minor edits. This
+						resulted in a design process that mostly involved thinking about how to structure the
+						data in a way that wouldn't cause me problems in the future when I wanted to add more
+						features.
+					</p>
+				</div>
+                <h4>Final Product</h4>
+                <img class="max-w-6 m-auto rounded-lg" src="../assets/EvolvingCyborgs.jpg" alt="" />
+                <p class="mt-5">I've been very with the progress I've made on this project. It's now almost at the point where I left off with Version 2, but I don't feel nearly as limited with my data structure.</p>
+                <h4>Features</h4>
+                <ul class="max-w-xl">
+					<li>Habit Tracker - Now with dynamically adjusting goals!</li>
+					<li>Vices - time since last performed an action you are trying to stop</li>
+					<li>Friends list showing their level and current experience</li>
+				</ul>
+                <div class="text-left">
+					<h3 class="divider text-2xl text">V3 Roadmap</h3>
+                    <p>Version 3 of this project is under active development and so far there have been no major issues that require reflection. I am planning on continuing development and adding the following features:</p>
+                    <ul class="max-w-xl text-left justify-self-start">
+                        <li>Achievements and Badges - Show off to your friends what you have accomplished!</li>
+                        <li>Activities - Track specific behaviour occurances which may not happen every day, or happen multiple times a day</li>
+                        <li>Custom Data tracking - Building off the activites above, modify it to us custom data types allowing tracking of any information desired</li>
+                        <li>Attributes - Game-like stats which are leveled as you complete various actions</li>
+                    </ul>
+                </div>
 			</div>
 		{/if}
 	</div>
-	<Construction />
 </div>
 
 <style>
