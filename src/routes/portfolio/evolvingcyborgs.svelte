@@ -2,26 +2,24 @@
 	import NavbarOther from '../../sections/NavbarOther.svelte';
 	import Construction from '../../components/Construction.svelte';
 
-	let currentSelect = 'v3';
+	let currentSelect = 2;
 	let problemSelect = 1;
 </script>
 
 <NavbarOther />
 <div class="background bg-base-200 p-10 min-h-screen">
 	<div
-		class="content p-10 m-auto mt-20 bg-base-300 rounded-md flex flex-col justify-center text-center text-lg, max-w-4xl"
+		class="content p-10 m-auto mt-20 bg-base-300 rounded-md flex flex-col justify-center text-left text-lg, max-w-4xl"
 	>
-		<h1 class="text-3xl bold text-center mb-3">Evolving Cyborgs</h1>
+		<h1 class="text-3xl bold text-left mb-3">Evolving Cyborgs</h1>
 		<p class="text-lg">A better gamified habit tracker</p>
 		<img class="max-w-10 m-10 rounded-lg" src="../assets/EvolvingCyborgs.jpg" alt="" />
 		<a class="m-auto" href="https://github.com/reidpat/evolving-cyborgs-svelte" target="_blank"
 			><button class="glow-on-hover pl-3 pr-3">See Code</button></a
 		>
-		<div class="divider" />
-		<h2 class="text-2xl bold text-center">My Role</h2>
-		<p>Owner, designer and sole creator of a personal project</p>
-		<div class="divider" />
-		<h2 class="text-2xl bold text-center">The Problem</h2>
+		<h2 class="text-2xl bold text-center divider">My Role</h2>
+		<p class="text-center">Owner, designer and sole creator of a personal project</p>
+		<h2 class="text-2xl bold text-center divider">The Problem</h2>
 		<p class="mb-5">
 			I've always enjoyed playing video games but the older I get, the more frustrating it feels to
 			only be able to affect the digital world. I wanted to find a way that I could still feel like
@@ -65,72 +63,189 @@
 		{#if problemSelect == 1}
 			<p>
 				Giving rewards and punishments is one of the most effective known ways of creating behaviour
-				change as it causes positive and negative associations with a specific
-				behaviour. But if you are not careful with your timing of feedback, you can easily cause
-				counterproductive situations. I found many apps were not careful with this feedback.
+				change as it causes positive and negative associations with a specific behaviour. But if you
+				are not careful with your timing of feedback, you can easily cause counterproductive
+				situations. I found many apps were not careful with this feedback.
 			</p>
 			<p>
-				For example, they would punish the user (usually by losing health, gold, or
-				experience) when something like a habit was not completed. The issue here is that this
-				punishment was applied the <i>next</i> time a user would log in. This made it easy to avoid the
-				punishment simply by avoiding using the app.
+				For example, they would punish the user (usually by losing health, gold, or experience) when
+				something like a habit was not completed. The issue here is that this punishment was applied
+				the <i>next</i> time a user would log in. This made it easy to avoid the punishment simply by
+				avoiding using the app.
 			</p>
 		{:else if problemSelect == 2}
-			<p>Mobile applications are great because they are easily accessible, making data recording simple and easy to do. However, they are not great for extended text input and trying to view graphs and data is extremely difficult due to the small screen. I need an application that I am able to use on both mobile and desktop.</p>
+			<p>
+				Mobile applications are great because they are easily accessible, making data recording
+				simple and easy to do. However, they are not great for extended text input and trying to
+				view graphs and data is extremely difficult due to the small screen. I need an application
+				that I am able to use on both mobile and desktop.
+			</p>
 		{:else}
-			<p> I like tracking lots of things about my life, but I don't like it when
-                all this data is stuck in silos. Allowing custom data types for
-                tracking, or at least having an API available to export the data
-                somewhere else is a must for me.</p>
+			<p>
+				I like tracking lots of things about my life, but I don't like it when all this data is
+				stuck in silos. Allowing custom data types for tracking, or at least having an API available
+				to export the data somewhere else is a must for me.
+			</p>
 		{/if}
 
-		<div class="divider" />
-		<h2 class="text-2xl bold text-center">The Solution</h2>
-        <p class="mb-5"> I decided that the only way of solving these
-            problems is if I made an application myself. This project is what
-            originally encouraged me to learn web development</p>
-		<div class="tabs tabs-boxed flex justify-center bg-base-300">
+		<h2 class="text-2xl bold text-center divider">The Solution</h2>
+		<p class="mb-5">
+			I decided that the only way of solving these problems is if I made an application myself. This
+			project is what originally encouraged me to learn web development
+		</p>
+		<div class="tabs tabs-boxed flex justify-center bg-base-300 mb-5">
 			<button
 				on:click={() => {
-					currentSelect = 'v1';
+					currentSelect = 1;
 				}}
-				class:tab-active={currentSelect === 'v1'}
+				class:tab-active={currentSelect === 1}
 				class="tab tab-lg tab-bordered">Version 1</button
 			>
 			<button
 				on:click={() => {
-					currentSelect = 'v2';
+					currentSelect = 2;
 				}}
-				class:tab-active={currentSelect === 'v2'}
+				class:tab-active={currentSelect === 2}
 				class="tab tab-lg tab-bordered">Version 2</button
 			>
 			<button
 				on:click={() => {
-					currentSelect = 'v3';
+					currentSelect = 3;
 				}}
-				class:tab-active={currentSelect === 'v3'}
+				class:tab-active={currentSelect === 3}
 				class="tab tab-lg tab-bordered">Version 3</button
 			>
 		</div>
-        {#if currentSelect == 'v1'}
-            <p>Timeline: Feb - May, 2020</p>
-        {:else if currentSelect == 'v2'}
-            <p>Timeline: June 2020 - Dec 2021</p>
-        {:else}
-            <p>Timeline: Jan 2022 - Present</p>
-        {/if}
+
+		{#if currentSelect == 1}
+			<div class="text-center">
+				<p>Timeline: Feb - May, 2020</p>
+				<h4>Design Process</h4>
+				<div class="h-96 carousel carousel-vertical rounded-box">
+					<div class="carousel-item h-full">
+						<img
+							class="drawing-slides"
+							src="../assets/evolving_cyborgs/drawing1.png"
+							alt="first drawing"
+						/>
+					</div>
+					<div class="carousel-item h-full">
+						<img
+							class="drawing-slides"
+							src="../assets/evolving_cyborgs/drawing2.jpg"
+							alt="second drawing"
+						/>
+					</div>
+					<div class="carousel-item h-full">
+						<img
+							class="drawing-slides"
+							src="../assets/evolving_cyborgs/drawing3.jpg"
+							alt="third drawing"
+						/>
+					</div>
+					<div class="carousel-item h-full">
+						<img
+							class="drawing-slides"
+							src="../assets/evolving_cyborgs/drawing4.jpg"
+							alt="fourth drawing"
+						/>
+					</div>
+					<div class="carousel-item h-full">
+						<img
+							class="drawing-slides"
+							src="../assets/evolving_cyborgs/drawing5.jpg"
+							alt="first drawing"
+						/>
+					</div>
+					<div class="carousel-item h-full">
+						<img
+							class="drawing-slides"
+							src="../assets/evolving_cyborgs/drawing6.jpg"
+							alt="first drawing"
+						/>
+					</div>
+				</div>
+
+				<h3>Feature Video</h3>
+				<iframe
+					src="https://www.youtube.com/embed/jHzjWNivhKY?start=26"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen
+				/>
+				<div class="flex flex-col justify-center">
+					<h3>Final Product</h3>
+					<img id="final_app" src="../assets/evolving_cyborgs/updatedApp.png" alt="first drawing" />
+				</div>
+				<div id="reflection1" class="text-left">
+					<h3 class="divider text-2xl">V1 Reflection</h3>
+					<p>
+						This was my first time embarking on a serious web app project using a frontend
+						framework. Here's some of the lessons I learned along the way:
+					</p>
+					<h4 class="text-center">1. How to use data reactivity the wrong way</h4>
+					<p>
+						I was modifying my data using google cloud functions instead of modifying the state on
+						the front end directly (which I later realised was the entire point of a front-end
+						framework like Vue). This introduced a noticeable amount of lag when you interacted with
+						the interface.
+					</p>
+					<h4 class="text-center">2. Use tabs to navigate instead of scrolling</h4>
+					<p>
+						It felt strange to have all the components on the same page. Using tabs would feel much
+						more natural and be easier to navigate.
+					</p>
+					<h4 class="text-center">3. No need to remake the wheel (of todo lists)</h4>
+					<p>
+						There's already a bunch of great software designed around todo lists. My implementation
+						of one didn't end up being that useful as I would end up managing my tasks in a separate
+						program only to have to copy them in. In the future, I would just connect to an external
+						piece of software using their API.
+					</p>
+					<h3 class="divider">Final Thoughts</h3>
+					<p>
+						Overall the concept I was going for was solid, but there was lots of room for
+						improvement in the execution.
+					</p>
+					<p>
+						Of my original 3 problems I set out to fix I was able to solve the first one - Punishing
+						the User. My version of the app didn't actively punish you for missing a day, though it
+						would reset your streaks and reduce your xp gain. I found this to be a good comprimise
+						and it eliminated a major pain point I had with other applications
+					</p>
+				</div>
+			</div>
+		{:else if currentSelect == 2}
+			<div class="text-center">
+				<p>Timeline: Sep 2020 - Dec 2021</p>
+			</div>
+		{:else}
+			<div class="text-center">
+				<p>Timeline: Jan 2022 - Present</p>
+			</div>
+		{/if}
 	</div>
 	<Construction />
 </div>
 
 <style>
+	iframe {
+		margin: 20px auto;
+		width: 60%;
+		min-width: 200px;
+		height: 300px;
+	}
+	.drawing-slides {
+		margin: 0px auto;
+	}
 	img {
 		max-height: 400px;
 		object-fit: contain;
 	}
 	.divider {
 		padding: 20px;
-		padding-top: 30px;
+		padding-top: 60px;
 	}
 	h1,
 	h2,
