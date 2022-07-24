@@ -3,6 +3,9 @@
 	import Construction from '../../components/Construction.svelte';
 </script>
 
+<svelte:head>
+	<title>Unity ML</title>
+</svelte:head>
 <NavbarOther />
 <div class="background bg-base-200 p-10 min-h-screen">
 	<div

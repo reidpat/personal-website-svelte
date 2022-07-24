@@ -6,6 +6,9 @@
 	let problemSelect = 1;
 </script>
 
+<svelte:head>
+	<title>Evolving Cyborgs</title>
+</svelte:head>
 <NavbarOther />
 <div class="background bg-base-200 p-10 min-h-screen">
 	<div
