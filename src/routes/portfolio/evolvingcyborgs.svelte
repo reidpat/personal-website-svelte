@@ -17,22 +17,22 @@
 		<a class="m-auto" href="https://github.com/reidpat/evolving-cyborgs-svelte" target="_blank"
 			><button class="glow-on-hover pl-3 pr-3">See Code</button></a
 		>
-		<h2 class="text-2xl bold text-center divider">My Role</h2>
+		<h2 class="text-2xl bold divider">My Role</h2>
 		<p class="text-center">Owner, designer and sole creator of a personal project</p>
-		<h2 class="text-2xl bold text-center divider">The Problem</h2>
+		<h2 class="text-2xl bold divider">The Problem</h2>
 		<p class="mb-5">
 			I've always enjoyed playing video games but the older I get, the more frustrating it feels to
 			only be able to affect the digital world. I wanted to find a way that I could still feel like
 			I'm playing a game, but do it in the physical world. In my searching for a solution to this
 			problem, I began to learn about gamified habit trackers.
 		</p>
-		<h3 class="text-lg bold text-center">What is a gamified habit tracker?</h3>
+		<h3 class="text-lg bold">What is a gamified habit tracker?</h3>
 		<p class="mb-5">
 			Gamified habit trackers are a genre of app in which elements from video games (such as
 			experience, levels, acheievements and character stats) are used to provide additional
 			motivation to the user to help them complete real world tasks.
 		</p>
-		<h3 class="text-lg bold text-center">Why existing apps didn't work</h3>
+		<h3 class="text-lg bold">Why existing apps didn't work</h3>
 		<p class="mb-10">
 			I couldn't find any apps out there which worked for me. I kept running into one of the
 			following problems:
@@ -88,7 +88,7 @@
 			</p>
 		{/if}
 
-		<h2 class="text-2xl bold text-center divider">The Solution</h2>
+		<h2 class="text-2xl bold divider">The Solution</h2>
 		<p class="mb-5">
 			I decided that the only way of solving these problems is if I made an application myself. This
 			project is what originally encouraged me to learn web development
