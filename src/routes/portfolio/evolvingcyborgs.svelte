@@ -8,6 +8,7 @@
 
 <svelte:head>
 	<title>Evolving Cyborgs</title>
+	<link rel="icon" href="../assets/code_icon.png" />
 </svelte:head>
 <NavbarOther />
 <div class="background bg-base-200 p-10 min-h-screen">
