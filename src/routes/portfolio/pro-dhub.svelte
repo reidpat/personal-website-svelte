@@ -16,7 +16,7 @@
 		<p class="text-lg text-center">A resource hub and event portal for K-12 teachers</p>
 		<img
 			class="max-w-10 m-10 rounded-lg"
-			src="..\assets\Pro-DHub.jpg"
+			src="..\assets\Pro-D_Hub.png"
 			alt="interface for pro-d hub"
 		/>
 		<a class="m-auto" href="https://pro-d.geeringup.ca/" target="_blank"

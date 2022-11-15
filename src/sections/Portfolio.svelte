@@ -182,7 +182,7 @@
 					>
 						<ProjectCard
 							title="Teacher Pro-D Hub"
-							url="assets/Pro-DHub.jpg"
+							url="assets/Pro-D_Hub.png"
 							alt="chip"
 							topBadge="featured"
 							description="A hub to provide STEM resources, lesson plans, online courses, and events for teachers"
