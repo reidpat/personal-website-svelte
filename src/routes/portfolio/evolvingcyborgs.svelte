@@ -320,7 +320,7 @@
 				</div>
                 <h4>Final Product</h4>
                 <img class="max-w-6 m-auto rounded-lg" src="../assets/EvolvingCyborgs.jpg" alt="" />
-                <p class="mt-5">I've been very with the progress I've made on this project. It's now almost at the point where I left off with Version 2, but I don't feel nearly as limited with my data structure.</p>
+                <p class="mt-5">I've been very happy with the progress I've made on this project. It's now almost at the point where I left off with Version 2, but I don't feel nearly as limited with my data structure.</p>
                 <h4>Features</h4>
                 <ul class="max-w-xl">
 					<li>Habit Tracker - Now with dynamically adjusting goals!</li>
