@@ -23,6 +23,12 @@
 					}}
 					class="btn glow-on-hover m-auto uppercase">Portfolio</button
 				>
+				<button
+					on:click={() => {
+						scrollTo('media');
+					}}
+					class="btn glow-on-hover m-auto uppercase">Media</button
+				>
 			</div>
 		</div>
 	</div>

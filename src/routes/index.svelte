@@ -9,7 +9,9 @@
   import About from '../sections/About.svelte'
   import Portfolio from '../sections/Portfolio.svelte'
   import Contact from '../components/Contact.svelte'
+  import Media from '../sections/Media.svelte';
   import BottomNav from '../sections/BottomNav.svelte';
+
 </script>
 <Navbar />
 <Hero />
@@ -17,4 +19,5 @@
 <BottomNav />
 <About />
 <Portfolio />
+<Media />
 

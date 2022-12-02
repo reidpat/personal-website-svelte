@@ -54,6 +54,15 @@
 	>
 		Portfolio
 	</div>
+	<div
+		on:click={() => {
+			scrollTo('media');
+		}}
+		class:glow={currentScroll === 'media'}
+		class="tab glow-on-hover tab-lg"
+	>
+		Media
+	</div>
 </div>
 
 <style>
