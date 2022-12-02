@@ -78,15 +78,17 @@
 						<div id="about-desc" class="py-6 text-xl text-left self-center">
 							<p class="text-2xl italic mb-3">Hello, I'm Reid!</p>
 							<p class="mb-3">
-								I'm an educator and developer living in Vancouver, BC. <br> Teaching and tinkering with tech are my passions!
+								I'm an educator and developer living in Vancouver, BC.
 							</p>
 							<p class="mb-3">
-								By day, I work at <a class="gradient-text" href="https://geeringup.apsc.ubc.ca/">UBC Geering Up</a> as a professional development instructor,
-								helping K-12 teachers bring <span class="tooltip gradient-text"  data-tip="Science, Technology, Engineering, Math">STEM</span> into their classrooms.
+								By day, I work at <a class="gradient-text" href="https://geeringup.apsc.ubc.ca/"
+									>UBC Geering Up</a
+								>
+								as a computer science instructor and web developer, helping K-12 teachers bring
+								topics like AI and Digital Literacy into their classrooms.
 							</p>
 							<p>
-								By night, I moonlight as a web developer, indulging my love of programming through designing helpful little tools and
-								websites.
+								By night, I moonlight as a tech tinkerer - making helpful tools & websites, working with training machine learning models, and experimenting with algorithmically generated art.
 							</p>
 						</div>
 						<div id="action">
@@ -234,7 +236,8 @@
 	.glow > img {
 		max-width: 55%;
 	}
-	.glow:before, .glow-small:before {
+	.glow:before,
+	.glow-small:before {
 		content: '';
 		background: linear-gradient(45deg, #ff0000, #ff00c8, #002aff, #7b00ff, #ff00c8, #ff0000);
 		position: absolute;
@@ -254,7 +257,7 @@
 	.glow:active:after {
 		background: transparent;
 	}
-	.glow:before{
+	.glow:before {
 		opacity: 0.3;
 	}
 	.glow-small:before {
@@ -264,7 +267,8 @@
 		opacity: 1;
 	}
 
-	.glow:after, .glow-small:after {
+	.glow:after,
+	.glow-small:after {
 		z-index: -1;
 		content: '';
 		position: absolute;
