@@ -52,6 +52,13 @@
 						}}>About</div
 					>
 				</li>
+				<li>
+					<div
+						on:click={() => {
+							scrollTo('media');
+						}}>Media</div
+					>
+				</li>
 			</ul>
 		</div>
 	</div>
