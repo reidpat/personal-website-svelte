@@ -181,7 +181,7 @@
 	#action {
 		display: flex;
 		position: relative;
-		min-width: 300px;
+		width: 100%;
 		min-height: 400px;
 		align-items: center;
 		justify-content: center;

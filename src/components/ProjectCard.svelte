@@ -8,7 +8,7 @@
 	export let bottomBadges = [];
 </script>
 
-<div class="card w-96 bg-base-100 rounded-md shadow-[0_35px_60px_-15px_rgba(255,255,255,0.2)">
+<div class="card bg-base-100 rounded-md shadow-[0_35px_60px_-15px_rgba(255,255,255,0.2)">
 	<figure><img src={url} {alt} /></figure>
 	<div class="card-body items-center text-center">
 		<h2 class="card-title gradient-text uppercase">
@@ -28,7 +28,7 @@
 <style>
 	.card {
 		box-shadow: 0 0 2rem 0 rgb(255 255 255 / 30%);
-		width: 50vw !important;
+		width: 80vw !important;
 		min-width: 250px;
 		max-width: 350px;
 		height: 550px;

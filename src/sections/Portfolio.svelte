@@ -34,45 +34,47 @@
 	let rotateFn = isHorizontal ? 'rotateY' : 'rotateX';
 	// let orientationRadios;
 	let width = '400px';
+	let cards = [];
 
 	onMount(() => {
 		console.log(window.innerWidth);
-		if (window.innerWidth < 700) {
-			console.log('run!');
-			isHorizontal = false;
-			width = 'auto';
-			overflow = 'hidden';
-		} else {
-			isHorizontal = true;
-		}
+		let container = document.getElementById('portfolio')
+		cards = container.getElementsByClassName('card');
+		width = 'auto';
+		overflow = 'visible';
 		carousel = document.querySelector('.carousel-container');
 		console.log(carousel);
 		cells = document.querySelectorAll('.carousel-cell');
-		cellWidth = carousel.offsetWidth;
+		cellWidth = cards[0].offsetWidth;
+		console.log(cellWidth);
 		cellHeight = carousel.offsetHeight;
 		// orientationRadios = document.querySelectorAll('input[name="orientation"]');
 
 		onOrientationChange();
 
 		window.addEventListener('resize', resize);
-		setTimeout(() => {
-			overflow = 'visible';
-		}, 1100);
+		
 	});
-	let overflow = 'visible';
+	let overflow = 'hidden';
 	function rotateCarousel() {
+		overflow = 'hidden';
 		var angle = theta * selectedIndex * -1;
 		carousel.style.transform = 'translateZ(' + -radius + 'px) ' + rotateFn + '(' + angle + 'deg)';
-		setTimeout(() => {
-			overflow = 'visible';
-		}, 1100);
+		// setTimeout(() => {
+		// 	overflow = 'visible';
+		// }, 1100);
 	}
 
+	
+
 	function changeCarousel() {
-		let cellCount = 4;
+		let cellCount = cells.length;
 		theta = 360 / cellCount;
-		var cellSize = isHorizontal ? cellWidth : cellHeight;
+		var cellSize = cellWidth + 20;
 		radius = Math.round(cellSize / 2 / Math.tan(Math.PI / cellCount));
+		console.log("radius: ", radius);
+		console.log("window: ", window.innerWidth);
+
 		for (var i = 0; i < cells.length; i++) {
 			var cell = cells[i];
 			if (i < cellCount) {
@@ -91,13 +93,15 @@
 	}
 
 	function resize() {
-		if (window.innerWidth < 700) {
-			isHorizontal = false;
-			width = 'auto';
-			overflow = 'hidden';
-		} else {
-			isHorizontal = true;
-		}
+		// if (window.innerWidth < 700) {
+		// 	isHorizontal = false;
+		// 	width = 'auto';
+		// 	overflow = 'hidden';
+		// } else {
+		// 	isHorizontal = true;
+		// }
+		cellWidth = cards[0].offsetWidth;
+		console.log('width', cellWidth);
 		onOrientationChange();
 	}
 
@@ -111,84 +115,96 @@
 	function onOrientationChange() {
 		// var checkedRadio = document.querySelector('input[name="orientation"]:checked');
 		// isHorizontal = checkedRadio.value == 'horizontal';
-		rotateFn = isHorizontal ? 'rotateY' : 'rotateX';
+		rotateFn = 'rotateY';
 		changeCarousel();
 	}
 
 	// set initials
 </script>
 
+
+
 <div id="portfolio" class="section hero min-h-screen bg-base-200">
 	<div class="hero-content text-center">
 		<div>
-			<h1 class="text-5xl font-bold mt-14 pr-5">My Portfolio</h1>
+			<h1 class="text-5xl font-bold mt-14 text-center">My Portfolio</h1>
 			<!-- <button class="btn glow-on-hover black">See more projects ></button> -->
 			<!-- <h2 class="font-bold text-3xl m-5">Featured Projects</h2> -->
 			<!-- <button class="btn glow-on-hover black">See All Projects</button> -->
 			<div
 				class="scene"
-				style="margin: {!isHorizontal * 150 + 20}px auto; width: {width}; overflow-y: {overflow}"
-			>
-				<div class="flex justify-center carousel-container">
+				style="margin: 20px 0px; width: auto; max-width:100%; overflow-y: visible; overflow-x: visible; max-width: 80vw">
+				<div class="flex align-center justify-center carousel-container">
 					<div
 						class="carousel-cell"
 						use:swipe={{ timeframe: 300, minSwipeDistance: 60 }}
-						on:swipe={handler}
-					>
-						<ProjectCard
-							title="Evolving Cyborgs"
-							url="assets/EvolvingCyborgs.jpg"
-							alt="chip"
-							topBadge="featured"
-							description="A gamified habit and behaviour tracker. Based off of psychological research, this app aims to make the process of behaviour change easier."
-							bottomBadges={['Svelte', 'Supabase', 'PWA', 'Netlify', 'Tailwind CSS']}
-							link="evolvingcyborgs"
-						/>
-					</div>
-					<div
-						class="carousel-cell"
-						use:swipe={{ timeframe: 300, minSwipeDistance: 60 }}
-						on:swipe={handler}
-					>
+						on:swipe={handler}>
 						<ProjectCard
 							title="Unity ML Tournament"
 							url="assets/ML_Agents_scene.png"
 							alt="chip"
 							topBadge="featured"
-							description="An open ended learning environment where university students train machine learning agents to compete in a capture the flag competition."
+							description="An open ended learning environment where university students train
+							machine learning agents to compete in a capture the flag competition."
 							bottomBadges={['Unity', 'Unity ML Agents']}
-							link="unityml"
-						/>
+							link="unityml" />
 					</div>
+					<!-- <div
+						class="carousel-cell"
+						use:swipe={{ timeframe: 300, minSwipeDistance: 60 }}
+						on:swipe={handler}>
+						<ProjectCard
+							title="Experiments"
+							url="assets/ML_Agents_scene.png"
+							alt="chip"
+							topBadge="featured"
+							description="An open ended learning environment where university students train
+							machine learning agents to compete in a capture the flag competition."
+							bottomBadges={['Unity', 'Unity ML Agents']}
+							link="unityml" />
+					</div> -->
 					<div
 						class="carousel-cell"
 						use:swipe={{ timeframe: 300, minSwipeDistance: 60 }}
-						on:swipe={handler}
-					>
+						on:swipe={handler}>
+						<ProjectCard
+							title="Evolving Cyborgs"
+							url="assets/EvolvingCyborgs.jpg"
+							alt="chip"
+							topBadge="featured"
+							description="A gamified habit and behaviour tracker. Based off of psychological
+							research, this app aims to make the process of behaviour change easier."
+							bottomBadges={['Svelte', 'Supabase', 'PWA', 'Netlify', 'Tailwind CSS']}
+							link="evolvingcyborgs" />
+					</div>
+
+					<div
+						class="carousel-cell"
+						use:swipe={{ timeframe: 300, minSwipeDistance: 60 }}
+						on:swipe={handler}>
 						<ProjectCard
 							title="Tech Tracker"
 							url="assets/TechTracker.jpg"
 							alt="chip"
 							topBadge="featured"
-							description="An inventory management app for employees to sign out, track, and return technology (laptops, arduinos, etc...) used in our program delivery."
+							description="An inventory management app for employees to sign out, track, and return
+							technology (laptops, arduinos, etc...) used in our program delivery."
 							bottomBadges={['Svelte', 'Supabase', 'PWA', 'Netlify', 'Tailwind CSS']}
-							link="techtracker"
-						/>
+							link="techtracker" />
 					</div>
 					<div
 						class="carousel-cell"
 						use:swipe={{ timeframe: 300, minSwipeDistance: 60 }}
-						on:swipe={handler}
-					>
+						on:swipe={handler}>
 						<ProjectCard
 							title="Teacher Pro-D Hub"
 							url="assets/Pro-D_Hub.png"
 							alt="chip"
 							topBadge="featured"
-							description="A hub to provide STEM resources, lesson plans, online courses, and events for teachers"
+							description="A hub to provide STEM resources, lesson plans, online courses, and events
+							for teachers"
 							bottomBadges={['Webflow']}
-							link="pro-dhub"
-						/>
+							link="pro-dhub" />
 					</div>
 					<!-- <div
 						class="carousel-cell"
@@ -225,22 +241,32 @@
 					selectedIndex--;
 					rotateCarousel();
 				}}
-				class="btn btn-circle">&#60;</button
-			>
+				class="btn btn-circle">
+				&#60;
+			</button>
 			<button
 				on:click={() => {
 					selectedIndex++;
 					rotateCarousel();
 				}}
-				class="btn btn-circle">&#62;</button
-			>
+				class="btn btn-circle">
+				&#62;
+			</button>
 		</div>
 	</div>
 </div>
 
+
 <style>
+	.scene::-webkit-scrollbar{
+		display: none;
+	}
 	#portfolio {
 		padding-bottom: 100px;
-		max-width: 100vw;
-	}	
+		width: 100vw;
+	}
+	.hero-content{
+		
+		max-width: 80%;
+	}
 </style>

@@ -1,5 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
+	import MenuScroller from '../components/menuScroller.svelte';
 
 	let currentScroll = 'home';
 	function scrollTo(id) {
@@ -8,9 +9,21 @@
 		element.scrollIntoView({ behavior: 'smooth' });
 	}
 
+	function scrollAbout(){
+		scrollTo('about');
+	}
+
 	onMount(() => {
 		window.addEventListener('scroll', scrollBot);
+		window.addEventListener('resize', changeMenu);
+		changeMenu();
 	});
+
+	let small = false;
+	function changeMenu(){
+		console.log('width: ', window.windowWidth)
+		small = window.windowWidth < 425; 
+	}
 
 	let opacity = 0;
 	function scrollBot() {
@@ -35,7 +48,7 @@
 		display: flex;
 		justify-content: center;
 		width: 100%;
-		height: 65px;
+		/* height: 65px; */
 		border-radius: 0px;
 	}
 	.glow:before {
@@ -56,6 +69,9 @@
 	img {
 		height: 30px;
 	}
+	.menu li {
+		margin-bottom: 5px
+	}
 </style>
 
 <div id="bottom-nav-wrapper" class="tabs tabs-boxed bg-base-100 z-20" style="opacity: {opacity};">
@@ -68,30 +84,9 @@
 		<img src="/home.png" alt="home button" />
 	</div>
 	<div class="hidden xs:block">
-		<div on:click={() => {
-			scrollTo('about');
-			console.log('about')
-		}}
-		class:glow={currentScroll === 'about'}
-		class="tab glow-on-hover tab-lg">
-			About
-		</div>
-		<div
-			on:click={() => {
-				scrollTo('portfolio');
-			}}
-			class:glow={currentScroll === 'portfolio'}
-			class="tab glow-on-hover tab-lg">
-			Portfolio
-		</div>
-		<div
-			on:click={() => {
-				scrollTo('media');
-			}}
-			class:glow={currentScroll === 'media'}
-			class="tab glow-on-hover tab-lg">
-			Media
-		</div>
+		<MenuScroller name="About" classes="tab glow-on-hover tab-lg" bind:currentScroll/>
+		<MenuScroller name="Portfolio" classes="tab glow-on-hover tab-lg" bind:currentScroll/>
+		<MenuScroller name="Media" classes="tab glow-on-hover tab-lg" bind:currentScroll/>
 	</div>
 	<div class="dropdown dropdown-top dropdown-end xs:hidden">
 		<label tabindex="0" class="class:glow m-1">
@@ -110,32 +105,15 @@
 		</label>
 		<ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
 			<li>
-				<div
-					on:click={() => {
-						scrollTo('about');
-					}}>
-					About
-				</div>
+				<MenuScroller name="About" classes="tab glow-on-hover tab-lg flex align-center" bind:currentScroll/>
 			</li>
 			<li>
-				<div
-					<div
-					on:click={() => {
-						scrollTo('portfolio');
-					}}>
-					Portfolio
-				</div>
+				<MenuScroller name="Portfolio" classes="tab glow-on-hover tab-lg" bind:currentScroll/>
 			</li>
 
 			<li>
-				<div
-					on:click={() => {
-						scrollTo('media');
-					}}>
-					Media
-				</div>
+				<MenuScroller name="Media" classes="tab glow-on-hover tab-lg" bind:currentScroll/>
 			</li>
 		</ul>
 	</div>
-
 </div>

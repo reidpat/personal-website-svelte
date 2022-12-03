@@ -15,7 +15,8 @@ function setup() {
 
 function windowResized() {
   if (document.getElementById("boids-display")) {
-    let homeElementHeight = document.getElementById("home").clientHeight;
+    let home = document.getElementById("home");
+    let homeElementHeight = home.clientHeight;
     resizeCanvas(windowWidth - widthReduction, homeElementHeight);
   }
 }

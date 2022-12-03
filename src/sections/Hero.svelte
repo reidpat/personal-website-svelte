@@ -4,7 +4,7 @@
 		element.scrollIntoView({ behavior: 'smooth' });
 	}
 </script>
-<div id="home" class="section hero min-h-screen bg-base-200">
+<div id="home" class="section hero min-h-screen bg-base-200 min-w-screen">
 	<div class="hero-content  text-center rounded p-10">
 		<div class="max-w-md">
 			<p class="text-xl font-semibold text-slate-100">Hi, I'm</p>
@@ -41,7 +41,7 @@
         box-shadow: 0 0 1rem 0 rgba(255, 255, 255, .2); 
         width: 50%;
         max-width: 800px;
-        min-width: 300px;
+        min-width: 250px;
 	}
     .container {
   width: 30rem;

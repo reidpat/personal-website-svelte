@@ -13,6 +13,7 @@
   import BottomNav from '../sections/BottomNav.svelte';
 
 </script>
+<div class="bg-base-200">
 <Navbar />
 <Hero />
 
@@ -20,4 +21,6 @@
 <About />
 <Portfolio />
 <Media />
+
+</div>
 
