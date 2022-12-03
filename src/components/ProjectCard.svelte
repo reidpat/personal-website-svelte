@@ -14,9 +14,10 @@
 		<h2 class="card-title gradient-text uppercase">
 			{title}
 		</h2>
-		<!-- <div class="badge badge-primary">{topBadge}</div> -->
+		
 		<p>{description}</p>
 		<div class="card-actions justify-center">
+			<div class="badge badge-primary">{topBadge}</div>
 			{#each bottomBadges as badge}
 				<div class="badge badge-outline">{badge}</div>
 			{/each}
@@ -30,7 +31,7 @@
 		box-shadow: 0 0 2rem 0 rgb(255 255 255 / 30%);
 		width: 80vw !important;
 		min-width: 250px;
-		max-width: 350px;
+		max-width: 400px;
 		height: 550px;
 		/* margin: 10px; */
 		-webkit-touch-callout: none; /* iOS Safari */
@@ -40,9 +41,13 @@
 		-ms-user-select: none; /* Internet Explorer/Edge */
 		user-select: none;
 	}
+	.card-body{
+		padding: 15px;
+		text-align: center;
+	}
 	img {
 		height: 200px;
 		width: 100%;
-		object-fit: contain;
+		object-fit: cover;
 	}
 </style>

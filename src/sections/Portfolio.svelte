@@ -11,19 +11,12 @@
 		direction = event.detail.direction;
 		target = event.detail.target;
 		console.log(direction);
-		if (isHorizontal) {
 			if (direction === 'right') {
 				selectedIndex--;
 			} else {
 				selectedIndex++;
 			}
-		} else {
-			if (direction === 'top') {
-				selectedIndex--;
-			} else {
-				selectedIndex++;
-			}
-		}
+	
 
 		rotateCarousel();
 	}
@@ -133,7 +126,7 @@
 			<!-- <button class="btn glow-on-hover black">See All Projects</button> -->
 			<div
 				class="scene"
-				style="margin: 20px 0px; width: auto; max-width:100%; overflow-y: visible; overflow-x: visible; max-width: 80vw">
+				style="margin: 20px 0px; width: 80vh; max-width: 500px; overflow-y: visible; overflow-x: visible; max-width: 80vw">
 				<div class="flex align-center justify-center carousel-container">
 					<div
 						class="carousel-cell"
@@ -143,7 +136,7 @@
 							title="Unity ML Tournament"
 							url="assets/ML_Agents_scene.png"
 							alt="chip"
-							topBadge="featured"
+							topBadge="C#"
 							description="An open ended learning environment where university students train
 							machine learning agents to compete in a capture the flag competition."
 							bottomBadges={['Unity', 'Unity ML Agents']}
@@ -171,7 +164,7 @@
 							title="Evolving Cyborgs"
 							url="assets/EvolvingCyborgs.jpg"
 							alt="chip"
-							topBadge="featured"
+							topBadge="JavaScript"
 							description="A gamified habit and behaviour tracker. Based off of psychological
 							research, this app aims to make the process of behaviour change easier."
 							bottomBadges={['Svelte', 'Supabase', 'PWA', 'Netlify', 'Tailwind CSS']}
@@ -186,7 +179,7 @@
 							title="Tech Tracker"
 							url="assets/TechTracker.jpg"
 							alt="chip"
-							topBadge="featured"
+							topBadge="JavaScript"
 							description="An inventory management app for employees to sign out, track, and return
 							technology (laptops, arduinos, etc...) used in our program delivery."
 							bottomBadges={['Svelte', 'Supabase', 'PWA', 'Netlify', 'Tailwind CSS']}
@@ -200,7 +193,7 @@
 							title="Teacher Pro-D Hub"
 							url="assets/Pro-D_Hub.png"
 							alt="chip"
-							topBadge="featured"
+							topBadge="JavaScript"
 							description="A hub to provide STEM resources, lesson plans, online courses, and events
 							for teachers"
 							bottomBadges={['Webflow']}
