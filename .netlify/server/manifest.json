@@ -4,7 +4,7 @@
     "src": ".svelte-kit/build/index.js",
     "isEntry": true,
     "imports": [
-      "_index-1259f1f6.js"
+      "_index-6b489d84.js"
     ],
     "dynamicImports": [
       ".svelte-kit/build/hooks.js"
@@ -15,10 +15,10 @@
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "imports": [
-      "_index-1259f1f6.js"
+      "_index-6b489d84.js"
     ],
     "css": [
-      "assets/entries/pages/__layout.svelte-b18589f5.css"
+      "assets/entries/pages/__layout.svelte-1c11e61b.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
@@ -26,7 +26,7 @@
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
-      "_index-1259f1f6.js"
+      "_index-6b489d84.js"
     ]
   },
   "src/routes/index.svelte": {
@@ -34,14 +34,85 @@
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "imports": [
-      "_index-1259f1f6.js"
+      "_index-6b489d84.js",
+      "_Contact-8a18bbeb.js"
     ],
     "css": [
-      "assets/entries/pages/index.svelte-1c756fad.css"
+      "assets/entries/pages/index.svelte-9d46799a.css"
     ]
   },
-  "_index-1259f1f6.js": {
-    "file": "chunks/index-1259f1f6.js"
+  "src/routes/portfolio/evolvingcyborgs.svelte": {
+    "file": "entries/pages/portfolio/evolvingcyborgs.svelte.js",
+    "src": "src/routes/portfolio/evolvingcyborgs.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-6b489d84.js",
+      "_NavbarOther-bf166992.js",
+      "_Contact-8a18bbeb.js"
+    ],
+    "css": [
+      "assets/entries/pages/portfolio/evolvingcyborgs.svelte-f9017f8a.css"
+    ]
+  },
+  "src/routes/portfolio/pro-dhub.svelte": {
+    "file": "entries/pages/portfolio/pro-dhub.svelte.js",
+    "src": "src/routes/portfolio/pro-dhub.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-6b489d84.js",
+      "_NavbarOther-bf166992.js",
+      "_Contact-8a18bbeb.js"
+    ],
+    "css": [
+      "assets/entries/pages/portfolio/pro-dhub.svelte-7f2126c3.css"
+    ]
+  },
+  "src/routes/portfolio/techtracker.svelte": {
+    "file": "entries/pages/portfolio/techtracker.svelte.js",
+    "src": "src/routes/portfolio/techtracker.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-6b489d84.js",
+      "_NavbarOther-bf166992.js",
+      "_Contact-8a18bbeb.js"
+    ]
+  },
+  "src/routes/portfolio/unityml.svelte": {
+    "file": "entries/pages/portfolio/unityml.svelte.js",
+    "src": "src/routes/portfolio/unityml.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-6b489d84.js",
+      "_NavbarOther-bf166992.js",
+      "_Contact-8a18bbeb.js"
+    ],
+    "css": [
+      "assets/entries/pages/portfolio/unityml.svelte-e3b95964.css"
+    ]
+  },
+  "src/routes/portfolio.svelte": {
+    "file": "entries/pages/portfolio.svelte.js",
+    "src": "src/routes/portfolio.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-6b489d84.js"
+    ]
+  },
+  "_index-6b489d84.js": {
+    "file": "chunks/index-6b489d84.js"
+  },
+  "_Contact-8a18bbeb.js": {
+    "file": "chunks/Contact-8a18bbeb.js",
+    "imports": [
+      "_index-6b489d84.js"
+    ]
+  },
+  "_NavbarOther-bf166992.js": {
+    "file": "chunks/NavbarOther-bf166992.js",
+    "imports": [
+      "_index-6b489d84.js",
+      "_Contact-8a18bbeb.js"
+    ]
   },
   ".svelte-kit/build/hooks.js": {
     "file": "chunks/hooks-1c45ba0b.js",

@@ -14,6 +14,7 @@
 
 </script>
 <div class="bg-base-200">
+<div id="boids-display"></div>
 <Navbar />
 <Hero />
 

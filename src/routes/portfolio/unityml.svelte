@@ -1,27 +1,101 @@
 <script>
 	import NavbarOther from '../../sections/NavbarOther.svelte';
 	import Construction from '../../components/Construction.svelte';
+	import UnityUserDemo from '../../components/UnityUserDemo.svelte';
+	import DeviceDetector from 'svelte-device-detector';
+
+	let demo = false;
+
+	function toggleDemo() {
+		demo = !demo;
+		console.log(demo);
+	}
 </script>
+
+<style>
+	ul {
+		list-style: circle;
+		text-align: left;
+		margin: auto;
+		justify-self: center;
+		width: auto;
+	}
+	iframe {
+		margin: 20px auto;
+		width: 60%;
+		min-width: 200px;
+		height: 300px;
+	}
+	.drawing-slides {
+		margin: 0px auto;
+	}
+	img {
+		max-height: 400px;
+		object-fit: contain;
+	}
+	.divider {
+		padding: 20px;
+		padding-top: 60px;
+	}
+	h1,
+	h2,
+	h3,
+	h4 {
+		margin: 20px 20px;
+		font-weight: 700;
+	}
+</style>
 
 <svelte:head>
 	<title>Unity ML</title>
 	<link rel="icon" href="../assets/code_icon.png" />
 </svelte:head>
 <NavbarOther />
-<div class="background bg-base-200 p-10 min-h-screen">
+<div class="background bg-base-200 p-5 min-h-screen">
 	<div
-		class="content p-10 m-auto mt-20 bg-base-300 rounded-md flex flex-col justify-center text-left text-lg, max-w-4xl"
-	>
+		class="content p-5 m-auto mt-20 bg-base-300 rounded-md flex flex-col justify-center text-left
+		text-lg, max-w-4xl">
 		<h1 class="text-3xl bold text-center mb-3">Unity ML Agents</h1>
 		<p class="tetx-lg text-center">
 			A Unity based machine learning tournament designed for use by third year university students
 			in Cognitve Systems 300 at the University of British Columbia
 		</p>
 		<img
+			on:click={() => console.log('click!')}
 			class="max-w-10 m-10 rounded-lg"
-			src="../assets\unity_ml\ML_Agents_scene.png"
-			alt="unity ml"
-		/>
+			src="../assets/unity_ml/ML_Agents_scene.png"
+			alt="unity ml" />
+		<DeviceDetector showInDevice="desktop">
+			<div class="flex flex-col justify-center align-center">
+				<div
+					class="tooltip"
+					data-tip="Arrow keys to move, space to shoot. Capture more balls to win!">
+					<button class="btn uppercase mb-5">How do I play?</button>
+				</div>
+				{#if demo}
+					<div
+						class="m-auto btn glow-on-hover uppercase mb-5"
+						style="max-width: 200px;"
+						on:click={() => toggleDemo()}>
+						Stop Demo
+					</div>
+					<UnityUserDemo />
+				{:else}
+					<div
+						class="m-auto btn glow-on-hover uppercase"
+						style="max-width: 200px;"
+						on:click={() => toggleDemo()}>
+						Play Demo
+					</div>
+				{/if}
+
+			</div>
+		</DeviceDetector>
+		<DeviceDetector showInDevice="mobile">
+			<button class="btn btn-disabled m-auto glow-on-hover uppercase">Switch to Desktop to see demo</button>
+		</DeviceDetector>
+
+
 		<h2 class="text-2xl bold divider">My Role</h2>
 		<p class="mb-5">
 			Lead developer on team of 2 teaching assistant students, done in collaboration with the
@@ -53,8 +127,7 @@
 		<a
 			href="https://github.com/Unity-Technologies/ml-agents/blob/main/docs/ML-Agents-Overview.md"
 			target="blank"
-			class="link link-secondary"
-		>
+			class="link link-secondary">
 			Learn more about Unity ML Agents
 		</a>
 
@@ -97,13 +170,13 @@
 			same limitations and rules the students were subject to. Below is a video showing the TA bot
 			facing off against the tournament winner from the students, commentated by myself.
 		</p>
-		<iframe
+		<!-- <iframe
 			src="https://www.youtube.com/embed/dUhDrbfb-1U"
 			title="YouTube video player"
 			frameborder="0"
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 			allowfullscreen
-		/>
+		/> -->
 
 		<h2 class="text-2xl bold divider">Reflections</h2>
 		<h3 class="text-lg bold">Feedback</h3>
@@ -114,7 +187,8 @@
 		</p>
 		<p class="quotation">
 			"Thank you so much for not only keeping COGS 300 alive during these challenging times, but
-			thriving and evolving." <br />
+			thriving and evolving."
+			<br />
 			- Cogs Course Coordinator
 		</p>
 		<h3 class="text-lg bold">Lessons Learned</h3>
@@ -141,37 +215,3 @@
 		</ul>
 	</div>
 </div>
-
-<style>
-	ul {
-		list-style: circle;
-		text-align: left;
-		margin: auto;
-		justify-self: center;
-		width: auto;
-	}
-	iframe {
-		margin: 20px auto;
-		width: 60%;
-		min-width: 200px;
-		height: 300px;
-	}
-	.drawing-slides {
-		margin: 0px auto;
-	}
-	img {
-		max-height: 400px;
-		object-fit: contain;
-	}
-	.divider {
-		padding: 20px;
-		padding-top: 60px;
-	}
-	h1,
-	h2,
-	h3,
-	h4 {
-		margin: 20px 20px;
-		font-weight: 700;
-	}
-</style>

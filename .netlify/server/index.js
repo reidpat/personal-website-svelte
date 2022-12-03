@@ -42,7 +42,7 @@ __export(stdin_exports, {
   override: () => override
 });
 module.exports = __toCommonJS(stdin_exports);
-var import_index_1259f1f6 = require("./chunks/index-1259f1f6.js");
+var import_index_6b489d84 = require("./chunks/index-6b489d84.js");
 var _use_hashes, _dev, _script_needs_csp, _style_needs_csp, _directives, _script_src, _style_src;
 var __defProp2 = Object.defineProperty;
 var __defProps = Object.defineProperties;
@@ -77,14 +77,14 @@ var __objRest = (source, exclude) => {
 };
 function afterUpdate() {
 }
-const Root = (0, import_index_1259f1f6.c)(($$result, $$props, $$bindings, slots) => {
+const Root = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings, slots) => {
   let { stores } = $$props;
   let { page } = $$props;
   let { components } = $$props;
   let { props_0 = null } = $$props;
   let { props_1 = null } = $$props;
   let { props_2 = null } = $$props;
-  (0, import_index_1259f1f6.s)("__svelte__", stores);
+  (0, import_index_6b489d84.s)("__svelte__", stores);
   afterUpdate(stores.page.notify);
   if ($$props.stores === void 0 && $$bindings.stores && stores !== void 0)
     $$bindings.stores(stores);
@@ -104,15 +104,15 @@ const Root = (0, import_index_1259f1f6.c)(($$result, $$props, $$bindings, slots)
   return `
 
 
-${components[1] ? `${(0, import_index_1259f1f6.v)(components[0] || import_index_1259f1f6.m, "svelte:component").$$render($$result, Object.assign(props_0 || {}), {}, {
+${components[1] ? `${(0, import_index_6b489d84.v)(components[0] || import_index_6b489d84.m, "svelte:component").$$render($$result, Object.assign(props_0 || {}), {}, {
     default: () => {
-      return `${components[2] ? `${(0, import_index_1259f1f6.v)(components[1] || import_index_1259f1f6.m, "svelte:component").$$render($$result, Object.assign(props_1 || {}), {}, {
+      return `${components[2] ? `${(0, import_index_6b489d84.v)(components[1] || import_index_6b489d84.m, "svelte:component").$$render($$result, Object.assign(props_1 || {}), {}, {
         default: () => {
-          return `${(0, import_index_1259f1f6.v)(components[2] || import_index_1259f1f6.m, "svelte:component").$$render($$result, Object.assign(props_2 || {}), {}, {})}`;
+          return `${(0, import_index_6b489d84.v)(components[2] || import_index_6b489d84.m, "svelte:component").$$render($$result, Object.assign(props_2 || {}), {}, {})}`;
         }
-      })}` : `${(0, import_index_1259f1f6.v)(components[1] || import_index_1259f1f6.m, "svelte:component").$$render($$result, Object.assign(props_1 || {}), {}, {})}`}`;
+      })}` : `${(0, import_index_6b489d84.v)(components[1] || import_index_6b489d84.m, "svelte:component").$$render($$result, Object.assign(props_1 || {}), {}, {})}`}`;
     }
-  })}` : `${(0, import_index_1259f1f6.v)(components[0] || import_index_1259f1f6.m, "svelte:component").$$render($$result, Object.assign(props_0 || {}), {}, {})}`}
+  })}` : `${(0, import_index_6b489d84.v)(components[0] || import_index_6b489d84.m, "svelte:component").$$render($$result, Object.assign(props_0 || {}), {}, {})}`}
 
 ${``}`;
 });
@@ -2296,7 +2296,34 @@ function set_paths(paths) {
 }
 function set_prerendering(value) {
 }
-const template = ({ head, body, assets: assets2, nonce }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<link rel="icon" href="' + assets2 + '/favicon.png" />\n		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"><\/script>\n		<script src="Boids/sketch.js"><\/script>\n		<script src="Boids/quadtree.js"><\/script>\n		<script src="Boids/Boid.js"><\/script> -->\n		<script src="q5.min.js"><\/script>\n		<script src="sketch.js"><\/script>\n    	<!-- <script src="https://cdn.jsdelivr.net/gh/LingDong-/q5xjs/q5.p5acl.js"><\/script> -->\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\n		' + head + '\n	</head>\n	<body class="bg-base-200">\n		<div id="boids-display"></div>\n		<div>' + body + "</div>\n	</body>\n</html>\n\n\n<style>\n	#boids-display {\n		position: absolute;\n		top: 0;\n		left: 0;\n		z-index: 0;\n		width: 100%;\n		height: 100%;\n		overflow: hidden;\n	}\n</style>\n";
+const template = ({ head, body, assets: assets2, nonce }) => `<!DOCTYPE html>\r
+<html lang="en">\r
+\r
+<head>\r
+	<meta charset="utf-8" />\r
+	<link rel="icon" href="assets/code_icon.png" />\r
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"><\/script>\r
+		<script src="Boids/sketch.js"><\/script>\r
+		<script src="Boids/quadtree.js"><\/script>\r
+		<script src="Boids/Boid.js"><\/script> -->\r
+	<script src="q5.min.js"><\/script>\r
+	<script src="sketch.js"><\/script>\r
+	<!-- <script src="https://cdn.jsdelivr.net/gh/LingDong-/q5xjs/q5.p5acl.js"><\/script> -->\r
+	<meta name="viewport" content="width=device-width, initial-scale=1" />\r
+	<!-- <meta name="viewport" content="viewport-fit=cover"> -->\r
+	<!-- Global site tag (gtag.js) - Google Analytics -->\r
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CCE094D93K"><\/script>\r
+	<title>\r
+		Reid Patterson\r
+	</title>\r
+	<script>\r
+		window.dataLayer = window.dataLayer || [];\r
+		function gtag() { dataLayer.push(arguments); }\r
+		gtag('js', new Date());\r
+\r
+		gtag('config', 'G-CCE094D93K');\r
+	<\/script>\r
+	` + head + '\r\n</head>\r\n\r\n<body class="bg-base-200">\r\n	<div id="boids-display"></div>\r\n	<div>' + body + "</div>\r\n</body>\r\n\r\n</html>\r\n\r\n\r\n<style>\r\n	#boids-display {\r\n		position: absolute;\r\n		top: 0;\r\n		left: 0;\r\n		z-index: 0;\r\n		width: 100%;\r\n		height: 100%;\r\n		overflow: hidden;\r\n	}\r\n	html, body {\r\n		min-width: 200px;\r\n	}\r\n</style>";
 let read = null;
 set_paths({ "base": "", "assets": "" });
 let default_protocol = "https";
