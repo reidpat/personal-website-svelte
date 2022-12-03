@@ -1,7 +1,12 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    extend: {},
+    screens: {
+      'xs': '425px',
+      ...defaultTheme.screens,
+    },
   },
   plugins: [require('daisyui')], 
   daisyui: {

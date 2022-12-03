@@ -73,7 +73,7 @@
 		class="tab glow-on-hover tab-lg">
 		<img src="/home.png" alt="home button" />
 	</div>
-	<div class="hidden sm:block">
+	<div class="hidden xs:block">
 		<div
 			on:click={() => {
 				scrollTo('about');
@@ -99,7 +99,7 @@
 			Media
 		</div>
 	</div>
-	<div class="dropdown dropdown-top dropdown-end sm:hidden">
+	<div class="dropdown dropdown-top dropdown-end xs:hidden">
 		<label tabindex="0" class="class:glow m-1">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
