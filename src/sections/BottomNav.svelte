@@ -4,19 +4,13 @@
 	let currentScroll = 'home';
 	function scrollTo(id) {
 		var element = document.getElementById(id);
+		// removing this comment breaks the code???????
 		element.scrollIntoView({ behavior: 'smooth' });
 	}
 
 	onMount(() => {
 		window.addEventListener('scroll', scrollBot);
-		window.addEventListener('resize', resize);
-		resize();
 	});
-
-	let winWidth = 0;
-	function resize() {
-		winWidth = window.width;
-	}
 
 	let opacity = 0;
 	function scrollBot() {
@@ -74,12 +68,12 @@
 		<img src="/home.png" alt="home button" />
 	</div>
 	<div class="hidden xs:block">
-		<div
-			on:click={() => {
-				scrollTo('about');
-			}}
-			class:glow={currentScroll === 'about'}
-			class="tab glow-on-hover tab-lg">
+		<div on:click={() => {
+			scrollTo('about');
+			console.log('about')
+		}}
+		class:glow={currentScroll === 'about'}
+		class="tab glow-on-hover tab-lg">
 			About
 		</div>
 		<div
