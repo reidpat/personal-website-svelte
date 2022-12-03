@@ -67,8 +67,10 @@
 
 <style>
 	#bottom-nav-wrapper {
-		position: sticky;
+		position: fixed;
 		top: calc(100vh - 64px);
+		bottom: 0px;
+		left: 0px;
 		display: flex;
 		justify-content: center;
 		width: 100%;
