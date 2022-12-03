@@ -44,6 +44,9 @@
 		margin: 20px 20px;
 		font-weight: 700;
 	}
+	p {
+		text-align: justify;
+	}
 </style>
 
 <svelte:head>
@@ -53,7 +56,7 @@
 <NavbarOther />
 <div class="background bg-base-200 p-5 min-h-screen">
 	<div
-		class="content p-5 m-auto mt-20 bg-base-300 rounded-md flex flex-col justify-center text-left
+		class="content p-10 m-auto mt-20 bg-base-300 rounded-md flex flex-col justify-center text-left
 		text-lg, max-w-4xl">
 		<h1 class="text-3xl bold text-center mb-3">Unity ML Agents</h1>
 		<p class="tetx-lg text-center">
@@ -75,7 +78,7 @@
 				{#if demo}
 					<div
 						class="m-auto btn glow-on-hover uppercase mb-5"
-						style="max-width: 200px;"
+						style="max-width: 250px;"
 						on:click={() => toggleDemo()}>
 						Stop Demo
 					</div>
@@ -83,7 +86,7 @@
 				{:else}
 					<div
 						class="m-auto btn glow-on-hover uppercase"
-						style="max-width: 200px;"
+						style="width: 250px;"
 						on:click={() => toggleDemo()}>
 						Play Demo
 					</div>
@@ -92,9 +95,19 @@
 			</div>
 		</DeviceDetector>
 		<DeviceDetector showInDevice="mobile">
-			<button class="btn btn-disabled m-auto glow-on-hover uppercase">Switch to Desktop to see demo</button>
+			<button class="btn btn-disabled red-glow m-auto glow-on-hover uppercase mb-5" style="width: 250px">
+				Switch to Desktop for demo
+			</button>
 		</DeviceDetector>
 
+		<a
+			class="m-auto btn glow-on-hover uppercase mt-5"
+			style="width: 250px;"
+			href="https://github.com/COGS300/lab7to9-robot-tournament"
+			target="_blank"
+			>
+			See Code
+	</a>
 
 		<h2 class="text-2xl bold divider">My Role</h2>
 		<p class="mb-5">

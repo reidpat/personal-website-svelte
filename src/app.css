@@ -41,6 +41,11 @@
     border-radius: 10px;
 }
 
+.red-glow:before{
+    background: #ff0000 !important;
+}
+
+
 
 .glow-on-hover:active:after {
     background: transparent;
