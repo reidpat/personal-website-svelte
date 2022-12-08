@@ -9,7 +9,7 @@
 
 <div class="navbar bg-base-100 fixed top-0 z-10">
 	<div class="navbar-start">
-		<a href="/" target="_self"><button class="glow-on-hover pl-3 pr-3">Home</button></a>
+		<a href="/" target="_self"><button class="glow-on-hover pl-3 pr-3"><img src="/home.png" alt="home button" /></button></a>
 	</div>
 	<div class="navbar-center">
 		<button
@@ -25,4 +25,7 @@
 </div>
 
 <style>
+		img {
+		height: 30px;
+	}
 </style>
