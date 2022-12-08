@@ -6,6 +6,40 @@
 	let problemSelect = 1;
 </script>
 
+<style>
+	ul {
+		list-style: circle;
+		text-align: left;
+		margin: auto;
+		justify-self: center;
+		width: auto;
+	}
+	iframe {
+		margin: 20px auto;
+		width: 60%;
+		min-width: 200px;
+		height: 300px;
+	}
+	.drawing-slides {
+		margin: 0px auto;
+	}
+	img {
+		max-height: 400px;
+		object-fit: contain;
+	}
+	.divider {
+		padding: 20px;
+		padding-top: 60px;
+	}
+	h1,
+	h2,
+	h3,
+	h4 {
+		margin: 20px 20px;
+		font-weight: 700;
+	}
+</style>
+
 <svelte:head>
 	<title>Evolving Cyborgs</title>
 	<link rel="icon" href="../assets/code_icon.png" />
@@ -13,14 +47,25 @@
 <NavbarOther />
 <div class="background bg-base-200 p-10 min-h-screen">
 	<div
-		class="content p-10 m-auto mt-20 bg-base-300 rounded-md flex flex-col justify-center text-left text-lg, max-w-4xl"
-	>
+		class="content p-10 m-auto mt-20 bg-base-300 rounded-md flex flex-col justify-center text-left
+		text-lg, max-w-4xl">
 		<h1 class="text-3xl bold text-center mb-3">Evolving Cyborgs</h1>
 		<p class="text-lg text-center">A better gamified habit tracker</p>
 		<img class="max-w-10 m-10 rounded-lg" src="../assets/EvolvingCyborgs.jpg" alt="" />
-		<a class="m-auto" href="https://github.com/reidpat/evolving-cyborgs-svelte" target="_blank"
-			><button class="glow-on-hover pl-3 pr-3">See Code</button></a
-		>
+		<a
+			class="m-auto btn glow-on-hover uppercase mt-5"
+			style="width: 250px;"
+			href="https://evolvingcyborgs.netlify.app/demo"
+			target="_blank">
+			See Demo
+		</a>
+		<a
+			class="m-auto btn glow-on-hover uppercase mt-5"
+			style="width: 250px;"
+			href="https://github.com/reidpat/evolving-cyborgs-svelte"
+			target="_blank">
+			See Code
+		</a>
 		<h2 class="text-2xl bold divider">My Role</h2>
 		<p class="text-center">Owner, designer and sole creator of a personal project</p>
 		<h2 class="text-2xl bold divider">The Problem</h2>
@@ -47,22 +92,25 @@
 					problemSelect = 1;
 				}}
 				class:tab-active={problemSelect === 1}
-				class="tab tab-lg tab-bordered">1. Feedback</button
-			>
+				class="tab tab-lg tab-bordered">
+				1. Feedback
+			</button>
 			<button
 				on:click={() => {
 					problemSelect = 2;
 				}}
 				class:tab-active={problemSelect === 2}
-				class="tab tab-lg tab-bordered">2. Platform</button
-			>
+				class="tab tab-lg tab-bordered">
+				2. Platform
+			</button>
 			<button
 				on:click={() => {
 					problemSelect = 3;
 				}}
 				class:tab-active={problemSelect === 3}
-				class="tab tab-lg tab-bordered">3. Customization</button
-			>
+				class="tab tab-lg tab-bordered">
+				3. Customization
+			</button>
 		</div>
 		{#if problemSelect == 1}
 			<p>
@@ -74,8 +122,10 @@
 			<p>
 				For example, they would punish the user (usually by losing health, gold, or experience) when
 				something like a habit was not completed. The issue here is that this punishment was applied
-				the <i>next</i> time a user would log in. This made it easy to avoid the punishment simply by
-				avoiding using the app.
+				the
+				<i>next</i>
+				time a user would log in. This made it easy to avoid the punishment simply by avoiding using
+				the app.
 			</p>
 		{:else if problemSelect == 2}
 			<p>
@@ -103,22 +153,25 @@
 					currentSelect = 1;
 				}}
 				class:tab-active={currentSelect === 1}
-				class="tab tab-lg tab-bordered">Version 1</button
-			>
+				class="tab tab-lg tab-bordered">
+				Version 1
+			</button>
 			<button
 				on:click={() => {
 					currentSelect = 2;
 				}}
 				class:tab-active={currentSelect === 2}
-				class="tab tab-lg tab-bordered">Version 2</button
-			>
+				class="tab tab-lg tab-bordered">
+				Version 2
+			</button>
 			<button
 				on:click={() => {
 					currentSelect = 3;
 				}}
 				class:tab-active={currentSelect === 3}
-				class="tab tab-lg tab-bordered">Version 3</button
-			>
+				class="tab tab-lg tab-bordered">
+				Version 3
+			</button>
 		</div>
 
 		{#if currentSelect == 1}
@@ -135,43 +188,37 @@
 						<img
 							class="drawing-slides"
 							src="../assets/evolving_cyborgs/drawing1.png"
-							alt="first drawing"
-						/>
+							alt="first drawing" />
 					</div>
 					<div class="carousel-item h-full">
 						<img
 							class="drawing-slides"
 							src="../assets/evolving_cyborgs/drawing2.jpg"
-							alt="second drawing"
-						/>
+							alt="second drawing" />
 					</div>
 					<div class="carousel-item h-full">
 						<img
 							class="drawing-slides"
 							src="../assets/evolving_cyborgs/drawing3.jpg"
-							alt="third drawing"
-						/>
+							alt="third drawing" />
 					</div>
 					<div class="carousel-item h-full">
 						<img
 							class="drawing-slides"
 							src="../assets/evolving_cyborgs/drawing4.jpg"
-							alt="fourth drawing"
-						/>
+							alt="fourth drawing" />
 					</div>
 					<div class="carousel-item h-full">
 						<img
 							class="drawing-slides"
 							src="../assets/evolving_cyborgs/drawing5.jpg"
-							alt="first drawing"
-						/>
+							alt="first drawing" />
 					</div>
 					<div class="carousel-item h-full">
 						<img
 							class="drawing-slides"
 							src="../assets/evolving_cyborgs/drawing6.jpg"
-							alt="first drawing"
-						/>
+							alt="first drawing" />
 					</div>
 				</div>
 
@@ -180,9 +227,9 @@
 					src="https://www.youtube.com/embed/jHzjWNivhKY?start=26"
 					title="YouTube video player"
 					frameborder="0"
-					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-					allowfullscreen
-				/>
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+					picture-in-picture"
+					allowfullscreen />
 				<div class="flex flex-col justify-center">
 					<h3>Final Product</h3>
 					<img id="final_app" src="../assets/evolving_cyborgs/updatedApp.png" alt="first drawing" />
@@ -245,14 +292,14 @@
 				<img
 					class="m-auto p-5"
 					src="../assets/evolving_cyborgs/evolving_cyborgs_concept.jpg"
-					alt=""
-				/>
+					alt="" />
 				<p class="text-left">
 					Opting for a card based design and changing tabs through a menu at the bottom allows for a
 					very smooth mobile experience. Adding PWA support was a priority so that it could behave
-					like a native mobile app. <br />
-					I also decided to focus on the habits section of the app, as this is what was being used the
-					most.
+					like a native mobile app.
+					<br />
+					I also decided to focus on the habits section of the app, as this is what was being used
+					the most.
 				</p>
 				<p class="text" />
 				<h3>Final Product</h3>
@@ -285,8 +332,8 @@
 						this app doesn't generate revenue. The second option is dangerous because once you have
 						multiple copies of the same data it becomes hard to keep them in sync with one another.
 						<br />
-						Ultimately, this caused me to scrap this version of the project and start using a new backend,
-						which requires a MAJOR redesign.
+						Ultimately, this caused me to scrap this version of the project and start using a new
+						backend, which requires a MAJOR redesign.
 					</p>
 				</div>
 			</div>
@@ -318,60 +365,40 @@
 						features.
 					</p>
 				</div>
-                <h4>Final Product</h4>
-                <img class="max-w-6 m-auto rounded-lg" src="../assets/EvolvingCyborgs.jpg" alt="" />
-                <p class="mt-5">I've been very happy with the progress I've made on this project. It's now almost at the point where I left off with Version 2, but I don't feel nearly as limited with my data structure.</p>
-                <h4>Features</h4>
-                <ul class="max-w-xl">
+				<h4>Final Product</h4>
+				<img class="max-w-6 m-auto rounded-lg" src="../assets/EvolvingCyborgs.jpg" alt="" />
+				<p class="mt-5">
+					I've been very happy with the progress I've made on this project. It's now almost at the
+					point where I left off with Version 2, but I don't feel nearly as limited with my data
+					structure.
+				</p>
+				<h4>Features</h4>
+				<ul class="max-w-xl">
 					<li>Habit Tracker - Now with dynamically adjusting goals!</li>
 					<li>Vices - time since last performed an action you are trying to stop</li>
 					<li>Friends list showing their level and current experience</li>
 				</ul>
-                <div class="text-left">
+				<div class="text-left">
 					<h3 class="divider text-2xl text">V3 Roadmap</h3>
-                    <p>Version 3 of this project is under active development and so far there have been no major issues that require reflection. I am planning on continuing development and adding the following features:</p>
-                    <ul class="max-w-xl text-left justify-self-start">
-                        <li>Achievements and Badges - Show off to your friends what you have accomplished!</li>
-                        <li>Activities - Track specific behaviour occurances which may not happen every day, or happen multiple times a day</li>
-                        <li>Custom Data tracking - Building off the activites above, modify it to us custom data types allowing tracking of any information desired</li>
-                        <li>Attributes - Game-like stats which are leveled as you complete various actions</li>
-                    </ul>
-                </div>
+					<p>
+						Version 3 of this project is under active development and so far there have been no
+						major issues that require reflection. I am planning on continuing development and adding
+						the following features:
+					</p>
+					<ul class="max-w-xl text-left justify-self-start">
+						<li>Achievements and Badges - Show off to your friends what you have accomplished!</li>
+						<li>
+							Activities - Track specific behaviour occurances which may not happen every day, or
+							happen multiple times a day
+						</li>
+						<li>
+							Custom Data tracking - Building off the activites above, modify it to us custom data
+							types allowing tracking of any information desired
+						</li>
+						<li>Attributes - Game-like stats which are leveled as you complete various actions</li>
+					</ul>
+				</div>
 			</div>
 		{/if}
 	</div>
 </div>
-
-<style>
-	ul {
-		list-style: circle;
-		text-align: left;
-		margin: auto;
-		justify-self: center;
-		width: auto;
-	}
-	iframe {
-		margin: 20px auto;
-		width: 60%;
-		min-width: 200px;
-		height: 300px;
-	}
-	.drawing-slides {
-		margin: 0px auto;
-	}
-	img {
-		max-height: 400px;
-		object-fit: contain;
-	}
-	.divider {
-		padding: 20px;
-		padding-top: 60px;
-	}
-	h1,
-	h2,
-	h3,
-	h4 {
-		margin: 20px 20px;
-		font-weight: 700;
-	}
-</style>
