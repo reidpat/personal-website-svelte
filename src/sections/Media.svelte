@@ -25,6 +25,7 @@
   max-width: 1200px;
   height: 50vw;
   min-height: 200px;
+  max-height: 600px;
 }
 iframe{
   position: absolute;
