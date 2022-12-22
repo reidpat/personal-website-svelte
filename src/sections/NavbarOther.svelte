@@ -25,7 +25,7 @@
 </div>
 
 <style>
-		img {
-		height: 30px;
+	img {
+		height: 20px;
 	}
 </style>

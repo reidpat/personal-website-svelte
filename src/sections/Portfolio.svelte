@@ -199,6 +199,19 @@
 							bottomBadges={['Webflow']}
 							link="pro-dhub" />
 					</div>
+					<div
+						class="carousel-cell"
+						use:swipe={{ timeframe: 300, minSwipeDistance: 60 }}
+						on:swipe={handler}>
+						<ProjectCard
+							title="Death Typer"
+							url="assets/DeathTyper Screens.jpg"
+							alt="chip"
+							topBadge="JavaScript"
+							description="An app designed to increase typing speed and accuracy by training using a 'sudden death' mode"
+							bottomBadges={['Svelte', 'Supabase', 'Vercel', 'Tailwind CSS']}
+							link="deathtyper" />
+					</div>
 					<!-- <div
 						class="carousel-cell"
 						use:swipe={{ timeframe: 300, minSwipeDistance: 60 }}
