@@ -32,7 +32,7 @@
 		<p>
 			When I joined the Pro-D team at Geering Up the current resource hub was being hosted on Edx,
 			which required both an Edx account and an invite in order to be accessed. This created a lot
-			of unecessary friction for teachers who may have wanted to use our resources.
+			of unnecessary friction for teachers who may have wanted to use our resources.
 		</p>
 
 		<h2 class="text-2xl bold divider">The Solution</h2>
