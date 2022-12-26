@@ -68,7 +68,7 @@
 			class="max-w-10 m-10 rounded-lg"
 			src="../assets/unity_ml/ML_Agents_scene.png"
 			alt="unity ml" />
-		<DeviceDetector showInDevice="desktop">
+		<!-- <DeviceDetector showInDevice="desktop">
 			<div class="flex flex-col justify-center align-center">
 				<div
 					class="tooltip"
@@ -98,7 +98,7 @@
 			<button class="btn btn-disabled red-glow m-auto glow-on-hover uppercase mb-5" style="width: 250px">
 				Switch to Desktop for demo
 			</button>
-		</DeviceDetector>
+		</DeviceDetector> -->
 
 		<a
 			class="m-auto btn glow-on-hover uppercase mt-5"
