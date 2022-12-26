@@ -10,13 +10,22 @@
 	function handler(event) {
 		direction = event.detail.direction;
 		target = event.detail.target;
-		console.log(direction);
-			if (direction === 'right') {
-				selectedIndex--;
-			} else {
-				selectedIndex++;
-			}
-	
+		console.log(event);
+		if (direction === 'right') {
+			selectedIndex--;
+		} else if (direction === 'left') {
+			selectedIndex++;
+		} else if (direction === 'bottom') {
+			window.scrollBy({
+				top: -200,
+				behavior: 'smooth'
+			});
+		} else {
+			window.scrollBy({
+				top: 200,
+				behavior: 'smooth'
+			});
+		}
 
 		rotateCarousel();
 	}
@@ -29,24 +38,26 @@
 	let width = '400px';
 	let cards = [];
 
+	let WinWidth = 0;
+
 	onMount(() => {
 		console.log(window.innerWidth);
-		let container = document.getElementById('portfolio')
+		WinWidth = window.innerWidth;
+		let container = document.getElementById('portfolio');
 		cards = container.getElementsByClassName('card');
 		width = 'auto';
 		overflow = 'visible';
 		carousel = document.querySelector('.carousel-container');
-		console.log(carousel);
+		// console.log(carousel);
 		cells = document.querySelectorAll('.carousel-cell');
 		cellWidth = cards[0].offsetWidth;
-		console.log(cellWidth);
+		// console.log(cellWidth);
 		cellHeight = carousel.offsetHeight;
 		// orientationRadios = document.querySelectorAll('input[name="orientation"]');
 
 		onOrientationChange();
 
 		window.addEventListener('resize', resize);
-		
 	});
 	let overflow = 'hidden';
 	function rotateCarousel() {
@@ -58,15 +69,13 @@
 		// }, 1100);
 	}
 
-	
-
 	function changeCarousel() {
 		let cellCount = cells.length;
 		theta = 360 / cellCount;
 		var cellSize = cellWidth + 20;
 		radius = Math.round(cellSize / 2 / Math.tan(Math.PI / cellCount));
-		console.log("radius: ", radius);
-		console.log("window: ", window.innerWidth);
+		console.log('radius: ', radius);
+		console.log('window: ', window.innerWidth);
 
 		for (var i = 0; i < cells.length; i++) {
 			var cell = cells[i];
@@ -115,8 +124,6 @@
 	// set initials
 </script>
 
-
-
 <div id="portfolio" class="section hero min-h-screen bg-base-200">
 	<div class="hero-content text-center">
 		<div>
@@ -126,12 +133,32 @@
 			<!-- <button class="btn glow-on-hover black">See All Projects</button> -->
 			<div
 				class="scene"
-				style="margin: 20px 0px; width: 80vh; max-width: 500px; overflow-y: visible; overflow-x: visible; max-width: 80vw">
+				style="margin: 20px 0px; width: 80vh; max-width: 500px; overflow-y: visible; overflow-x: visible; max-width: 80vw"
+			>
+				<div class="carousel-buttons">
+					<button
+				on:click={() => {
+					selectedIndex--;
+					rotateCarousel();
+				}}
+				class="btn btn-circle glow-on-hover"
+			>
+				&#60;
+			</button>
+			<button
+				on:click={() => {
+					selectedIndex++;
+					rotateCarousel();
+				}}
+				class="btn btn-circle glow-on-hover"
+			>
+				&#62;
+			</button>
+				</div>
 				<div class="flex align-center justify-center carousel-container">
 					<div
 						class="carousel-cell"
-						use:swipe={{ timeframe: 300, minSwipeDistance: 60 }}
-						on:swipe={handler}>
+					>
 						<ProjectCard
 							title="Unity ML Tournament"
 							url="assets/ML_Agents_scene.png"
@@ -140,7 +167,8 @@
 							description="An open ended learning environment where university students train
 							machine learning agents to compete in a capture the flag competition."
 							bottomBadges={['Unity', 'Unity ML Agents']}
-							link="unityml" />
+							link="unityml"
+						/>
 					</div>
 					<!-- <div
 						class="carousel-cell"
@@ -158,8 +186,7 @@
 					</div> -->
 					<div
 						class="carousel-cell"
-						use:swipe={{ timeframe: 300, minSwipeDistance: 60 }}
-						on:swipe={handler}>
+					>
 						<ProjectCard
 							title="Evolving Cyborgs"
 							url="assets/EvolvingCyborgs.jpg"
@@ -168,13 +195,13 @@
 							description="A gamified habit and behaviour tracker. Based off of psychological
 							research, this app aims to make the process of behaviour change easier."
 							bottomBadges={['Svelte', 'Supabase', 'PWA', 'Netlify', 'Tailwind CSS']}
-							link="evolvingcyborgs" />
+							link="evolvingcyborgs"
+						/>
 					</div>
 
 					<div
 						class="carousel-cell"
-						use:swipe={{ timeframe: 300, minSwipeDistance: 60 }}
-						on:swipe={handler}>
+										>
 						<ProjectCard
 							title="Tech Tracker"
 							url="assets/TechTracker.jpg"
@@ -183,12 +210,12 @@
 							description="An inventory management app for employees to sign out, track, and return
 							technology (laptops, arduinos, etc...) used in our program delivery."
 							bottomBadges={['Svelte', 'Supabase', 'PWA', 'Netlify', 'Tailwind CSS']}
-							link="techtracker" />
+							link="techtracker"
+						/>
 					</div>
 					<div
 						class="carousel-cell"
-						use:swipe={{ timeframe: 300, minSwipeDistance: 60 }}
-						on:swipe={handler}>
+						>
 						<ProjectCard
 							title="Teacher Pro-D Hub"
 							url="assets/Pro-D_Hub.png"
@@ -197,12 +224,13 @@
 							description="A hub to provide STEM resources, lesson plans, online courses, and events
 							for teachers"
 							bottomBadges={['Webflow']}
-							link="pro-dhub" />
+							link="pro-dhub"
+						/>
 					</div>
 					<div
 						class="carousel-cell"
-						use:swipe={{ timeframe: 300, minSwipeDistance: 60 }}
-						on:swipe={handler}>
+						
+					>
 						<ProjectCard
 							title="Death Typer"
 							url="assets/DeathTyper Screens.jpg"
@@ -210,7 +238,8 @@
 							topBadge="JavaScript"
 							description="An app designed to increase typing speed and accuracy by training using a 'sudden death' mode"
 							bottomBadges={['Svelte', 'Supabase', 'Vercel', 'Tailwind CSS']}
-							link="deathtyper" />
+							link="deathtyper"
+						/>
 					</div>
 					<!-- <div
 						class="carousel-cell"
@@ -242,37 +271,27 @@
 					</div> -->
 				</div>
 			</div>
-			<button
-				on:click={() => {
-					selectedIndex--;
-					rotateCarousel();
-				}}
-				class="btn btn-circle">
-				&#60;
-			</button>
-			<button
-				on:click={() => {
-					selectedIndex++;
-					rotateCarousel();
-				}}
-				class="btn btn-circle">
-				&#62;
-			</button>
+			
 		</div>
 	</div>
 </div>
 
-
 <style>
-	.scene::-webkit-scrollbar{
+	.scene::-webkit-scrollbar {
 		display: none;
 	}
 	#portfolio {
 		padding-bottom: 100px;
 		width: 100vw;
 	}
-	.hero-content{
-		
+	.hero-content {
 		max-width: 80%;
+	}
+	.carousel-buttons{
+		position: relative;
+		z-index: 5;
+		top: 33%;
+		display: flex;
+		justify-content: space-between;
 	}
 </style>
