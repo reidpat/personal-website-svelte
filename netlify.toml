@@ -17,7 +17,7 @@
     Content-Type = "application/javascript"
 
 [[headers]]
-  for = "/Build/*.js.br"
+  for = "/Build/*.js.gz"
   [headers.values]
-    Content-Encoding = "br"
+    Content-Encoding = "gz"
     Content-Type = "application/javascript"
