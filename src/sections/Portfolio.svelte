@@ -282,7 +282,8 @@
 	}
 	#portfolio {
 		padding-bottom: 100px;
-		width: 100vw;
+		max-width: 99vw;
+		overflow-x: hidden;
 	}
 	.hero-content {
 		max-width: 80%;

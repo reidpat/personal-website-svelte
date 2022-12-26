@@ -84,7 +84,7 @@
 								By day, I work at <a class="gradient-text" href="https://geeringup.apsc.ubc.ca/"
 									>UBC Geering Up</a
 								>
-								as a computer science instructor and web developer, helping K-12 teachers bring
+								as a computer science instructor and web developer - building web apps for Geering Up and helping K-12 teachers bring
 								topics like AI and Digital Literacy into their classrooms.
 							</p>
 							<p>
@@ -169,6 +169,9 @@
 </div>
 
 <style>
+	#about{
+		max-width: 99vw;
+	}
 	.portrait {
 		height: 80%;
 		border-radius: 35%;
