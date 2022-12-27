@@ -29,24 +29,29 @@
 
 		<h2 class="text-2xl bold divider">The Problem</h2>
 		<p>
-			
+			After switching over to the Dvorak keyboard layout a few years ago, I wanted to improve my
+			typing speeds and accuracy. I found that it was my accuracy which was holding me back the most
+			as even small amount of errors can have a great impact because of the time needed to correct
+			them. So I set out to design my own application which would force me to type accurately
+			instead of trying to rush for speed first.
 		</p>
 
 		<h2 class="text-2xl bold divider">The Solution</h2>
 		<p>
-			
+			To solve this problem I created a sudden death typing mode which would restart the entire
+			lesson as soon as you made any mistake. This was slightly too punishing however, so I later
+			modified it to restart the current word every time a mistake is made.
 		</p>
-
-		<h3 class="text-lg bold">Design Process</h3>
-		<p class="mb-5">
-			
+		<img src="/assets/Death Typer.gif" alt="A gif showing the typing and mistakes process"/>
+		<p>
+			Now with an average speed of 80WPM and an accuracy of over 90% I'm much happier with my typing ability. This project has been extremely successful for me.
 		</p>
-
-
-		<h3 class="text-lg bold">Final Product</h3>
-        <Construction />
+		<h3 class="text-lg bold">Next Steps</h3>
+		<ol>
+			<li>Display collected average accuracy (data currently being collected but not averaged and displayed)</li>
+			<li>Use code snippets instead of quotes to increase coding speed. Currently code typing interface is working, but a good api needs to be found/created to load a variety of code snippets.</li>
+		</ol>
 	</div>
-   
 </div>
 
 <style>
