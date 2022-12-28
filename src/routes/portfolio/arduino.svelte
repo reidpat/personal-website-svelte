@@ -38,11 +38,15 @@
         </ul>
 
 		<h2 class="text-2xl bold divider">Examples</h2>
+        <p>As this project took place several years ago now, I unfortunately have less videos and demonstrations recorded than I would like. If you would like to see updated examples implemented virtually with Unity, you can find those on my <a href="/portfolio/unityml"> Unity project page</a>.</p>
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/bx9dvp-c9IY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-		<!-- <h3 class="text-lg bold">Design Process</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jnnQy7Nw3Q0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		
+        
+        
+        <!-- <h3 class="text-lg bold">Design Process</h3>
 		<p class="mb-5" />
-
+        
 		<h3 class="text-lg bold">Final Product</h3> -->
 		<Construction />
 	</div>
