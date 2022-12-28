@@ -61,7 +61,7 @@
 		<h1 class="text-3xl bold text-center mb-3">Unity ML Agents</h1>
 		<p class="tetx-lg text-center">
 			A Unity based machine learning tournament designed for use by third year university students
-			in Cognitve Systems 300 at the University of British Columbia
+			in Cognitive Systems 300 at the University of British Columbia
 		</p>
 		<img
 			on:click={() => console.log('click!')}
