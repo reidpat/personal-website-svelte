@@ -241,6 +241,20 @@
 							link="deathtyper"
 						/>
 					</div>
+					<div
+						class="carousel-cell"
+						
+					>
+						<ProjectCard
+							title="Arduino Robotics"
+							url="assets/arduino robot.jpg"
+							alt="An example of a robot stopping when it sees an obstacle"
+							topBadge="C++"
+							description="A collection of labs created and taught during my time as a Cogs 300 Teaching Assistant"
+							bottomBadges={['Arduino', 'Wordpress']}
+							link="arduino"
+						/>
+					</div>
 					<!-- <div
 						class="carousel-cell"
 						use:swipe={{ timeframe: 300, minSwipeDistance: 60 }}
