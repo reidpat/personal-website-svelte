@@ -141,7 +141,7 @@
 					selectedIndex--;
 					rotateCarousel();
 				}}
-				class="btn btn-circle glow-on-hover"
+				class="btn btn-circle glow-on-hover bright"
 			>
 				&#60;
 			</button>
@@ -150,7 +150,7 @@
 					selectedIndex++;
 					rotateCarousel();
 				}}
-				class="btn btn-circle glow-on-hover"
+				class="btn btn-circle glow-on-hover bright"
 			>
 				&#62;
 			</button>
@@ -241,20 +241,6 @@
 							link="deathtyper"
 						/>
 					</div>
-					<div
-						class="carousel-cell"
-						
-					>
-						<ProjectCard
-							title="Arduino Robotics"
-							url="assets/arduino robot.jpg"
-							alt="An example of a robot stopping when it sees an obstacle"
-							topBadge="C++"
-							description="A collection of labs created and taught during my time as a Cogs 300 Teaching Assistant"
-							bottomBadges={['Arduino', 'Wordpress']}
-							link="arduino"
-						/>
-					</div>
 					<!-- <div
 						class="carousel-cell"
 						use:swipe={{ timeframe: 300, minSwipeDistance: 60 }}
@@ -308,5 +294,21 @@
 		top: 33%;
 		display: flex;
 		justify-content: space-between;
+	}
+
+	.bright.glow-on-hover::after {
+		background: rgba(230, 230, 230, 0.9);
+	}
+	.bright.glow-on-hover::before{
+		top: -4px;
+		left: -4px;
+		width: calc(100% + 8px);
+		height: calc(100% + 8px);
+	}
+	.bright.glow-on-hover{
+		color: black;
+		height: 3em;
+		width: 3em;
+		font-size: large;
 	}
 </style>
