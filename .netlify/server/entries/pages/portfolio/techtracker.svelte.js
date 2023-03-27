@@ -21,17 +21,12 @@ __export(stdin_exports, {
 });
 module.exports = __toCommonJS(stdin_exports);
 var import_index_6b489d84 = require("../../../chunks/index-6b489d84.js");
-var import_NavbarOther_bf166992 = require("../../../chunks/NavbarOther-bf166992.js");
+var import_NavbarOther_80ea6fbd = require("../../../chunks/NavbarOther-80ea6fbd.js");
+var import_Construction_930e19b6 = require("../../../chunks/Construction-930e19b6.js");
 var import_Contact_8a18bbeb = require("../../../chunks/Contact-8a18bbeb.js");
-const Construction = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings, slots) => {
-  return `<div class="${"m-auto pt-20 text-center"}"><h1 class="${"text-2xl text-center"}">This part of the site is currently under construction</h1>
-    <img class="${"m-auto max-h-48"}" src="${"../assets/construction.png"}" alt="${"under construction"}">
-    <p class="${"text-lg text-center"}">Please check back again in a few days</p>
-    <p class="${"text-md"}">Last Update: Nov 13, 2022</p></div>`;
-});
 const Techtracker = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings, slots) => {
   return `${$$result.head += `${$$result.title = `<title>Tech Tracker</title>`, ""}<link rel="${"icon"}" href="${"../assets/code_icon.png"}" data-svelte="svelte-1wezr7k">`, ""}
-${(0, import_index_6b489d84.v)(import_NavbarOther_bf166992.N, "NavbarOther").$$render($$result, {}, {}, {})}
+${(0, import_index_6b489d84.v)(import_NavbarOther_80ea6fbd.N, "NavbarOther").$$render($$result, {}, {}, {})}
 <div class="${"background bg-base-200 p-10 min-h-screen"}"><div class="${"content p-10 m-auto mt-20 bg-base-300 rounded-md flex flex-col justify-center text-left text-lg, max-w-4xl"}"><h1 class="${"text-3xl bold text-center mb-3"}">Tech Tracker</h1>
 		<img class="${"max-w-10 m-10 rounded-lg"}" src="${"../assets\\TechTracker.jpg"}" alt="${"unity ml"}">
 		<h2 class="${"text-2xl bold divider"}">My Role</h2>
@@ -66,5 +61,5 @@ ${(0, import_index_6b489d84.v)(import_NavbarOther_bf166992.N, "NavbarOther").$$r
 		<p>After that initial setup, I transitioned to more of a mentor and supervisor role, where I
 			helped with architecting data structures and assisted with debugging the program
 		</p>
-		${(0, import_index_6b489d84.v)(Construction, "Construction").$$render($$result, {}, {}, {})}</div></div>`;
+		${(0, import_index_6b489d84.v)(import_Construction_930e19b6.C, "Construction").$$render($$result, {}, {}, {})}</div></div>`;
 });

@@ -18,7 +18,7 @@
       "_index-6b489d84.js"
     ],
     "css": [
-      "assets/entries/pages/__layout.svelte-1c11e61b.css"
+      "assets/entries/pages/__layout.svelte-71f7be8f.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
@@ -38,7 +38,34 @@
       "_Contact-8a18bbeb.js"
     ],
     "css": [
-      "assets/entries/pages/index.svelte-9d46799a.css"
+      "assets/entries/pages/index.svelte-d0800554.css"
+    ]
+  },
+  "src/routes/portfolio/arduino.svelte": {
+    "file": "entries/pages/portfolio/arduino.svelte.js",
+    "src": "src/routes/portfolio/arduino.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-6b489d84.js",
+      "_NavbarOther-80ea6fbd.js",
+      "_Construction-930e19b6.js",
+      "_Contact-8a18bbeb.js"
+    ],
+    "css": [
+      "assets/entries/pages/portfolio/arduino.svelte-864a51b0.css"
+    ]
+  },
+  "src/routes/portfolio/deathtyper.svelte": {
+    "file": "entries/pages/portfolio/deathtyper.svelte.js",
+    "src": "src/routes/portfolio/deathtyper.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-6b489d84.js",
+      "_NavbarOther-80ea6fbd.js",
+      "_Contact-8a18bbeb.js"
+    ],
+    "css": [
+      "assets/entries/pages/portfolio/deathtyper.svelte-cddf6820.css"
     ]
   },
   "src/routes/portfolio/evolvingcyborgs.svelte": {
@@ -47,7 +74,7 @@
     "isEntry": true,
     "imports": [
       "_index-6b489d84.js",
-      "_NavbarOther-bf166992.js",
+      "_NavbarOther-80ea6fbd.js",
       "_Contact-8a18bbeb.js"
     ],
     "css": [
@@ -60,7 +87,7 @@
     "isEntry": true,
     "imports": [
       "_index-6b489d84.js",
-      "_NavbarOther-bf166992.js",
+      "_NavbarOther-80ea6fbd.js",
       "_Contact-8a18bbeb.js"
     ],
     "css": [
@@ -73,7 +100,8 @@
     "isEntry": true,
     "imports": [
       "_index-6b489d84.js",
-      "_NavbarOther-bf166992.js",
+      "_NavbarOther-80ea6fbd.js",
+      "_Construction-930e19b6.js",
       "_Contact-8a18bbeb.js"
     ]
   },
@@ -83,16 +111,25 @@
     "isEntry": true,
     "imports": [
       "_index-6b489d84.js",
-      "_NavbarOther-bf166992.js",
+      "_NavbarOther-80ea6fbd.js",
+      "_Construction-930e19b6.js",
       "_Contact-8a18bbeb.js"
     ],
     "css": [
-      "assets/entries/pages/portfolio/unityml.svelte-e3b95964.css"
+      "assets/entries/pages/portfolio/unityml.svelte-6a1fe685.css"
     ]
   },
   "src/routes/portfolio.svelte": {
     "file": "entries/pages/portfolio.svelte.js",
     "src": "src/routes/portfolio.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-6b489d84.js"
+    ]
+  },
+  "src/routes/sanctuaryai.svelte": {
+    "file": "entries/pages/sanctuaryai.svelte.js",
+    "src": "src/routes/sanctuaryai.svelte",
     "isEntry": true,
     "imports": [
       "_index-6b489d84.js"
@@ -107,11 +144,20 @@
       "_index-6b489d84.js"
     ]
   },
-  "_NavbarOther-bf166992.js": {
-    "file": "chunks/NavbarOther-bf166992.js",
+  "_NavbarOther-80ea6fbd.js": {
+    "file": "chunks/NavbarOther-80ea6fbd.js",
     "imports": [
       "_index-6b489d84.js",
       "_Contact-8a18bbeb.js"
+    ],
+    "css": [
+      "assets/NavbarOther-059d4940.css"
+    ]
+  },
+  "_Construction-930e19b6.js": {
+    "file": "chunks/Construction-930e19b6.js",
+    "imports": [
+      "_index-6b489d84.js"
     ]
   },
   ".svelte-kit/build/hooks.js": {

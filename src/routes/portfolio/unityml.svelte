@@ -15,7 +15,7 @@
 </script>
 
 <svelte:head>
-	<title>Unity ML</title>
+	<title>Cogs 300 Unity Labs</title>
 	<link rel="icon" href="../assets/code_icon.png" />
 </svelte:head>
 <NavbarOther />
@@ -24,7 +24,7 @@
 		class="content p-10 m-auto mt-20 bg-base-300 rounded-md flex flex-col justify-center text-left
 		text-lg, max-w-4xl"
 	>
-		<h1 class="text-3xl bold text-center mb-3">Unity ML Agents</h1>
+		<h1 class="text-3xl bold text-center mb-3">Cogs 300 Unity Labs</h1>
 		<p class="text-lg text-center">
 			A Unity based set of labs and a machine learning tournament designed for use by third year university students
 			in Cognitive Systems 300 at the University of British Columbia
@@ -223,8 +223,9 @@
 			</ul>
 		</div>
 		{:else if versionSelect == 2}
-		<p>The ongoing version of the project which began in fall 2022. This version focuses on new content for each of the labs leading up to the final project</p>
+		<p>The ongoing version of the project is a collaboration between the Cogs 300 course and the <a href="https://eml.ubc.ca/" class="gradient-text">UBC Emerging Media Lab</a>  which began in fall 2022. This version focuses on new content for each of the labs leading up to the final project.</p>
 		<h2 class="text-2xl bold divider">My Role</h2>
+		<p class="text-center">I have served as a unity developer, pedagogical advisor, and subject matter expert while working with undergraduate students, industry expert advisors, and the professor for the course.</p>
 		<h2 class="text-2xl bold divider">The Problem</h2>
 		<h2 class="text-2xl bold divider">The Solution</h2>
 		<img

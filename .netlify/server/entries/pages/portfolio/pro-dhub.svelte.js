@@ -21,7 +21,7 @@ __export(stdin_exports, {
 });
 module.exports = __toCommonJS(stdin_exports);
 var import_index_6b489d84 = require("../../../chunks/index-6b489d84.js");
-var import_NavbarOther_bf166992 = require("../../../chunks/NavbarOther-bf166992.js");
+var import_NavbarOther_80ea6fbd = require("../../../chunks/NavbarOther-80ea6fbd.js");
 var import_Contact_8a18bbeb = require("../../../chunks/Contact-8a18bbeb.js");
 var proDhub_svelte_svelte_type_style_lang = /* @__PURE__ */ (() => "ul.svelte-101dw0f{list-style:circle;text-align:left;margin:auto;justify-self:center;width:auto}ol.svelte-101dw0f{list-style:decimal}img.svelte-101dw0f{max-height:400px;-o-object-fit:contain;object-fit:contain}.divider.svelte-101dw0f{padding:20px;padding-top:60px}h1.svelte-101dw0f,h2.svelte-101dw0f,h3.svelte-101dw0f{margin:20px 20px;font-weight:700}")();
 const css = {
@@ -31,7 +31,7 @@ const css = {
 const Pro_dhub = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `${$$result.head += `${$$result.title = `<title>Pro-D Hub</title>`, ""}<link rel="${"icon"}" href="${"../assets/code_icon.png"}" data-svelte="svelte-1l7nun7">`, ""}
-${(0, import_index_6b489d84.v)(import_NavbarOther_bf166992.N, "NavbarOther").$$render($$result, {}, {}, {})}
+${(0, import_index_6b489d84.v)(import_NavbarOther_80ea6fbd.N, "NavbarOther").$$render($$result, {}, {}, {})}
 <div class="${"background bg-base-200 p-10 min-h-screen"}"><div class="${"content p-10 m-auto mt-20 bg-base-300 rounded-md flex flex-col justify-center text-left text-lg, max-w-4xl"}"><h1 class="${"text-3xl bold text-center mb-3 svelte-101dw0f"}">Teacher Pro-D Hub</h1>
 		<p class="${"text-lg text-center"}">A resource hub and event portal for K-12 teachers</p>
 		<img class="${"max-w-10 m-10 rounded-lg svelte-101dw0f"}" src="${"..\\assets\\Pro-D_Hub.png"}" alt="${"interface for pro-d hub"}">
@@ -44,7 +44,7 @@ ${(0, import_index_6b489d84.v)(import_NavbarOther_bf166992.N, "NavbarOther").$$r
 		<h2 class="${"text-2xl bold divider svelte-101dw0f"}">The Problem</h2>
 		<p>When I joined the Pro-D team at Geering Up the current resource hub was being hosted on Edx,
 			which required both an Edx account and an invite in order to be accessed. This created a lot
-			of unecessary friction for teachers who may have wanted to use our resources.
+			of unnecessary friction for teachers who may have wanted to use our resources.
 		</p>
 
 		<h2 class="${"text-2xl bold divider svelte-101dw0f"}">The Solution</h2>

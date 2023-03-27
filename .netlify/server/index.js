@@ -2323,7 +2323,7 @@ const template = ({ head, body, assets: assets2, nonce }) => `<!DOCTYPE html>\r
 \r
 		gtag('config', 'G-CCE094D93K');\r
 	<\/script>\r
-	` + head + '\r\n</head>\r\n\r\n<body class="bg-base-200">\r\n	<div id="boids-display"></div>\r\n	<div>' + body + "</div>\r\n</body>\r\n\r\n</html>\r\n\r\n\r\n<style>\r\n	#boids-display {\r\n		position: absolute;\r\n		top: 0;\r\n		left: 0;\r\n		z-index: 0;\r\n		width: 100%;\r\n		height: 100%;\r\n		overflow: hidden;\r\n	}\r\n	html, body {\r\n		min-width: 200px;\r\n	}\r\n</style>";
+	` + head + '\r\n</head>\r\n\r\n<body class="bg-base-200">\r\n	<div>' + body + "</div>\r\n</body>\r\n\r\n</html>\r\n\r\n\r\n<style>\r\n	#boids-display {\r\n		position: absolute;\r\n		top: 0;\r\n		left: 0;\r\n		z-index: 0;\r\n		width: 100%;\r\n		height: 100%;\r\n		overflow: hidden;\r\n	}\r\n	html, body {\r\n		min-width: 200px;\r\n	}\r\n</style>";
 let read = null;
 set_paths({ "base": "", "assets": "" });
 let default_protocol = "https";

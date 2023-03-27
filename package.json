@@ -26,6 +26,7 @@
 	"dependencies": {
 		"daisyui": "^2.15.3",
 		"svelte-device-detector": "^0.2.2",
-		"svelte-gestures": "^1.4.1"
+		"svelte-gestures": "^1.4.1",
+		"svelte-lazy": "^1.2.1"
 	}
 }

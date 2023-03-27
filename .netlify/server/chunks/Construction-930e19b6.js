@@ -1,8 +1,6 @@
-var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
-var __getProtoOf = Object.getPrototypeOf;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
 var __export = (target, all) => {
   for (var name in all)
@@ -16,19 +14,16 @@ var __copyProps = (to, from, except, desc) => {
   }
   return to;
 };
-var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target, mod));
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 var stdin_exports = {};
 __export(stdin_exports, {
-  css: () => css,
-  entry: () => entry,
-  index: () => index,
-  js: () => js,
-  module: () => module2
+  C: () => Construction
 });
 module.exports = __toCommonJS(stdin_exports);
-var module2 = __toESM(require("../entries/pages/__layout.svelte.js"));
-const index = 0;
-const entry = "pages/__layout.svelte-ae1170b2.js";
-const js = ["pages/__layout.svelte-ae1170b2.js", "chunks/index-a27d9349.js"];
-const css = ["assets/pages/__layout.svelte-bd440889.css"];
+var import_index_6b489d84 = require("./index-6b489d84.js");
+const Construction = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings, slots) => {
+  return `<div class="${"m-auto pt-20 text-center"}"><h1 class="${"text-2xl text-center"}">This part of the site is currently under construction</h1>
+    <img class="${"m-auto max-h-48"}" src="${"../assets/construction.png"}" alt="${"under construction"}">
+    <p class="${"text-lg text-center"}">Please check back again in a few days</p>
+    <p class="${"text-md"}">Last Update: Dec 28, 2022</p></div>`;
+});

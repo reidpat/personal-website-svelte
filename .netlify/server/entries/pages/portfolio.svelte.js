@@ -23,7 +23,7 @@ __export(stdin_exports, {
 module.exports = __toCommonJS(stdin_exports);
 var import_index_6b489d84 = require("../../chunks/index-6b489d84.js");
 async function load() {
-  return { status: 302, redirect: "/" };
+  return { status: 302, redirect: "/#portfolio" };
 }
 const Portfolio = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings, slots) => {
   return ``;

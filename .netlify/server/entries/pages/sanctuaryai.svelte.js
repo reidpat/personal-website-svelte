@@ -17,14 +17,10 @@ var __copyProps = (to, from, except, desc) => {
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 var stdin_exports = {};
 __export(stdin_exports, {
-  N: () => NavbarOther
+  default: () => Sanctuaryai
 });
 module.exports = __toCommonJS(stdin_exports);
-var import_index_6b489d84 = require("./index-6b489d84.js");
-var import_Contact_8a18bbeb = require("./Contact-8a18bbeb.js");
-const NavbarOther = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings, slots) => {
-  return `<div class="${"navbar bg-base-100 fixed top-0 z-10"}"><div class="${"navbar-start"}"><a href="${"/"}" target="${"_self"}"><button class="${"glow-on-hover pl-3 pr-3"}">Home</button></a></div>
-	<div class="${"navbar-center"}"><button class="${"btn btn-ghost gradient-text normal-case text-xl"}">Reid Patterson</button></div>
-	<div class="${"navbar-end"}">${(0, import_index_6b489d84.v)(import_Contact_8a18bbeb.C, "Contact").$$render($$result, {}, {}, {})}</div>
-</div>`;
+var import_index_6b489d84 = require("../../chunks/index-6b489d84.js");
+const Sanctuaryai = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings, slots) => {
+  return ``;
 });

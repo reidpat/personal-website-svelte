@@ -29,6 +29,6 @@ __export(stdin_exports, {
 module.exports = __toCommonJS(stdin_exports);
 var module2 = __toESM(require("../entries/fallbacks/error.svelte.js"));
 const index = 1;
-const entry = "error.svelte-844d4b2e.js";
-const js = ["error.svelte-844d4b2e.js", "chunks/index-7784f889.js"];
+const entry = "error.svelte-786486d2.js";
+const js = ["error.svelte-786486d2.js", "chunks/index-a27d9349.js"];
 const css = [];

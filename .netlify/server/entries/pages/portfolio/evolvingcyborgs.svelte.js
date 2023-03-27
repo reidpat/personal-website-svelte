@@ -21,7 +21,7 @@ __export(stdin_exports, {
 });
 module.exports = __toCommonJS(stdin_exports);
 var import_index_6b489d84 = require("../../../chunks/index-6b489d84.js");
-var import_NavbarOther_bf166992 = require("../../../chunks/NavbarOther-bf166992.js");
+var import_NavbarOther_80ea6fbd = require("../../../chunks/NavbarOther-80ea6fbd.js");
 var import_Contact_8a18bbeb = require("../../../chunks/Contact-8a18bbeb.js");
 var evolvingcyborgs_svelte_svelte_type_style_lang = /* @__PURE__ */ (() => "ul.svelte-7o0nbe{list-style:circle;text-align:left;margin:auto;justify-self:center;width:auto}iframe.svelte-7o0nbe{margin:20px auto;width:60%;min-width:200px;height:300px}.drawing-slides.svelte-7o0nbe{margin:0px auto}img.svelte-7o0nbe{max-height:400px;-o-object-fit:contain;object-fit:contain}.divider.svelte-7o0nbe{padding:20px;padding-top:60px}h1.svelte-7o0nbe,h2.svelte-7o0nbe,h3.svelte-7o0nbe,h4.svelte-7o0nbe{margin:20px 20px;font-weight:700}")();
 const css = {
@@ -31,11 +31,14 @@ const css = {
 const Evolvingcyborgs = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `${$$result.head += `${$$result.title = `<title>Evolving Cyborgs</title>`, ""}<link rel="${"icon"}" href="${"../assets/code_icon.png"}" data-svelte="svelte-x415ln">`, ""}
-${(0, import_index_6b489d84.v)(import_NavbarOther_bf166992.N, "NavbarOther").$$render($$result, {}, {}, {})}
+${(0, import_index_6b489d84.v)(import_NavbarOther_80ea6fbd.N, "NavbarOther").$$render($$result, {}, {}, {})}
 <div class="${"background bg-base-200 p-10 min-h-screen"}"><div class="${"content p-10 m-auto mt-20 bg-base-300 rounded-md flex flex-col justify-center text-left text-lg, max-w-4xl"}"><h1 class="${"text-3xl bold text-center mb-3 svelte-7o0nbe"}">Evolving Cyborgs</h1>
 		<p class="${"text-lg text-center"}">A better gamified habit tracker</p>
 		<img class="${"max-w-10 m-10 rounded-lg svelte-7o0nbe"}" src="${"../assets/EvolvingCyborgs.jpg"}" alt="${""}">
-		<a class="${"m-auto"}" href="${"https://github.com/reidpat/evolving-cyborgs-svelte"}" target="${"_blank"}"><button class="${"glow-on-hover pl-3 pr-3"}">See Code</button></a>
+		<a class="${"m-auto btn glow-on-hover uppercase mt-5"}" style="${"width: 250px;"}" href="${"https://evolvingcyborgs.netlify.app/demo"}" target="${"_blank"}">See Demo
+		</a>
+		<a class="${"m-auto btn glow-on-hover uppercase mt-5"}" style="${"width: 250px;"}" href="${"https://github.com/reidpat/evolving-cyborgs-svelte"}" target="${"_blank"}">See Code
+		</a>
 		<h2 class="${"text-2xl bold divider svelte-7o0nbe"}">My Role</h2>
 		<p class="${"text-center"}">Owner, designer and sole creator of a personal project</p>
 		<h2 class="${"text-2xl bold divider svelte-7o0nbe"}">The Problem</h2>
@@ -53,9 +56,12 @@ ${(0, import_index_6b489d84.v)(import_NavbarOther_bf166992.N, "NavbarOther").$$r
 		<p class="${"mb-10"}">I couldn&#39;t find any apps out there which worked for me. I kept running into one of the
 			following problems:
 		</p>
-		<div class="${"tabs tabs-boxed flex justify-center bg-base-300 mb-5"}"><button class="${["tab tab-lg tab-bordered", "tab-active"].join(" ").trim()}">1. Feedback</button>
-			<button class="${["tab tab-lg tab-bordered", ""].join(" ").trim()}">2. Platform</button>
-			<button class="${["tab tab-lg tab-bordered", ""].join(" ").trim()}">3. Customization</button></div>
+		<div class="${"tabs tabs-boxed flex justify-center bg-base-300 mb-5"}"><button class="${["tab tab-lg tab-bordered", "tab-active"].join(" ").trim()}">1. Feedback
+			</button>
+			<button class="${["tab tab-lg tab-bordered", ""].join(" ").trim()}">2. Platform
+			</button>
+			<button class="${["tab tab-lg tab-bordered", ""].join(" ").trim()}">3. Customization
+			</button></div>
 		${`<p>Giving rewards and punishments is one of the most effective known ways of creating behaviour
 				change as it causes positive and negative associations with a specific behaviour. But if you
 				are not careful with your timing of feedback, you can easily cause counterproductive
@@ -63,17 +69,22 @@ ${(0, import_index_6b489d84.v)(import_NavbarOther_bf166992.N, "NavbarOther").$$r
 			</p>
 			<p>For example, they would punish the user (usually by losing health, gold, or experience) when
 				something like a habit was not completed. The issue here is that this punishment was applied
-				the <i>next</i> time a user would log in. This made it easy to avoid the punishment simply by
-				avoiding using the app.
+				the
+				<i>next</i>
+				time a user would log in. This made it easy to avoid the punishment simply by avoiding using
+				the app.
 			</p>`}
 
 		<h2 class="${"text-2xl bold divider svelte-7o0nbe"}">The Solution</h2>
 		<p class="${"mb-5"}">I decided that the only way of solving these problems is if I made an application myself. This
 			project is what originally encouraged me to learn web development
 		</p>
-		<div class="${"tabs tabs-boxed flex justify-center bg-base-300 mb-5"}"><button class="${["tab tab-lg tab-bordered", ""].join(" ").trim()}">Version 1</button>
-			<button class="${["tab tab-lg tab-bordered", ""].join(" ").trim()}">Version 2</button>
-			<button class="${["tab tab-lg tab-bordered", "tab-active"].join(" ").trim()}">Version 3</button></div>
+		<div class="${"tabs tabs-boxed flex justify-center bg-base-300 mb-5"}"><button class="${["tab tab-lg tab-bordered", ""].join(" ").trim()}">Version 1
+			</button>
+			<button class="${["tab tab-lg tab-bordered", ""].join(" ").trim()}">Version 2
+			</button>
+			<button class="${["tab tab-lg tab-bordered", "tab-active"].join(" ").trim()}">Version 3
+			</button></div>
 
 		${`${`<div class="${"text-center"}"><p>Timeline: Jan 2022 - Present</p>
 				<h4 class="${"svelte-7o0nbe"}">Technology Used</h4>
@@ -95,18 +106,27 @@ ${(0, import_index_6b489d84.v)(import_NavbarOther_bf166992.N, "NavbarOther").$$r
 						data in a way that wouldn&#39;t cause me problems in the future when I wanted to add more
 						features.
 					</p></div>
-                <h4 class="${"svelte-7o0nbe"}">Final Product</h4>
-                <img class="${"max-w-6 m-auto rounded-lg svelte-7o0nbe"}" src="${"../assets/EvolvingCyborgs.jpg"}" alt="${""}">
-                <p class="${"mt-5"}">I&#39;ve been very happy with the progress I&#39;ve made on this project. It&#39;s now almost at the point where I left off with Version 2, but I don&#39;t feel nearly as limited with my data structure.</p>
-                <h4 class="${"svelte-7o0nbe"}">Features</h4>
-                <ul class="${"max-w-xl svelte-7o0nbe"}"><li>Habit Tracker - Now with dynamically adjusting goals!</li>
+				<h4 class="${"svelte-7o0nbe"}">Final Product</h4>
+				<img class="${"max-w-6 m-auto rounded-lg svelte-7o0nbe"}" src="${"../assets/EvolvingCyborgs.jpg"}" alt="${""}">
+				<p class="${"mt-5"}">I&#39;ve been very happy with the progress I&#39;ve made on this project. It&#39;s now almost at the
+					point where I left off with Version 2, but I don&#39;t feel nearly as limited with my data
+					structure.
+				</p>
+				<h4 class="${"svelte-7o0nbe"}">Features</h4>
+				<ul class="${"max-w-xl svelte-7o0nbe"}"><li>Habit Tracker - Now with dynamically adjusting goals!</li>
 					<li>Vices - time since last performed an action you are trying to stop</li>
 					<li>Friends list showing their level and current experience</li></ul>
-                <div class="${"text-left"}"><h3 class="${"divider text-2xl text svelte-7o0nbe"}">V3 Roadmap</h3>
-                    <p>Version 3 of this project is under active development and so far there have been no major issues that require reflection. I am planning on continuing development and adding the following features:</p>
-                    <ul class="${"max-w-xl text-left justify-self-start svelte-7o0nbe"}"><li>Achievements and Badges - Show off to your friends what you have accomplished!</li>
-                        <li>Activities - Track specific behaviour occurances which may not happen every day, or happen multiple times a day</li>
-                        <li>Custom Data tracking - Building off the activites above, modify it to us custom data types allowing tracking of any information desired</li>
-                        <li>Attributes - Game-like stats which are leveled as you complete various actions</li></ul></div></div>`}`}</div>
-</div>`;
+				<div class="${"text-left"}"><h3 class="${"divider text-2xl text svelte-7o0nbe"}">V3 Roadmap</h3>
+					<p>Version 3 of this project is under active development and so far there have been no
+						major issues that require reflection. I am planning on continuing development and adding
+						the following features:
+					</p>
+					<ul class="${"max-w-xl text-left justify-self-start svelte-7o0nbe"}"><li>Achievements and Badges - Show off to your friends what you have accomplished!</li>
+						<li>Activities - Track specific behaviour occurances which may not happen every day, or
+							happen multiple times a day
+						</li>
+						<li>Custom Data tracking - Building off the activites above, modify it to us custom data
+							types allowing tracking of any information desired
+						</li>
+						<li>Attributes - Game-like stats which are leveled as you complete various actions</li></ul></div></div>`}`}</div></div>`;
 });

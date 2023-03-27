@@ -47,9 +47,9 @@ const Navbar = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings, slot
 	<div class="${"navbar-end"}">${(0, import_index_6b489d84.v)(import_Contact_8a18bbeb.C, "Contact").$$render($$result, {}, {}, {})}</div>
 </div>`;
 });
-var About_svelte_svelte_type_style_lang = /* @__PURE__ */ (() => ".portrait.svelte-17udlyu.svelte-17udlyu{height:80%;border-radius:35%;position:absolute;z-index:1}img.svelte-17udlyu.svelte-17udlyu{-o-object-fit:contain;object-fit:contain}#action.svelte-17udlyu.svelte-17udlyu{display:flex;position:relative;width:100%;min-height:400px;align-items:center;justify-content:center}#about-desc.svelte-17udlyu.svelte-17udlyu{width:65%;max-width:600px;min-width:250px}.modal-box.svelte-17udlyu.svelte-17udlyu{border-radius:10px;overflow:visible}#interest-modal-image.svelte-17udlyu.svelte-17udlyu{position:absolute;top:-10px;right:-10px;border-radius:100%;background-color:#111;width:50px;height:50px;align-items:center}#interest-modal-image.svelte-17udlyu>img.svelte-17udlyu{position:absolute;width:60%}.glow-small.svelte-17udlyu.svelte-17udlyu:before{content:'';background:linear-gradient(45deg, #ff0000, #ff00c8, #002aff, #7b00ff, #ff00c8, #ff0000);position:absolute;top:-2px;left:-2px;background-size:400%;z-index:-1;filter:blur(5px);width:calc(100% + 4px);height:calc(100% + 4px);-webkit-animation:svelte-17udlyu-glowing 60s linear infinite;animation:svelte-17udlyu-glowing 60s linear infinite;transition:opacity 0.3s ease-in-out;border-radius:100%;opacity:1}.glow-small.svelte-17udlyu.svelte-17udlyu:after{z-index:-1;content:'';position:absolute;width:100%;height:100%;background:#111;left:0;top:0;border-radius:100%}@-webkit-keyframes svelte-17udlyu-glowing{0%{background-position:0 0}50%{background-position:400% 0}100%{background-position:0 0}}@keyframes svelte-17udlyu-glowing{0%{background-position:0 0}50%{background-position:400% 0}100%{background-position:0 0}}")();
+var About_svelte_svelte_type_style_lang = /* @__PURE__ */ (() => "#about.svelte-1kav8x3.svelte-1kav8x3{max-width:99vw}.portrait.svelte-1kav8x3.svelte-1kav8x3{height:80%;border-radius:35%;position:absolute;z-index:1}img.svelte-1kav8x3.svelte-1kav8x3{-o-object-fit:contain;object-fit:contain}#action.svelte-1kav8x3.svelte-1kav8x3{display:flex;position:relative;width:100%;min-height:400px;align-items:center;justify-content:center}#about-desc.svelte-1kav8x3.svelte-1kav8x3{width:65%;max-width:600px;min-width:250px}.modal-box.svelte-1kav8x3.svelte-1kav8x3{border-radius:10px;overflow:visible}#interest-modal-image.svelte-1kav8x3.svelte-1kav8x3{position:absolute;top:-10px;right:-10px;border-radius:100%;background-color:#111;width:50px;height:50px;align-items:center}#interest-modal-image.svelte-1kav8x3>img.svelte-1kav8x3{position:absolute;width:60%}.glow-small.svelte-1kav8x3.svelte-1kav8x3:before{content:'';background:linear-gradient(45deg, #ff0000, #ff00c8, #002aff, #7b00ff, #ff00c8, #ff0000);position:absolute;top:-2px;left:-2px;background-size:400%;z-index:-1;filter:blur(5px);width:calc(100% + 4px);height:calc(100% + 4px);-webkit-animation:svelte-1kav8x3-glowing 60s linear infinite;animation:svelte-1kav8x3-glowing 60s linear infinite;transition:opacity 0.3s ease-in-out;border-radius:100%;opacity:1}.glow-small.svelte-1kav8x3.svelte-1kav8x3:after{z-index:-1;content:'';position:absolute;width:100%;height:100%;background:#111;left:0;top:0;border-radius:100%}@-webkit-keyframes svelte-1kav8x3-glowing{0%{background-position:0 0}50%{background-position:400% 0}100%{background-position:0 0}}@keyframes svelte-1kav8x3-glowing{0%{background-position:0 0}50%{background-position:400% 0}100%{background-position:0 0}}")();
 const css$5 = {
-  code: ".portrait.svelte-17udlyu.svelte-17udlyu{height:80%;border-radius:35%;position:absolute;z-index:1}img.svelte-17udlyu.svelte-17udlyu{object-fit:contain}#action.svelte-17udlyu.svelte-17udlyu{display:flex;position:relative;width:100%;min-height:400px;align-items:center;justify-content:center}#about-desc.svelte-17udlyu.svelte-17udlyu{width:65%;max-width:600px;min-width:250px}.modal-box.svelte-17udlyu.svelte-17udlyu{border-radius:10px;overflow:visible}#interest-modal-image.svelte-17udlyu.svelte-17udlyu{position:absolute;top:-10px;right:-10px;border-radius:100%;background-color:#111;width:50px;height:50px;align-items:center}#interest-modal-image.svelte-17udlyu>img.svelte-17udlyu{position:absolute;width:60%}.glow-small.svelte-17udlyu.svelte-17udlyu:before{content:'';background:linear-gradient(45deg, #ff0000, #ff00c8, #002aff, #7b00ff, #ff00c8, #ff0000);position:absolute;top:-2px;left:-2px;background-size:400%;z-index:-1;filter:blur(5px);width:calc(100% + 4px);height:calc(100% + 4px);animation:svelte-17udlyu-glowing 60s linear infinite;opacity:0;transition:opacity 0.3s ease-in-out;border-radius:100%}.glow-small.svelte-17udlyu.svelte-17udlyu:before{opacity:1}.glow-small.svelte-17udlyu.svelte-17udlyu:after{z-index:-1;content:'';position:absolute;width:100%;height:100%;background:#111;left:0;top:0;border-radius:100%}@keyframes svelte-17udlyu-glowing{0%{background-position:0 0}50%{background-position:400% 0}100%{background-position:0 0}}",
+  code: "#about.svelte-1kav8x3.svelte-1kav8x3{max-width:99vw}.portrait.svelte-1kav8x3.svelte-1kav8x3{height:80%;border-radius:35%;position:absolute;z-index:1}img.svelte-1kav8x3.svelte-1kav8x3{object-fit:contain}#action.svelte-1kav8x3.svelte-1kav8x3{display:flex;position:relative;width:100%;min-height:400px;align-items:center;justify-content:center}#about-desc.svelte-1kav8x3.svelte-1kav8x3{width:65%;max-width:600px;min-width:250px}.modal-box.svelte-1kav8x3.svelte-1kav8x3{border-radius:10px;overflow:visible}#interest-modal-image.svelte-1kav8x3.svelte-1kav8x3{position:absolute;top:-10px;right:-10px;border-radius:100%;background-color:#111;width:50px;height:50px;align-items:center}#interest-modal-image.svelte-1kav8x3>img.svelte-1kav8x3{position:absolute;width:60%}.glow-small.svelte-1kav8x3.svelte-1kav8x3:before{content:'';background:linear-gradient(45deg, #ff0000, #ff00c8, #002aff, #7b00ff, #ff00c8, #ff0000);position:absolute;top:-2px;left:-2px;background-size:400%;z-index:-1;filter:blur(5px);width:calc(100% + 4px);height:calc(100% + 4px);animation:svelte-1kav8x3-glowing 60s linear infinite;opacity:0;transition:opacity 0.3s ease-in-out;border-radius:100%}.glow-small.svelte-1kav8x3.svelte-1kav8x3:before{opacity:1}.glow-small.svelte-1kav8x3.svelte-1kav8x3:after{z-index:-1;content:'';position:absolute;width:100%;height:100%;background:#111;left:0;top:0;border-radius:100%}@keyframes svelte-1kav8x3-glowing{0%{background-position:0 0}50%{background-position:400% 0}100%{background-position:0 0}}",
   map: null
 };
 const About = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings, slots) => {
@@ -59,30 +59,30 @@ const About = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings, slots
   let content = "content";
   let img = "";
   $$result.css.add(css$5);
-  return `<label for="${"interest-modal"}" class="${["modal cursor-pointer", ""].join(" ").trim()}"><label class="${"modal-box relative svelte-17udlyu"}" for="${" "}"><div id="${"interest-modal-image"}" class="${"glow-small flex justify-center svelte-17udlyu"}"><img src="${"assets/" + (0, import_index_6b489d84.e)(img) + ".png"}" alt="${"obsidian icon"}" class="${"svelte-17udlyu"}"></div>
+  return `<label for="${"interest-modal"}" class="${["modal cursor-pointer", ""].join(" ").trim()}"><label class="${"modal-box relative svelte-1kav8x3"}" for="${" "}"><div id="${"interest-modal-image"}" class="${"glow-small flex justify-center svelte-1kav8x3"}"><img src="${"assets/" + (0, import_index_6b489d84.e)(img) + ".png"}" alt="${"obsidian icon"}" class="${"svelte-1kav8x3"}"></div>
 		<h3 class="${"text-lg font-bold"}">${(0, import_index_6b489d84.e)(title)}</h3>
 		<p class="${"py-4"}">${(0, import_index_6b489d84.e)(content)}</p></label></label>
 
-<div id="${"about"}" class="${"hero section min-h-screen bg-base-200 flex justify-center"}"><div class="${"hero-content flex align-middle justify-center text-center"}"><div>${`<div><h1 class="${"text-5xl font-bold"}">About Me</h1>
-					<div class="${"flex align-middle justify-center flex-wrap"}" id="${"about-pic"}"><div id="${"about-desc"}" class="${"py-6 text-xl text-left self-center svelte-17udlyu"}"><p class="${"text-2xl italic mb-3"}">Hello, I&#39;m Reid!</p>
+<div id="${"about"}" class="${"hero section min-h-screen bg-base-200 flex justify-center svelte-1kav8x3"}"><div class="${"hero-content flex align-middle justify-center text-center"}"><div>${`<div><h1 class="${"text-5xl font-bold"}">About Me</h1>
+					<div class="${"flex align-middle justify-center flex-wrap"}" id="${"about-pic"}"><div id="${"about-desc"}" class="${"py-6 text-xl text-left self-center svelte-1kav8x3"}"><p class="${"text-2xl italic mb-3"}">Hello, I&#39;m Reid!</p>
 							<p class="${"mb-3"}">I&#39;m an educator and developer living in Vancouver, BC.
 							</p>
 							<p class="${"mb-3"}">By day, I work at <a class="${"gradient-text"}" href="${"https://geeringup.apsc.ubc.ca/"}">UBC Geering Up</a>
-								as a computer science instructor and web developer, helping K-12 teachers bring
+								as a computer science instructor and web developer - building web apps for Geering Up and helping K-12 teachers bring
 								topics like AI and Digital Literacy into their classrooms.
 							</p>
 							<p>By night, I moonlight as a tech tinkerer - making helpful tools &amp; websites, working with training machine learning models, and experimenting with algorithmically generated art.
 							</p></div>
-						<div id="${"action"}" class="${"svelte-17udlyu"}"><img class="${"portrait svelte-17udlyu"}" style="${"z-index: " + (0, import_index_6b489d84.e)(seriousZ.toString())}" src="${"MeSerious.webp"}" alt="${""}">
-							<img class="${"portrait svelte-17udlyu"}" style="${"z-index: " + (0, import_index_6b489d84.e)(smileZ.toString())}" src="${"MeFun.webp"}" alt="${""}"></div></div></div>`}
+						<div id="${"action"}" class="${"svelte-1kav8x3"}"><img class="${"portrait svelte-1kav8x3"}" style="${"z-index: " + (0, import_index_6b489d84.e)(seriousZ.toString())}" src="${"MeSerious.webp"}" alt="${""}">
+							<img class="${"portrait svelte-1kav8x3"}" style="${"z-index: " + (0, import_index_6b489d84.e)(smileZ.toString())}" src="${"MeFun.webp"}" alt="${""}"></div></div></div>`}
 			
 			
 			</div></div>
 </div>`;
 });
-var ProjectCard_svelte_svelte_type_style_lang = /* @__PURE__ */ (() => ".card.svelte-1whccvf{box-shadow:0 0 2rem 0 rgb(255 255 255 / 30%);width:80vw !important;min-width:250px;max-width:350px;height:550px;-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}img.svelte-1whccvf{height:200px;width:100%;-o-object-fit:contain;object-fit:contain}")();
+var ProjectCard_svelte_svelte_type_style_lang = /* @__PURE__ */ (() => ".card.svelte-8pubjo{box-shadow:0 0 2rem 0 rgb(255 255 255 / 30%);width:80vw !important;min-width:250px;max-width:400px;height:550px;-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.card-body.svelte-8pubjo{padding:15px;text-align:center}img.svelte-8pubjo{height:200px;width:100%;-o-object-fit:cover;object-fit:cover}")();
 const css$4 = {
-  code: ".card.svelte-1whccvf{box-shadow:0 0 2rem 0 rgb(255 255 255 / 30%);width:80vw !important;min-width:250px;max-width:350px;height:550px;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}img.svelte-1whccvf{height:200px;width:100%;object-fit:contain}",
+  code: ".card.svelte-8pubjo{box-shadow:0 0 2rem 0 rgb(255 255 255 / 30%);width:80vw !important;min-width:250px;max-width:400px;height:550px;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.card-body.svelte-8pubjo{padding:15px;text-align:center}img.svelte-8pubjo{height:200px;width:100%;object-fit:cover}",
   map: null
 };
 const ProjectCard = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings, slots) => {
@@ -108,32 +108,37 @@ const ProjectCard = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings,
   if ($$props.bottomBadges === void 0 && $$bindings.bottomBadges && bottomBadges !== void 0)
     $$bindings.bottomBadges(bottomBadges);
   $$result.css.add(css$4);
-  return `<div class="${"card bg-base-100 rounded-md shadow-[0_35px_60px_-15px_rgba(255,255,255,0.2) svelte-1whccvf"}"><figure><img${(0, import_index_6b489d84.a)("src", url, 0)}${(0, import_index_6b489d84.a)("alt", alt, 0)} class="${"svelte-1whccvf"}"></figure>
-	<div class="${"card-body items-center text-center"}"><h2 class="${"card-title gradient-text uppercase"}">${(0, import_index_6b489d84.e)(title)}</h2>
+  return `<div class="${"card bg-base-100 rounded-md shadow-[0_35px_60px_-15px_rgba(255,255,255,0.2) svelte-8pubjo"}"><figure><img${(0, import_index_6b489d84.a)("src", url, 0)}${(0, import_index_6b489d84.a)("alt", alt, 0)} class="${"svelte-8pubjo"}"></figure>
+	<div class="${"card-body items-center text-center svelte-8pubjo"}"><h2 class="${"card-title gradient-text uppercase"}">${(0, import_index_6b489d84.e)(title)}</h2>
 		
 		<p>${(0, import_index_6b489d84.e)(description)}</p>
-		<div class="${"card-actions justify-center"}">${(0, import_index_6b489d84.b)(bottomBadges, (badge) => {
+		<div class="${"card-actions justify-center"}"><div class="${"badge badge-primary"}">${(0, import_index_6b489d84.e)(topBadge)}</div>
+			${(0, import_index_6b489d84.b)(bottomBadges, (badge) => {
     return `<div class="${"badge badge-outline"}">${(0, import_index_6b489d84.e)(badge)}</div>`;
   })}</div>
 		<a${(0, import_index_6b489d84.a)("href", `/portfolio/${link}`, 0)} target="${"_self"}"><button class="${"btn uppercase glow-on-hover mt-3"}">Learn More</button></a></div>
 </div>`;
 });
-var Portfolio_svelte_svelte_type_style_lang = /* @__PURE__ */ (() => ".scene.svelte-dabkl4::-webkit-scrollbar{display:none}#portfolio.svelte-dabkl4{padding-bottom:100px;width:100vw}.hero-content.svelte-dabkl4{max-width:80%}")();
+var Portfolio_svelte_svelte_type_style_lang = /* @__PURE__ */ (() => ".scene.svelte-126gdnp::-webkit-scrollbar{display:none}#portfolio.svelte-126gdnp{padding-bottom:100px;max-width:99vw;overflow-x:hidden}.hero-content.svelte-126gdnp{max-width:80%}.carousel-buttons.svelte-126gdnp{position:relative;z-index:5;top:33%;display:flex;justify-content:space-between}.bright.glow-on-hover.svelte-126gdnp::after{background:rgba(230, 230, 230, 0.9)}.bright.glow-on-hover.svelte-126gdnp::before{top:-4px;left:-4px;width:calc(100% + 8px);height:calc(100% + 8px)}.bright.glow-on-hover.svelte-126gdnp{color:black;height:3em;width:3em;font-size:large}")();
 const css$3 = {
-  code: ".scene.svelte-dabkl4::-webkit-scrollbar{display:none}#portfolio.svelte-dabkl4{padding-bottom:100px;width:100vw}.hero-content.svelte-dabkl4{max-width:80%}",
+  code: ".scene.svelte-126gdnp::-webkit-scrollbar{display:none}#portfolio.svelte-126gdnp{padding-bottom:100px;max-width:99vw;overflow-x:hidden}.hero-content.svelte-126gdnp{max-width:80%}.carousel-buttons.svelte-126gdnp{position:relative;z-index:5;top:33%;display:flex;justify-content:space-between}.bright.glow-on-hover.svelte-126gdnp::after{background:rgba(230, 230, 230, 0.9)}.bright.glow-on-hover.svelte-126gdnp::before{top:-4px;left:-4px;width:calc(100% + 8px);height:calc(100% + 8px)}.bright.glow-on-hover.svelte-126gdnp{color:black;height:3em;width:3em;font-size:large}",
   map: null
 };
 const Portfolio = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$3);
-  return `<div id="${"portfolio"}" class="${"section hero min-h-screen bg-base-200 svelte-dabkl4"}"><div class="${"hero-content text-center svelte-dabkl4"}"><div><h1 class="${"text-5xl font-bold mt-14 text-center"}">My Portfolio</h1>
+  return `<div id="${"portfolio"}" class="${"section hero min-h-screen bg-base-200 svelte-126gdnp"}"><div class="${"hero-content text-center svelte-126gdnp"}"><div><h1 class="${"text-5xl font-bold mt-14 text-center"}">My Portfolio</h1>
 			
 			
 			
-			<div class="${"scene svelte-dabkl4"}" style="${"margin: 20px 0px; width: auto; max-width:100%; overflow-y: visible; overflow-x: visible; max-width: 80vw"}"><div class="${"flex align-center justify-center carousel-container"}"><div class="${"carousel-cell"}">${(0, import_index_6b489d84.v)(ProjectCard, "ProjectCard").$$render($$result, {
+			<div class="${"scene svelte-126gdnp"}" style="${"margin: 20px 0px; width: 80vh; max-width: 500px; overflow-y: visible; overflow-x: visible; max-width: 80vw"}"><div class="${"carousel-buttons svelte-126gdnp"}"><button class="${"btn btn-circle glow-on-hover bright svelte-126gdnp"}">&lt;
+			</button>
+			<button class="${"btn btn-circle glow-on-hover bright svelte-126gdnp"}">&gt;
+			</button></div>
+				<div class="${"flex align-center justify-center carousel-container"}"><div class="${"carousel-cell"}">${(0, import_index_6b489d84.v)(ProjectCard, "ProjectCard").$$render($$result, {
     title: "Unity ML Tournament",
     url: "assets/ML_Agents_scene.png",
     alt: "chip",
-    topBadge: "featured",
+    topBadge: "C#",
     description: "An open ended learning environment where university students train\r\n							machine learning agents to compete in a capture the flag competition.",
     bottomBadges: ["Unity", "Unity ML Agents"],
     link: "unityml"
@@ -143,7 +148,7 @@ const Portfolio = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings, s
     title: "Evolving Cyborgs",
     url: "assets/EvolvingCyborgs.jpg",
     alt: "chip",
-    topBadge: "featured",
+    topBadge: "JavaScript",
     description: "A gamified habit and behaviour tracker. Based off of psychological\r\n							research, this app aims to make the process of behaviour change easier.",
     bottomBadges: ["Svelte", "Supabase", "PWA", "Netlify", "Tailwind CSS"],
     link: "evolvingcyborgs"
@@ -153,7 +158,7 @@ const Portfolio = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings, s
     title: "Tech Tracker",
     url: "assets/TechTracker.jpg",
     alt: "chip",
-    topBadge: "featured",
+    topBadge: "JavaScript",
     description: "An inventory management app for employees to sign out, track, and return\r\n							technology (laptops, arduinos, etc...) used in our program delivery.",
     bottomBadges: ["Svelte", "Supabase", "PWA", "Netlify", "Tailwind CSS"],
     link: "techtracker"
@@ -162,28 +167,87 @@ const Portfolio = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings, s
     title: "Teacher Pro-D Hub",
     url: "assets/Pro-D_Hub.png",
     alt: "chip",
-    topBadge: "featured",
+    topBadge: "JavaScript",
     description: "A hub to provide STEM resources, lesson plans, online courses, and events\r\n							for teachers",
     bottomBadges: ["Webflow"],
     link: "pro-dhub"
   }, {}, {})}</div>
+					<div class="${"carousel-cell"}">${(0, import_index_6b489d84.v)(ProjectCard, "ProjectCard").$$render($$result, {
+    title: "Death Typer",
+    url: "assets/DeathTyper Screens.jpg",
+    alt: "chip",
+    topBadge: "JavaScript",
+    description: "An app designed to increase typing speed and accuracy by training using a 'sudden death' mode",
+    bottomBadges: ["Svelte", "Supabase", "Vercel", "Tailwind CSS"],
+    link: "deathtyper"
+  }, {}, {})}</div>
 					
-					</div></div>
-			<button class="${"btn btn-circle"}">&lt;
-			</button>
-			<button class="${"btn btn-circle"}">&gt;
-			</button></div></div>
+					</div></div></div></div>
 </div>`;
 });
-var Media_svelte_svelte_type_style_lang = /* @__PURE__ */ (() => ".iframe-container.svelte-1gw75q1{position:relative;overflow:hidden;width:90vw;max-width:1200px;height:50vw;min-height:200px}iframe.svelte-1gw75q1{position:absolute;top:0;left:10%;bottom:0;right:10%;width:80%;height:100%}")();
+const placeholderClass = "svelte-lazy-placeholder";
+const Placeholder = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings, slots) => {
+  let { placeholder = null } = $$props;
+  let { placeholderProps = null } = $$props;
+  if ($$props.placeholder === void 0 && $$bindings.placeholder && placeholder !== void 0)
+    $$bindings.placeholder(placeholder);
+  if ($$props.placeholderProps === void 0 && $$bindings.placeholderProps && placeholderProps !== void 0)
+    $$bindings.placeholderProps(placeholderProps);
+  return `${placeholder ? `<div${(0, import_index_6b489d84.a)("class", placeholderClass, 0)}>${typeof placeholder === "string" ? `<div>${(0, import_index_6b489d84.e)(placeholder)}</div>` : `${["function", "object"].includes(typeof placeholder) ? `${(0, import_index_6b489d84.v)(placeholder || import_index_6b489d84.m, "svelte:component").$$render($$result, Object.assign(placeholderProps), {}, {})}` : ``}`}</div>` : ``}`;
+});
+const Src = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings, slots) => {
+  let { height = 0 } = $$props;
+  let { offset = 150 } = $$props;
+  let { fadeOption = { delay: 0, duration: 400 } } = $$props;
+  let { resetHeightDelay = 0 } = $$props;
+  let { onload = null } = $$props;
+  let { placeholder = null } = $$props;
+  let { placeholderProps = null } = $$props;
+  let { class: className = "" } = $$props;
+  const rootClass = "svelte-lazy" + (className ? " " + className : "");
+  const rootInitialHeight = getStyleHeight();
+  function getStyleHeight() {
+    return typeof height === "number" ? height + "px" : height;
+  }
+  if ($$props.height === void 0 && $$bindings.height && height !== void 0)
+    $$bindings.height(height);
+  if ($$props.offset === void 0 && $$bindings.offset && offset !== void 0)
+    $$bindings.offset(offset);
+  if ($$props.fadeOption === void 0 && $$bindings.fadeOption && fadeOption !== void 0)
+    $$bindings.fadeOption(fadeOption);
+  if ($$props.resetHeightDelay === void 0 && $$bindings.resetHeightDelay && resetHeightDelay !== void 0)
+    $$bindings.resetHeightDelay(resetHeightDelay);
+  if ($$props.onload === void 0 && $$bindings.onload && onload !== void 0)
+    $$bindings.onload(onload);
+  if ($$props.placeholder === void 0 && $$bindings.placeholder && placeholder !== void 0)
+    $$bindings.placeholder(placeholder);
+  if ($$props.placeholderProps === void 0 && $$bindings.placeholderProps && placeholderProps !== void 0)
+    $$bindings.placeholderProps(placeholderProps);
+  if ($$props.class === void 0 && $$bindings.class && className !== void 0)
+    $$bindings.class(className);
+  return `<div${(0, import_index_6b489d84.a)("class", rootClass, 0)} style="${"height: " + (0, import_index_6b489d84.e)(rootInitialHeight)}">${`${placeholder ? `${(0, import_index_6b489d84.v)(Placeholder, "Placeholder").$$render($$result, { placeholder, placeholderProps }, {}, {})}` : ``}`}
+</div>`;
+});
+var Media_svelte_svelte_type_style_lang = /* @__PURE__ */ (() => ".iframe-container.svelte-1ps7ucs{position:relative;overflow:hidden;width:90vw;max-width:1200px;height:50vw;min-height:200px;max-height:600px}iframe.svelte-1ps7ucs{position:absolute;top:0;left:10%;bottom:0;right:10%;width:80%;height:100%}")();
 const css$2 = {
-  code: ".iframe-container.svelte-1gw75q1{position:relative;overflow:hidden;width:90vw;max-width:1200px;height:50vw;min-height:200px}iframe.svelte-1gw75q1{position:absolute;top:0;left:10%;bottom:0;right:10%;width:80%;height:100%}",
+  code: ".iframe-container.svelte-1ps7ucs{position:relative;overflow:hidden;width:90vw;max-width:1200px;height:50vw;min-height:200px;max-height:600px}iframe.svelte-1ps7ucs{position:absolute;top:0;left:10%;bottom:0;right:10%;width:80%;height:100%}",
   map: null
 };
 const Media = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$2);
   return `<div id="${"media"}" class="${"hero section min-h-screen bg-base-200 flex justify-center"}"><div class="${"hero-content flex align-middle justify-center text-center flex-col "}"><h1 class="${"text-5xl font-bold"}">Media</h1>
-		<div class="${"iframe-container svelte-1gw75q1"}"><iframe src="${"https://www.youtube.com/embed/cqaQNkmpyQ4"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"}" allowfullscreen class="${"svelte-1gw75q1"}"></iframe></div></div>
+		<div class="${"flex justify-center w-full py-2 gap-2"}"><a href="${"#media-item1"}"><button class="${"btn btn-circle glow-on-hover bright s-l_VPySslJWUT"}">1</button></a>
+			<a href="${"#media-item2"}"><button class="${"btn btn-circle glow-on-hover bright s-l_VPySslJWUT"}">2</button></a></div>
+		<div class="${"carousel w-full"}"><div class="${"iframe-container carousel-item w-full svelte-1ps7ucs"}" id="${"media-item1"}">${(0, import_index_6b489d84.v)(Src, "Lazy").$$render($$result, { placeholder: "loading video..." }, {}, {
+    default: () => {
+      return `<iframe src="${"https://www.youtube.com/embed/R1Z-T8IQxbQ"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"}" allowfullscreen class="${"svelte-1ps7ucs"}"></iframe>`;
+    }
+  })}</div>
+			<div class="${"iframe-container carousel-item w-full svelte-1ps7ucs"}" id="${"media-item2"}">${(0, import_index_6b489d84.v)(Src, "Lazy").$$render($$result, { placeholder: "loading video..." }, {}, {
+    default: () => {
+      return `<iframe class="${"carousel-item w-full svelte-1ps7ucs"}" src="${"https://www.youtube.com/embed/cqaQNkmpyQ4"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"}" allowfullscreen></iframe>`;
+    }
+  })}</div></div></div>
 </div>`;
 });
 var menuScroller_svelte_svelte_type_style_lang = /* @__PURE__ */ (() => ".glow.svelte-4a5hzf:before{opacity:0.5 !important}.tab.svelte-4a5hzf{width:auto;margin:auto 5px;background-color:black}.tab.svelte-4a5hzf:after{background:black}.tab.svelte-4a5hzf:before{opacity:0}")();
@@ -290,7 +354,8 @@ const BottomNav = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings, s
   return $$rendered;
 });
 const Routes = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings, slots) => {
-  return `<div class="${"bg-base-200"}">${(0, import_index_6b489d84.v)(Navbar, "Navbar").$$render($$result, {}, {}, {})}
+  return `<div class="${"bg-base-200"}"><div id="${"boids-display"}"></div>
+${(0, import_index_6b489d84.v)(Navbar, "Navbar").$$render($$result, {}, {}, {})}
 ${(0, import_index_6b489d84.v)(Hero, "Hero").$$render($$result, {}, {}, {})}
 
 ${(0, import_index_6b489d84.v)(BottomNav, "BottomNav").$$render($$result, {}, {}, {})}
