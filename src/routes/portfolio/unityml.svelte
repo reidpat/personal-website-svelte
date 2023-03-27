@@ -359,6 +359,31 @@
 			</p>
 			<br />
 			<p><b>GIF COMING SOON</b></p>
+			<h3 class="text-xl divider">Lab 6 - Embodied Cognition</h3>
+			<p>Learning Goals:</p>
+			<ol class="list-decimal list-outside ml-6">
+				<li>
+					Students should understand the connection between the form (body) of an agent and its
+					function (cognition)
+				</li>
+			</ol>
+			<br />
+			<p>
+				In the previous version of this lab, students would solve a maze using different movement
+				types (sliding vs jumping). However, this was difficult to connect to cognition
+				specifically.
+			</p>
+			<br />
+			<p>
+				In the new version, students will simulate the behaviour of a paper read in class, where
+				robots will "tidy" an arena of cubes by pushing them into piles.
+			</p>
+			<br />
+			<p>
+				This new version successfully improves upon teaching the learning goals, as it specifically
+				connects to content covered in the lectures and readings for the course, and more accurately
+				simulates embodied cognition.
+			</p>
 			<img
 				class="max-w-10 m-10 rounded-lg"
 				src="../assets/unity_ml/Unity Lab 6.gif"
