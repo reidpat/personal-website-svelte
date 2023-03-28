@@ -81,7 +81,7 @@
 		</ol>
 		<img
 			class="max-w-5 m-10 rounded-lg"
-			src="..\assets\Pro-DHub.jpg"
+			src="..\assets\Pro-D_Hub.png"
 			alt="interface for pro-d hub"
 		/>
 

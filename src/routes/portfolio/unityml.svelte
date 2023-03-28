@@ -252,7 +252,7 @@
 			<h2 class="text-2xl bold divider">The Solution</h2>
 			<p>So far, 4 of the labs have undergone a redesign</p>
 
-			<h3 class="text-xl divider">Lab 2 - Physical Symbol Systems</h3>
+			<h3 class="text-l divider">Lab 2 - Physical Symbol Systems</h3>
 			<p>Learning Goals:</p>
 			<ol class="list-decimal list-outside ml-6">
 				<li>
@@ -291,7 +291,7 @@
 				src="../assets/unity_ml/Unity Lab 2.gif"
 				alt="unity ml"
 			/>
-			<h3 class="text-xl divider">Lab 3 - Emergence</h3>
+			<h3 class="text-l divider">Lab 3 - Emergence</h3>
 			<p>Learning Goals:</p>
 			<ol class="list-decimal list-outside ml-6">
 				<li>
@@ -326,7 +326,7 @@
 				src="../assets/unity_ml/Unity Lab 3.gif"
 				alt="unity ml"
 			/>
-			<h3 class="text-xl divider">Lab 4 - Simple Neural Networks</h3>
+			<h3 class="text-l divider">Lab 4 - Simple Neural Networks</h3>
 			<p>Learning Goals:</p>
 			<ol class="list-decimal list-outside ml-6">
 				<li>
@@ -359,7 +359,7 @@
 			</p>
 			<br />
 			<p><b>GIF COMING SOON</b></p>
-			<h3 class="text-xl divider">Lab 6 - Embodied Cognition</h3>
+			<h3 class="text-l divider">Lab 6 - Embodied Cognition</h3>
 			<p>Learning Goals:</p>
 			<ol class="list-decimal list-outside ml-6">
 				<li>
@@ -389,7 +389,12 @@
 				src="../assets/unity_ml/Unity Lab 6.gif"
 				alt="unity ml"
 			/>
-			<Construction />
+			<h2 class="text-2xl divider">Reflections</h2>
+			<p>
+				Working on this project has been both engaging and educational, and I've thoroughly enjoyed
+				the opportunity to continue the work on a project I started in my undergrad. I'm hoping that
+				work on this project continues well into the future.
+			</p>
 		{/if}
 	</div>
 </div>
