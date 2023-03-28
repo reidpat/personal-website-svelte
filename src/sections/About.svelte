@@ -70,9 +70,8 @@
 
 <div id="about" class="hero section min-h-screen bg-base-200 flex justify-center">
 	<div class="hero-content flex align-middle justify-center text-center">
-		<div>
 			{#if currentSelect === 'about'}
-				<div>
+				<div class="w-full">
 					<h1 class="text-5xl font-bold">About Me</h1>
 					<div class="flex align-middle justify-center flex-wrap" id="about-pic">
 						<div id="about-desc" class="py-6 text-xl text-left self-center">
@@ -164,7 +163,6 @@
 					class="tab tab-lg tab-bordered">Interests</button
 				>
 			</div> -->
-		</div>
 	</div>
 </div>
 
@@ -184,7 +182,8 @@
 	#action {
 		display: flex;
 		position: relative;
-		width: 100%;
+		width: 30%;
+		min-width: 300px;
 		min-height: 400px;
 		align-items: center;
 		justify-content: center;
@@ -236,6 +235,10 @@
     background-clip: text;
     color: transparent;
 } */
+	.hero-content {
+		width: 99vw;
+		max-width: none;
+	}
 	.glow > img {
 		max-width: 55%;
 	}
