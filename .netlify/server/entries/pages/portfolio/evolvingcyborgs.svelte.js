@@ -21,7 +21,7 @@ __export(stdin_exports, {
 });
 module.exports = __toCommonJS(stdin_exports);
 var import_index_6b489d84 = require("../../../chunks/index-6b489d84.js");
-var import_NavbarOther_80ea6fbd = require("../../../chunks/NavbarOther-80ea6fbd.js");
+var import_NavbarOther_b7541eba = require("../../../chunks/NavbarOther-b7541eba.js");
 var import_Contact_8a18bbeb = require("../../../chunks/Contact-8a18bbeb.js");
 var evolvingcyborgs_svelte_svelte_type_style_lang = /* @__PURE__ */ (() => "ul.svelte-7o0nbe{list-style:circle;text-align:left;margin:auto;justify-self:center;width:auto}iframe.svelte-7o0nbe{margin:20px auto;width:60%;min-width:200px;height:300px}.drawing-slides.svelte-7o0nbe{margin:0px auto}img.svelte-7o0nbe{max-height:400px;-o-object-fit:contain;object-fit:contain}.divider.svelte-7o0nbe{padding:20px;padding-top:60px}h1.svelte-7o0nbe,h2.svelte-7o0nbe,h3.svelte-7o0nbe,h4.svelte-7o0nbe{margin:20px 20px;font-weight:700}")();
 const css = {
@@ -31,7 +31,7 @@ const css = {
 const Evolvingcyborgs = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `${$$result.head += `${$$result.title = `<title>Evolving Cyborgs</title>`, ""}<link rel="${"icon"}" href="${"../assets/code_icon.png"}" data-svelte="svelte-x415ln">`, ""}
-${(0, import_index_6b489d84.v)(import_NavbarOther_80ea6fbd.N, "NavbarOther").$$render($$result, {}, {}, {})}
+${(0, import_index_6b489d84.v)(import_NavbarOther_b7541eba.N, "NavbarOther").$$render($$result, {}, {}, {})}
 <div class="${"background bg-base-200 p-10 min-h-screen"}"><div class="${"content p-10 m-auto mt-20 bg-base-300 rounded-md flex flex-col justify-center text-left text-lg, max-w-4xl"}"><h1 class="${"text-3xl bold text-center mb-3 svelte-7o0nbe"}">Evolving Cyborgs</h1>
 		<p class="${"text-lg text-center"}">A better gamified habit tracker</p>
 		<img class="${"max-w-10 m-10 rounded-lg svelte-7o0nbe"}" src="${"../assets/EvolvingCyborgs.jpg"}" alt="${""}">

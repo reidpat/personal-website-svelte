@@ -32,7 +32,7 @@ const Hero = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings, slots)
   $$result.css.add(css$6);
   return `<div id="${"home"}" class="${"section hero min-h-screen bg-base-200 min-w-screen"}"><div class="${"hero-content text-center rounded p-10 svelte-1mnusvb"}"><div class="${"max-w-md"}"><p class="${"text-xl font-semibold text-slate-100"}">Hi, I&#39;m</p>
 			<h1 class="${"text-5xl font-bold gradient-text"}">Reid Patterson</h1>
-			<p class="${"text-xl p-4 text-slate-100"}">Tinkerer / Developer / Educator.</p>
+			<p class="${"text-xl p-4 text-slate-100"}">Developer / Educator / Creator</p>
 			<div class="${"flex flex-col m-auto"}"><button class="${"btn glow-on-hover m-auto uppercase svelte-1mnusvb"}">About Me</button>
                 <button class="${"btn glow-on-hover m-auto uppercase svelte-1mnusvb"}">Portfolio</button>
 				<button class="${"btn glow-on-hover m-auto uppercase svelte-1mnusvb"}">Media</button></div></div></div>
@@ -234,16 +234,18 @@ const css$2 = {
   map: null
 };
 const Media = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings, slots) => {
+  let showLoading = "relative";
   $$result.css.add(css$2);
   return `<div id="${"media"}" class="${"hero section min-h-screen bg-base-200 flex justify-center"}"><div class="${"hero-content flex align-middle justify-center text-center flex-col "}"><h1 class="${"text-5xl font-bold"}">Media</h1>
-		<div class="${"flex justify-center w-full py-2 gap-2"}"><a href="${"#media-item1"}"><button class="${"btn btn-circle glow-on-hover bright s-l_VPySslJWUT"}">1</button></a>
-			<a href="${"#media-item2"}"><button class="${"btn btn-circle glow-on-hover bright s-l_VPySslJWUT"}">2</button></a></div>
-		<div class="${"carousel w-full"}"><div class="${"iframe-container carousel-item w-full svelte-1ps7ucs"}" id="${"media-item1"}">${(0, import_index_6b489d84.v)(Src, "Lazy").$$render($$result, { placeholder: "loading video..." }, {}, {
+		<div class="${"flex justify-center w-full py-2 gap-2"}"><a href="${"#media-item1"}"><button class="${"btn btn-circle glow-on-hover bright"}">1</button></a>
+			<a href="${"#media-item2"}"><button class="${"btn btn-circle glow-on-hover bright"}">2</button></a></div>
+		<div class="${"carousel w-full"}"><div class="${"iframe-container carousel-item w-full svelte-1ps7ucs"}" id="${"media-item1"}"><progress class="${"progress progress-secondary w-80"}" style="${"display: " + (0, import_index_6b489d84.e)(showLoading) + "; left: 50%; top: 50%"}"></progress>
+				${(0, import_index_6b489d84.v)(Src, "Lazy").$$render($$result, {}, {}, {
     default: () => {
       return `<iframe src="${"https://www.youtube.com/embed/R1Z-T8IQxbQ"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"}" allowfullscreen class="${"svelte-1ps7ucs"}"></iframe>`;
     }
   })}</div>
-			<div class="${"iframe-container carousel-item w-full svelte-1ps7ucs"}" id="${"media-item2"}">${(0, import_index_6b489d84.v)(Src, "Lazy").$$render($$result, { placeholder: "loading video..." }, {}, {
+			<div class="${"iframe-container carousel-item w-full svelte-1ps7ucs"}" id="${"media-item2"}">${(0, import_index_6b489d84.v)(Src, "Lazy").$$render($$result, {}, {}, {
     default: () => {
       return `<iframe class="${"carousel-item w-full svelte-1ps7ucs"}" src="${"https://www.youtube.com/embed/cqaQNkmpyQ4"}" title="${"YouTube video player"}" frameborder="${"0"}" allow="${"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"}" allowfullscreen></iframe>`;
     }

@@ -30,7 +30,7 @@ const css = {
 const NavbarOther = (0, import_index_6b489d84.c)(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
   return `<div class="${"navbar bg-base-100 fixed top-0 z-10"}"><div class="${"navbar-start"}"><a href="${"/"}" target="${"_self"}"><button class="${"glow-on-hover pl-3 pr-3"}"><img src="${"/home.png"}" alt="${"home button"}" class="${"svelte-7kzvce"}"></button></a></div>
-	<div class="${"navbar-center"}"><button class="${"btn btn-ghost gradient-text normal-case text-xl"}">Reid Patterson</button></div>
+	<div class="${"navbar-center"}"><a href="${"/"}"><button class="${"btn btn-ghost gradient-text normal-case text-xl"}">Reid Patterson</button></a></div>
 	<div class="${"navbar-end"}">${(0, import_index_6b489d84.v)(import_Contact_8a18bbeb.C, "Contact").$$render($$result, {}, {}, {})}</div>
 </div>`;
 });

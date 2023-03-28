@@ -29,6 +29,6 @@ __export(stdin_exports, {
 module.exports = __toCommonJS(stdin_exports);
 var module2 = __toESM(require("../entries/pages/portfolio/deathtyper.svelte.js"));
 const index = 4;
-const entry = "pages/portfolio/deathtyper.svelte-713d9acd.js";
-const js = ["pages/portfolio/deathtyper.svelte-713d9acd.js", "chunks/index-a27d9349.js", "chunks/NavbarOther-89d446ff.js", "chunks/Contact-81563ed9.js"];
+const entry = "pages/portfolio/deathtyper.svelte-0d773981.js";
+const js = ["pages/portfolio/deathtyper.svelte-0d773981.js", "chunks/index-a27d9349.js", "chunks/NavbarOther-03e03f5d.js", "chunks/Contact-81563ed9.js"];
 const css = ["assets/pages/portfolio/deathtyper.svelte-b06fea04.css", "assets/NavbarOther-27e7f183.css"];
