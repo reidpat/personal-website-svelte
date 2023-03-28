@@ -238,6 +238,7 @@
 	.hero-content {
 		width: 99vw;
 		max-width: none;
+		margin: 0px 15px;
 	}
 	.glow > img {
 		max-width: 55%;
