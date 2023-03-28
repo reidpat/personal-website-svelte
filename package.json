@@ -24,9 +24,10 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@splidejs/splide-extension-video": "^0.8.0",
+		"@splidejs/svelte-splide": "^0.2.9",
 		"daisyui": "^2.15.3",
 		"svelte-device-detector": "^0.2.2",
-		"svelte-gestures": "^1.4.1",
-		"svelte-lazy": "^1.2.1"
+		"svelte-gestures": "^1.4.1"
 	}
 }
