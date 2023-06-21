@@ -22,7 +22,7 @@
 				<div class="badge badge-outline">{badge}</div>
 			{/each}
 		</div>
-		<a href={`/portfolio/${link}`}  target="_self" ><button  class="btn uppercase glow-on-hover mt-3">Learn More</button></a>
+		<a href={`/portfolio/${link}`}  target="_self" ><button  class="btn uppercase glow-on-hover bright mt-3">Learn More</button></a>
 	</div>
 </div>
 
@@ -47,7 +47,8 @@
 	}
 	img {
 		height: 200px;
-		width: 100%;
+		width: auto;
+		/* width: 100%; */
 		object-fit: cover;
 	}
 </style>

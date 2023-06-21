@@ -15,19 +15,19 @@
 					on:click={() => {
 						scrollTo('about');
 					}}
-					class="btn glow-on-hover m-auto uppercase">About Me</button
+					class="btn glow-on-hover bright m-auto uppercase">About Me</button
 				>
                 <button
 					on:click={() => {
 						scrollTo('portfolio');
 					}}
-					class="btn glow-on-hover m-auto uppercase">Portfolio</button
+					class="btn glow-on-hover bright m-auto uppercase">Portfolio</button
 				>
 				<button
 					on:click={() => {
 						scrollTo('media');
 					}}
-					class="btn glow-on-hover m-auto uppercase">Media</button
+					class="btn glow-on-hover bright m-auto uppercase">Media</button
 				>
 			</div>
 		</div>

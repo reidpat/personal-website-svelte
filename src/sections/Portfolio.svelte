@@ -160,13 +160,12 @@
 						class="carousel-cell"
 					>
 						<ProjectCard
-							title="Unity ML Tournament"
+							title="Cogs 300 Labs"
 							url="assets/ML_Agents_scene.png"
 							alt="chip"
 							topBadge="C#"
-							description="An open ended learning environment where university students train
-							machine learning agents to compete in a capture the flag competition."
-							bottomBadges={['Unity', 'Unity ML Agents']}
+							description="A set of programs designed for student use in the UBC course Cognitive Systems 300: Understanding and Designing Cognitive Systems"
+							bottomBadges={['Unity', 'PyTorch', 'Canvas LMS']}
 							link="unityml"
 						/>
 					</div>
@@ -229,6 +228,19 @@
 					</div>
 					<div
 						class="carousel-cell"
+						>
+						<ProjectCard
+							title="Obsidian Cognitive Assistant"
+							url="assets/Obsidian-Cognitive-Assistant.png"
+							alt="chip"
+							topBadge="TypeScript"
+							description="A plugin for Obsidian.md which connects to OpenAI's API and uses saved templates to assist the user with writing and learning tasks in a way that draws from best practices in cognitive science research"
+							bottomBadges={['Svelte', 'Obsidian.md', 'OpenAI']}
+							link="obsidian-cognitive-assistant"
+						/>
+					</div>
+					<!-- <div
+						class="carousel-cell"
 						
 					>
 						<ProjectCard
@@ -240,7 +252,7 @@
 							bottomBadges={['Svelte', 'Supabase', 'Vercel', 'Tailwind CSS']}
 							link="deathtyper"
 						/>
-					</div>
+					</div> -->
 					<!-- <div
 						class="carousel-cell"
 						use:swipe={{ timeframe: 300, minSwipeDistance: 60 }}
@@ -296,19 +308,5 @@
 		justify-content: space-between;
 	}
 
-	.bright.glow-on-hover::after {
-		background: rgba(230, 230, 230, 0.9);
-	}
-	.bright.glow-on-hover::before{
-		top: -4px;
-		left: -4px;
-		width: calc(100% + 8px);
-		height: calc(100% + 8px);
-	}
-	.bright.glow-on-hover{
-		color: black;
-		height: 3em;
-		width: 3em;
-		font-size: large;
-	}
+	
 </style>

@@ -99,7 +99,6 @@
 		</div>
 
 		{#if versionSelect == 1}
-			<div>
 				<p class="text-center">
 					The original project, completed in fall 2020. This version focuses on labs 7 to 9 - the
 					machine learning tournament.
@@ -226,34 +225,19 @@
 						strategies.
 					</li>
 				</ul>
-			</div>
 		{:else if versionSelect == 2}
+			<h3 class="text-xl divider">Project Overview:</h3>
 			<p>
-				The ongoing version of the project is a collaboration between the Cogs 300 course and the <a
-					href="https://eml.ubc.ca/"
-					class="gradient-text">UBC Emerging Media Lab</a
-				> which began in fall 2022. This version focuses on new content for each of the labs 1 to 6,
-				leading up to the robot tournament in labs 7 to 9 (version 1).
+				The ongoing project, a collaboration between the Cogs 300 course and the UBC Emerging Media
+				Lab, aims to enhance the learning experience and outcomes of the robotics labs. My role in
+				this project involved serving as a Unity developer, pedagogical advisor, and subject matter
+				expert. Working with undergraduate students, industry expert advisors, and the course
+				professor, we embarked on redesigning labs 1 to 6 and preparing for the robot tournament in
+				labs 7 to 9.
 			</p>
-			<h2 class="text-2xl bold divider">My Role</h2>
-			<p class="text-center">
-				I have served as a unity developer, pedagogical advisor, and subject matter expert while
-				working with undergraduate students, industry expert advisors, and the professor for the
-				course.
-			</p>
-			<h2 class="text-2xl bold divider">The Problem</h2>
-			<p>
-				Version 1 of this project was created in a very short timeline during the 2020 transition to
-				online content. While functional, this initial solution could be improved upon with more
-				time and effort. In version 2, we have decided to mostly focus on redesigning labs 1-6, as
-				the robot tournament described in version 1 serves as the remaining labs 7-9 and is in quite
-				good shape.
-			</p>
-			<h2 class="text-2xl bold divider">The Solution</h2>
-			<p>So far, 4 of the labs have undergone a redesign</p>
 
 			<h3 class="text-l divider">Lab 2 - Physical Symbol Systems</h3>
-			<p>Learning Goals:</p>
+			<h4>Learning Goals:</h4>
 			<ol class="list-decimal list-outside ml-6">
 				<li>
 					Students should understand how information can be explicitly represented symbolically
@@ -271,7 +255,7 @@
 				goals.
 			</p>
 			<br />
-			<p>In the new version, students have 2 tasks:</p>
+			<h4>In the new version, students have 2 tasks:</h4>
 			<ol class="list-decimal list-outside ml-6">
 				<li>provide a list of turning instructions to a virtual car</li>
 				<li>
@@ -292,7 +276,7 @@
 				alt="unity ml"
 			/>
 			<h3 class="text-l divider">Lab 3 - Emergence</h3>
-			<p>Learning Goals:</p>
+			<h4>Learning Goals:</h4>
 			<ol class="list-decimal list-outside ml-6">
 				<li>
 					Students should understand how simple rules can combine to create behaviour which is more
@@ -327,7 +311,7 @@
 				alt="unity ml"
 			/>
 			<h3 class="text-l divider">Lab 4 - Simple Neural Networks</h3>
-			<p>Learning Goals:</p>
+			<h4>Learning Goals:</h4>
 			<ol class="list-decimal list-outside ml-6">
 				<li>
 					Students should understand how a perceptron behaves as a simple, single-layer neural
@@ -360,7 +344,7 @@
 			<br />
 			<p><b>GIF COMING SOON</b></p>
 			<h3 class="text-l divider">Lab 6 - Embodied Cognition</h3>
-			<p>Learning Goals:</p>
+			<h4>Learning Goals:</h4>
 			<ol class="list-decimal list-outside ml-6">
 				<li>
 					Students should understand the connection between the form (body) of an agent and its
@@ -400,6 +384,18 @@
 </div>
 
 <style>
+	.content {
+		align-items: center;
+	}
+	p {
+		max-width: 80%;
+		min-width: 300px;
+	}
+	ol,
+	ul {
+		max-width: 80%;
+		min-width: 300px;
+	}
 	ul {
 		list-style: circle;
 		text-align: left;
