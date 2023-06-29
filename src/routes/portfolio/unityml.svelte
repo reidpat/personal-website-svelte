@@ -272,7 +272,7 @@
 
 			<img
 				class="max-w-10 m-10 rounded-lg"
-				src="../assets/unity_ml/Unity Lab 2.gif"
+				src="../assets/unity_ml/2 Self Driving.gif"
 				alt="unity ml"
 			/>
 			<h3 class="text-l divider">Lab 3 - Emergence</h3>
@@ -307,7 +307,7 @@
 			</p>
 			<img
 				class="max-w-10 m-10 rounded-lg"
-				src="../assets/unity_ml/Unity Lab 3.gif"
+				src="../assets/unity_ml/3 firefly.gif"
 				alt="unity ml"
 			/>
 			<h3 class="text-l divider">Lab 4 - Simple Neural Networks</h3>
@@ -342,7 +342,11 @@
 				approaches to the same problem.
 			</p>
 			<br />
-			<p><b>GIF COMING SOON</b></p>
+			<img
+				class="max-w-10 m-10 rounded-lg"
+				src="../assets/unity_ml/4 Perceptron.gif"
+				alt="unity ml"
+			/>
 			<h3 class="text-l divider">Lab 6 - Embodied Cognition</h3>
 			<h4>Learning Goals:</h4>
 			<ol class="list-decimal list-outside ml-6">
@@ -370,7 +374,7 @@
 			</p>
 			<img
 				class="max-w-10 m-10 rounded-lg"
-				src="../assets/unity_ml/Unity Lab 6.gif"
+				src="../assets/unity_ml/6 Embodied Cognition.gif"
 				alt="unity ml"
 			/>
 			<h2 class="text-2xl divider">Reflections</h2>
