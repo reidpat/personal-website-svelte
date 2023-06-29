@@ -257,9 +257,9 @@
 			<br />
 			<h4>In the new version, students have 2 tasks:</h4>
 			<ol class="list-decimal list-outside ml-6">
-				<li>provide a list of turning instructions to a virtual car</li>
+				<li>Provide a hard coded list of turning instructions to a virtual car</li>
 				<li>
-					Create an algorithm which will decide to turn left or right based off two sensor distance
+					Create an algorithm which will decide to turn left or right based off distance sensor
 					inputs
 				</li>
 			</ol>

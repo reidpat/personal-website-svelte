@@ -18,11 +18,8 @@
 	<NavbarOther />
 	<div id="media" class="hero section min-h-screen bg-base-200 flex justify-center mt-10">
         <div class="hero-content flex align-middle justify-center text-center flex-col ">
+            <br>
             <h1 class="text-5xl font-bold">Hello ngx!</h1>
-            <div> <a href="/">
-                <button class="btn glow-on-hover bright m-auto uppercase">Home</button></a>
-                <a href="/#portfolio">
-                    <button class="btn glow-on-hover bright m-auto uppercase">Portfolio</button></a></div>
             <Splide
                 options={{ rewind: true, heightRatio: 0.5625, arrows: false }}
                 extensions={{ Video }}
@@ -37,7 +34,7 @@
                     </SplideSlide>
                 {/each}
             </Splide>
-           
+           <Portfolio />
         </div>
     </div>
 </div>
