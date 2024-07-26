@@ -52,6 +52,6 @@
 			After that initial setup, I transitioned to more of a mentor and supervisor role, where I
 			helped with architecting data structures and assisted with debugging the program
 		</p>
-		<Construction />
+		<!-- <Construction /> -->
 	</div>
 </div>
