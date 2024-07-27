@@ -70,53 +70,50 @@
 
 <div id="about" class="hero section min-h-screen bg-base-200 flex justify-center">
 	<div class="hero-content flex align-middle justify-center text-center">
-			{#if currentSelect === 'about'}
-				<div class="w-full">
-					<h1 class="text-5xl font-bold">About Me</h1>
-					<div class="flex align-middle justify-center flex-wrap" id="about-pic">
-						<div id="about-desc" class="py-6 text-xl text-left self-center">
-							<p class="text-2xl italic mb-3">Hello, I'm Reid!</p>
-							<p class="mb-3">
-								I'm an educator and developer living in Vancouver, BC.
-							</p>
-							<p class="mb-3">
-								By day, I work at <a class="gradient-text" href="https://geeringup.apsc.ubc.ca/"
-									>UBC Geering Up</a
-								>
-								as a computer science instructor and web developer - building web apps for Geering Up and helping K-12 teachers bring
-								topics like AI and Digital Literacy into their classrooms.
-							</p>
-							<p>
-								By night, I moonlight as a tech tinkerer - making helpful tools & websites, working with training machine learning models, and experimenting with algorithmically generated art.
-							</p>
-						</div>
-						<div id="action">
-							<img
-								on:mouseover={swap}
-								class="portrait"
-								style="z-index: {seriousZ.toString()}"
-								src="MeSerious.webp"
-								alt=""
-							/>
-							<img
+		{#if currentSelect === 'about'}
+			<div class="w-full">
+				<h1 class="text-5xl font-bold">About Me</h1>
+				<div class="flex align-middle justify-center flex-wrap" id="about-pic">
+					<div id="about-desc" class="py-6 text-xl text-left self-center">
+						<p class="text-2xl italic mb-3">Hello, I'm Reid!</p>
+						<p class="mb-3">I'm an educator and developer living in Palo Alto, CA</p>
+						<p class="mb-3">
+							I'm deeply passionate about education, with expertise relating to pedagogy and
+							technology, <a class="gradient-text" href="https://www.youtube.com/@reidpat" target="_blank"
+								>advocating how the education system needs to adapt to new technologies.</a
+							>
+						</p>
+
+						<p>
+							In my free time, I enjoy becoming a cyborg by riding my electric unicycle around and <a
+								class="gradient-text"
+								target="_blank"
+								href="https://www.youtube.com/@evolvingcyborg"
+								>capturing my adventures on video.
+							</a>
+						</p>
+					</div>
+					<div id="action">
+						<img style="padding: 10px" src="Wedding_Reid (Small).jpg" alt="" />
+						<!-- <img
 								on:mouseleave={swap}
 								class="portrait"
 								style="z-index: {smileZ.toString()}"
 								src="MeFun.webp"
 								alt=""
-							/>
-						</div>
+							/> -->
 					</div>
 				</div>
-			{/if}
-			<!-- {#if currentSelect === 'work'}
+			</div>
+		{/if}
+		<!-- {#if currentSelect === 'work'}
 				<div>
 					<h1 class="text-5xl font-bold">My Work</h1>
 					<p class="py-6">I'm currently working at Geering Up
 					</p>
 				</div>
 			{/if} -->
-			<!-- {#if currentSelect === 'interests'}
+		<!-- {#if currentSelect === 'interests'}
 				<div>
 					<h1 class="text-5xl font-bold">My Interests</h1>
 					<div class="flex flex-wrap justify-center m-20">
@@ -147,7 +144,7 @@
 					</div>
 				</div>
 			{/if} -->
-			<!-- <div class="tabs flex justify-center">
+		<!-- <div class="tabs flex justify-center">
 				<button
 					on:click={() => {
 						currentSelect = 'about';
@@ -167,7 +164,7 @@
 </div>
 
 <style>
-	#about{
+	#about {
 		max-width: 99vw;
 	}
 	.portrait {

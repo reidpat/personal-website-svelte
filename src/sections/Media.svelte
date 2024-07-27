@@ -4,7 +4,7 @@
 	import { Video } from '@splidejs/splide-extension-video';
 	import '@splidejs/splide-extension-video/dist/css/splide-extension-video.min.css';
 
-	const videos = [ 'ge8zRYmy4Yc', 'R1Z-T8IQxbQ','u2Q-nMUDmvU'];
+	const videos = ['ge8zRYmy4Yc', 'XCs3OkDXU0M','u2Q-nMUDmvU'];
 </script>
 
 <div id="media" class="hero section min-h-screen bg-base-200 flex justify-center">
