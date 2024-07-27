@@ -55,13 +55,6 @@
 		<a
 			class="m-auto btn glow-on-hover uppercase mt-5"
 			style="width: 250px;"
-			href="https://evolvingcyborgs.netlify.app/demo"
-			target="_blank">
-			See Demo
-		</a>
-		<a
-			class="m-auto btn glow-on-hover uppercase mt-5"
-			style="width: 250px;"
 			href="https://github.com/reidpat/evolving-cyborgs-svelte"
 			target="_blank">
 			See Code
