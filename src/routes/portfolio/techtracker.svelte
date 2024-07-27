@@ -23,15 +23,15 @@
 			full time job.
 		</p>
 		<p>
-			Techonology frequently changes hands during a day of camps and with over 50 instructors, it
+			Technology frequently changes hands during a day of camps and with over 50 instructors, it
 			can be a pain to figure out who is using something at a given time. In the past instructors
 			would have to contact the Technology Student Assistant (Tech SA) who could look at a physical
-			sign out sheet in order to determine who had what tech signed out. This process was exhausing
+			sign out sheet in order to determine who had what tech signed out. This process was exhausting
 			for both instructors and the Tech SA being contacted.
 		</p>
 		<p>
 			When I worked in the Tech SA position myself in 2019, I developed an online sign in/out
-			solution which utilised Google forms and Google sheets in order to track where things were in
+			solution which utilized Google forms and Google sheets in order to track where things were in
 			realtime. This solution worked, but felt clunky and there were frequently data entry errors
 			which then had to be fixed manually.
 		</p>
@@ -50,8 +50,9 @@
 		</p>
 		<p>
 			After that initial setup, I transitioned to more of a mentor and supervisor role, where I
-			helped with architecting data structures and assisted with debugging the program
+			helped with architecting data structures and assisted with debugging the program.
 		</p>
+		<p>The project ended up being a huge success and has been used for the last 4 years as the method for tracking all of the technology at Geering Up.</p>
 		<!-- <Construction /> -->
 	</div>
 </div>
