@@ -76,7 +76,7 @@
 				<div class="flex align-middle justify-center flex-wrap" id="about-pic">
 					<div id="about-desc" class="py-6 text-xl text-left self-center">
 						<p class="text-2xl italic mb-3">Hello, I'm Reid!</p>
-						<p class="mb-3">I'm an educator and developer from Vancouver, BC currently living in Palo Alto, CA</p>
+						<p class="mb-3">I'm an educator and developer from Vancouver, BC - currently living in Nelson</p>
 						<p class="mb-3">
 							I'm deeply passionate about education, with expertise relating to pedagogy and
 							technology, <a class="gradient-text" href="https://www.youtube.com/@reidpat" target="_blank"
